@@ -1,1 +1,7 @@
-sdashadsfhasdfhasdhasdhasdhashahafhafsdhshfgjfkdhfkdg
+Procedure: Cadastrar Etec
+
+Procedure: Cadastrar Cursos[];
+
+Procedure(Transact): Etec faz pilha de Cadastro PESSOA - Perfil - Perfil Curso. (Caso já tenha A PESSOA cadastradA, guardar o id, atualizar perfil mantendo o protocolo anterior em observacoes com a data de alteração, atualizar perfi ) Cadastrando perfil, levar o id para perfil curso, que será escolhido. Pesquisar por cpf para verificar a existência.
+
+
