@@ -1,5 +1,10 @@
 /**/
 
+/*@font-face {
+    font-family: LondonBetween;
+    src: url(../fonts/LondonBetween.ttf) !important;
+}*/
+
 html {
   position: relative;
   min-height: 100%;
@@ -23,7 +28,7 @@ body {
 }
 
 .footer{
-	background-color: #E5801C;
+	background-color: #FE5000;
 }
 
 .navbar-dark .navbar-nav .nav-link{

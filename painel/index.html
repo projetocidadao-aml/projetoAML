@@ -18,14 +18,15 @@
 	<!--Header  -->
 	
 	<div class="container">
-		<h4 class="text-secondary text-center pt-4 mb-5">Cadastre-se! Vamos agir por um amanhã melhor!</h4>
+		<h4 class="text-secondary text-center pt-4">Cadastre-se! Vamos agir por um amanhã melhor!</h4>
 
 		<div class="row">
 			
-			<div class="col-md-6 border d-flex align-items-center">
+			<div class="col-md-6 d-flex align-items-center">
 				<div class="row m-auto">
-					<div class="col-12 px-5 py-2">
-						<form action="painel.html">
+					<div class="col-12 px-5 py-2 border">
+						<h3 class="text-center text-secondary">Acessar</h3>
+						<form action="painel.php">
 
 							<div class="form-row">
 								<div class="form-group col-md-12">
@@ -45,8 +46,8 @@
 
 						<div class="text-center">
 
-							<a href="cadastro.html" class="d-block mb-3">Cadastre-se</a>
-							<a href="#" class="d-block mb-3">Esqueci a Senha</a>
+							<a href="EcadastroEtec.html" class="d-block mb-3">Cadastre-se</a>
+							<a href="#" class="d-block mb-3" id="forgotPassword">Esqueci a Senha</a>
 						</div>
 
 					</div>
@@ -56,7 +57,7 @@
 			<!-- esquerda -->
 
 			<div class="col-6" id="imgIndex">
-				<img src="img/logo.png" class="img-thumbnail img-responsive">
+				<img src="img/logo.png" class="img-thumbnail img-responsive border-0">
 			</div>
 
 		</div>
@@ -86,6 +87,37 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
+
+
+
+	<div class="modal fade" id="senhaModal" tabindex="-1" role="dialog" aria-labelledby="FprgotPassword" aria-hidden="true">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content px-3 py-3">
+				<div class="modalTitulo">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="">Esqueci a Senha</h4>
+				</div>
+				<div class="modal-body">
+					<p>Digite o email que está cadastrado para recriar a sua senha.</p>
+					<form class="">
+						<div class="form-group">
+							<input type="text" class="form-control" name="emailSenha" placeholder="Email">
+						</div>
+
+
+						<input type="submit" class="btn btn-secondary" value="Enviar">
+						
+						<label class="returnFormLogCli"></label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$("#forgotPassword").click(function(){
+			$("#senhaModal").modal();
+		});
+	</script>
 
 </body>
 </html>
