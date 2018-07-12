@@ -1,6 +1,3 @@
-<?php include_once 'header.php'; ?>
-
-  <!-- ------------------------------------------------------------------------ -->
 
   <div class="container">
 
@@ -31,7 +28,7 @@
 
     <div class="row atividades">
       <div class="col-md-2">
-        <img src="img/logo.png" class="img-thumbnail img-responsive" style="width: 100px;">
+        <img src="./dist/img/logo.png" class="img-thumbnail img-responsive" style="width: 100px;">
       </div>
       <div class="col-md-9">
         <h2>Grupo LOREM LOREM subiu um vídeo</h2>
@@ -41,7 +38,7 @@
 
     <div class="row atividades">
       <div class="col-md-2">
-        <img src="img/logo.png" class="img-thumbnail img-responsive" style="width: 100px;">
+        <img src="./dist/img/logo.png" class="img-thumbnail img-responsive" style="width: 100px;">
       </div>
       <div class="col-md-9">
         <h2>Grupo LOREM LOREM subiu um vídeo</h2>
@@ -51,7 +48,7 @@
 
     <div class="row atividades">
       <div class="col-md-2">
-        <img src="img/logo.png" class="img-thumbnail img-responsive" style="width: 100px;">
+        <img src="./dist/img/logo.png" class="img-thumbnail img-responsive" style="width: 100px;">
       </div>
       <div class="col-md-9">
         <h2>Grupo LOREM LOREM subiu um vídeo</h2>
@@ -71,6 +68,4 @@
 
 </div>
 
-<!-- ------------------------------------------------------------------------ -->
 
-<?php include_once 'footer.php'; ?>

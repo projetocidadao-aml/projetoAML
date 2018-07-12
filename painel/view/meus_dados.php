@@ -1,10 +1,8 @@
-<?php include_once 'header.php'; ?>
-	<!--Header  -->
-	
+
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<img src="img/logo.png" class="img-thumbnail img-responsive float-left" style="width: 140px;">
+				<img src="./dist/img/logo.png" class="img-thumbnail img-responsive float-left" style="width: 140px;">
 				<h2 class="text-center mt-5">Meus Dados</h2>
 			</div>
 		</div>
@@ -81,9 +79,7 @@
 			</div>																		
 		</div>
 	</div>
-	<!-- Container -->
 
-<?php include_once 'footer.php'; ?>
 
 
 
