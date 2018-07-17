@@ -12,7 +12,7 @@ require_once "superior.php" ;
             <div class="carousel-item ">
                  <img class="d-block img-fluid" src="img/banner1.png" alt="slider">
                 <div class="carousel-caption">
-                    <h4>SEU FUTURO COMEÇA AQUI !</h4>
+                    <h4>SEU FUTURO COMEÇA AQUI ! </h4>
                 </div>
             </div>
             <div class="carousel-item ">
