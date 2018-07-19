@@ -8,7 +8,7 @@
 				<div class="row m-auto">
 					<div class="col-12 px-5 py-2 border">
 						<h3 class="text-center text-secondary">Acessar</h3>
-						<form action="index.php?page=painel" method="POST">
+						<form action="#" method="POST" class="aml-form">
 
 							<div class="form-row">
 								<div class="form-group col-md-12">
@@ -59,7 +59,7 @@
 				</div>
 				<div class="modal-body">
 					<p>Digite o email que está cadastrado para recriar a sua senha.</p>
-					<form class="">
+					<form class="aml-form-esqueci">
 						<div class="form-group">
 							<input type="text" class="form-control" name="emailSenha" placeholder="Email">
 						</div>
@@ -73,8 +73,3 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		$("#forgotPassword").click(function(){
-			$("#senhaModal").modal();
-		});
-	</script>
