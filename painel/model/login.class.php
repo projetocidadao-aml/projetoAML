@@ -10,7 +10,7 @@ include("../config.class.php");
 		{
 			$conexao = new conexao();
 			$this->conn = $conexao->conect();
-			$sql = "SELECT * FROM PESSOA WHERE PESSOA_EMAIL = '$username' AND PESSOA_SENHA = '$pass'";
+			$sql = "SELECT * FROM PESSOA WHERE (PESSOA_EMAIL = '$username' OR PESSOA_USUARIO = '$username') AND PESSOA_SENHA = '$pass'";
 			$db = $this->conn->prepare($sql);
 			$db->execute();
 			$result = $db->fetch(PDO::FETCH_OBJ);
