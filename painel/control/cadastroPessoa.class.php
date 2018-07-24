@@ -32,8 +32,8 @@ class Pessoa{
         $this->protocolo = $_POST['responsavelEtec'];
         $this->observacoes = $_POST['responsavelEtec'];
         $this->idperfil = $_POST['responsavelEtec'];
-        new capturaDados($this->nome, $this->email, $this->cep, $this->endereco, $this->cidade, $this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor, $this->responsavel);
+        new capturaDadosP($this->nome, $this->email, $this->cep, $this->endereco, $this->cidade, $this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor, $this->responsavel);
     }
 }
-new Etec();
+new Pessoa();
 ?>
