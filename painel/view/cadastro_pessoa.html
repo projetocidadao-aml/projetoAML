@@ -29,11 +29,11 @@
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="nomePessoa">Nome</label>
-								<input type="name" class="form-control" id="nomePessoa" name="nomePessoa" placeholder="Pedro Travalon Tavares">
+								<input type="name" class="form-control" id="nomePessoa" name="preCad_pessoa_nome" placeholder="Pedro Travalon Tavares">
 							</div>
 							<div class="form-group col-md-6">
 								<label for="emailPessoa">Email</label>
-								<input type="email" class="form-control" id="emailPessoa" name="emailPessoa" placeholder="Pedro.Travalon@gmail.com">
+								<input type="email" class="form-control" id="emailPessoa" name="preCad_pessoa_email" placeholder="Pedro.Travalon@gmail.com">
 							</div>
 
 						</div>
@@ -41,13 +41,13 @@
 						<div class="form-row">
 							<div class="form-group col-md-4">
 								<label for="perfilPessoa">Perfil</label>
-								<select class="form-control">
+								<select class="form-control" id="perfilPessoa" name="preCad_pessoa_perfil">
 									<option>Selecione...</option>
 								</select>
 							</div>
 							<div class="form-group col-md-8">
 								<label for="obsPessoa">Observações</label>
-								<input type="text" class="form-control" id="obsPessoa" name="obsPessoa" placeholder="Cadastro completado em 16/07/2018">
+								<input type="text" class="form-control" id="obsPessoa" name="preCad_pessoa_obs" placeholder="Cadastro completado em 16/07/2018">
 							</div>
 
 						</div>
@@ -69,14 +69,14 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-8">
-								<label for="nomePessoa">Curso</label>
-								<select class="form-control">
+								<label for="uploadCurso">Curso</label>
+								<select class="form-control" id="uploadCurso" name="upload_nome_curso">
 									<option>Selecione...</option>
 								</select>
 							</div>
 							<div class="form-group col-md-4">
-								<label for="nomePessoa">Semestre</label>
-								<select class="form-control">
+								<label for="uploadSemestre">Semestre</label>
+								<select class="form-control" id="uploadSemestre" name="upload_semestre_curso">
 									<option>Selecione...</option>
 								</select>
 							</div>
@@ -84,8 +84,8 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-12">
-								<label for="nomePessoa">Curso</label>
-								<input type="file" name="" class="form-control">
+								<label for="uploadArquivo">Curso</label>
+								<input type="file" id="uploadArquivo" name="upload_lista_pessoas" class="form-control">
 							</div>
 							
 						</div>
@@ -107,19 +107,20 @@
 			<div class="row">
 				<div class="col-12 border mt-5 p-4">
 					<h2 class="text-center text-secondary mb-5">Buscar Pessoas</h2>
-
-					<div class="form-row">
-						<div class="form-group col-md-6">
-							<label for="apelidoPessoa">Nome</label>
-							<input type="text" class="form-control" name="">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="busca_pessoa_nome">Nome</label>
+								<input type="text" class="form-control" id="busca_pessoa_nome" name="busca_pessoa_nome">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="busca_pessoa_curso">Curso</label>
+								<select class="form-control" id="busca_pessoa_curso" name="busca_pessoa_curso">
+									<option>Selecione...</option>
+								</select>
+							</div>
 						</div>
-						<div class="form-group col-md-6">
-							<label for="apelidoPessoa">Curso</label>
-							<select class="form-control">
-								<option>Selecione...</option>
-							</select>
-						</div>
-					</div>
+					</form>
 
 					<div class="buttons text-center mt-2">
 						<button type="submit" class="btn btn-secondary">Buscar</button>
@@ -170,34 +171,34 @@
 					<form>
 						<div class="form-row">
 							<div class="form-group col-md-5">
-								<label for="nomePessoa">Nome</label>
-								<input type="name" class="form-control" id="nomePessoa" name="nomePessoa" placeholder="Pedro Travalon Tavares">
+								<label for="cad_pessoa_nome">Nome</label>
+								<input type="name" class="form-control" id="cad_pessoa_nome" name="cad_pessoa_nome" placeholder="Pedro Travalon Tavares">
 							</div>
 							<div class="form-group col-md-4">
-								<label for="apelidoPessoa">Apelido</label>
-								<input type="email" class="form-control" id="apelidoPessoa" name="apelidoPessoa" placeholder="Pedrinho">
+								<label for="cad_pessoa_apelido">Apelido</label>
+								<input type="email" class="form-control" id="cad_pessoa_apelido" name="cad_pessoa_apelido" placeholder="Pedrinho">
 							</div>
 
 							<div class="form-group col-md-3">
-								<label for="apelidoPessoa">CPF</label>
-								<input type="email" class="form-control" id="apelidoPessoa" name="apelidoPessoa" placeholder="300.002.123-23">
+								<label for="cad_pessoa_cpf">CPF</label>
+								<input type="email" class="form-control" id="cad_pessoa_cpf" name="cad_pessoa_cpf" placeholder="300.002.123-23">
 							</div>
 
 						</div>
 
 						<div class="form-row">
 							<div class="form-group col-md-5">
-								<label for="emailPessoa">Email</label>
-								<input type="email" class="form-control" id="emailPessoa" name="emailPessoa" placeholder="pedrinho_tavares91@gmail.com">
+								<label for="cad_pessoa_email">Email</label>
+								<input type="email" class="form-control" id="cad_pessoa_email" name="cad_pessoa_email" placeholder="pedrinho_tavares91@gmail.com">
 							</div>
 							<div class="form-group col-md-4">
-								<label for="celularPessoa">Celular</label>
-								<input type="tel" class="form-control" id="celularPessoa" name="celularPessoa" placeholder="(11) 97834-2343">
+								<label for="cadastro_celular_pessoa">Celular</label>
+								<input type="tel" class="form-control" id="cadastro_celular_pessoa" name="cadastro_celular_pessoa" placeholder="(11) 97834-2343">
 							</div>
 
 							<div class="form-group col-md-3">
-								<label for="cpfPessoa">Status</label>
-								<select class="form-control">
+								<label for="cad_pessoa_status">Status</label>
+								<select class="form-control" id="cad_pessoa_status" name="cad_pessoa_status">
 									<option>Selecione...</option>
 								</select>
 							</div>
@@ -206,17 +207,17 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-5">
-								<label for="usuarioPessoa">Usuário</label>
-								<input type="text" class="form-control" id="usuarioPessoa" name="usuarioPessoa" placeholder="pedrinho_tavares91">
+								<label for="cad_pessoa_usuario">Usuário</label>
+								<input type="text" class="form-control" id="cad_pessoa_usuario" name="cad_pessoa_usuario" placeholder="pedrinho_tavares91">
 							</div>
 							<div class="form-group col-md-4">
-								<label for="senhaPessoa">Senha</label>
-								<input type="text" class="form-control" id="senhaPessoa" name="senhaPessoa" placeholder="hexx201899288301@1">
+								<label for="cad_pessoa_senha">Senha</label>
+								<input type="text" class="form-control" id="cad_pessoa_senha" name="cad_pessoa_senha" placeholder="hexx201899288301@1">
 							</div>
 
 							<div class="form-group col-md-3">
-								<label for="cpfPessoa">Perfil</label>
-								<select class="form-control">
+								<label for="cad_pessoa_perfil">Perfil</label>
+								<select class="form-control" id="cad_pessoa_perfil" name="cad_pessoa_perfil">
 									<option>Selecione...</option>
 								</select>
 							</div>
@@ -224,19 +225,19 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-12">
-								<label for="descricaoPessoa">Descrição</label>
-								<textarea class="form-control" id="descricaoPessoa" name="Estudante acima da média." rows="2"></textarea>
+								<label for="cad_pessoa_descricao">Descrição</label>
+								<textarea class="form-control" id="cad_pessoa_descricao" name="cad_pessoa_descricao" rows="2"></textarea>
 							</div>
 						</div>
 
 						<div class="form-row">
 							<div class="form-group col-md-4">
-								<label for="usuarioPessoa">Protocolo</label>
-								<input type="text" class="form-control" id="usuarioPessoa" name="usuarioPessoa" placeholder="1812018100701461022">
+								<label for="cad_pessoa_protocolo">Protocolo</label>
+								<input type="text" class="form-control" id="cad_pessoa_protocolo" name="cad_pessoa_protocolo" placeholder="1812018100701461022">
 							</div>
 							<div class="form-group col-md-8">
-								<label for="senhaPessoa">Observações</label>
-								<input type="text" class="form-control" id="senhaPessoa" name="senhaPessoa" placeholder="Aluno Destaque 2017">
+								<label for="cad_pessoa_obs">Observações</label>
+								<input type="text" class="form-control" id="cad_pessoa_obs" name="cad_pessoa_obs" placeholder="Aluno Destaque 2017">
 							</div>
 						</div>
 

@@ -9,7 +9,7 @@ class conexao{
     public function __construct()
     {
         //Atribui valor as variaveis
-        $this->host = "mysql:host=mysql.w2it.com.br;dbname=etec_teste_1";
+        $this->host = "mysql:host=mysql.w2it.com.br;dbname=etec_teste_2";
         $this->user = "etecdev";
         $this->pass = "5J%2dt2ds";
     }

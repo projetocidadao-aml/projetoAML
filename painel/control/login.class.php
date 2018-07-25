@@ -12,6 +12,8 @@ include("../model/login.class.php");
 			$this->username = $_POST['user'];
 			$this->pass = $_POST['pass'];
 			new capturaLogin($this->username, $this->pass);
+
+			
 		}
 	}
 	new Login();

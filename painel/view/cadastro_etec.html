@@ -11,65 +11,69 @@
 		<div class="col-12 border mt-5 p-4">
 			<form class="aml-form" id="form-etec">
 				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="nomeEtec">Nome ETEC</label>
-						<input type="name" class="form-control" id="nomeEtec" name="nomeEtec" placeholder="Etec Jaraguá">
+					<form>
+						<div class="form-group col-md-6">
+							<label for="nomeEtec">Nome ETEC</label>
+							<input type="name" class="form-control" id="nomeEtec" name="cad_etec_nome" placeholder="Etec Jaraguá">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="emailEtec">Email</label>
+							<input type="email" class="form-control" id="emailEtec" name="cad_etec_email" placeholder="etecjaragua@cps.com.br">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="cepEtec">CEP</label>
+							<input type="password" class="form-control" id="cepEtec" name="cad_etec_cep" placeholder="01.047-000">
+						</div>
 					</div>
-					<div class="form-group col-md-4">
-						<label for="emailEtec">Email</label>
-						<input type="email" class="form-control" id="emailEtec" name="emailEtec" placeholder="etecjaragua@cps.com.br">
-					</div>
-					<div class="form-group col-md-2">
-						<label for="cepEtec">CEP</label>
-						<input type="password" class="form-control" id="cepEtec" name="cepEtec" placeholder="01.047-000">
-					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="enderecoEtec">Endereço</label>
-						<input type="text" class="form-control" id="enderecoEtec" name="enderecoEtec" placeholder="Rua Jabuiutí, n° 104">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="enderecoEtec">Endereço</label>
+							<input type="text" class="form-control" id="enderecoEtec" name="cad_etec_endereco" placeholder="Rua Jabuiutí, n° 104">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="cidadeEtec">Cidade</label>
+							<input type="text" class="form-control" id="cidadeEtec" name="cad_etec_cidade" placeholder="São Paulo">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="ufEtec">UF</label>
+							<select id="ufEtec" name="cad_etec_uf" class="form-control">
+								<option selected>Selecione...</option>
+								<option>SP</option>
+								<option>RJ</option>
+								<option>MG</option>
+							</select>
+						</div>
 					</div>
-					<div class="form-group col-md-4">
-						<label for="cidadeEtec">Cidade</label>
-						<input type="text" class="form-control" id="cidadeEtec" name="cidadeEtec" placeholder="São Paulo">
-					</div>
-					<div class="form-group col-md-2">
-						<label for="ufEtec">UF</label>
-						<select id="ufEtec" name="ufEtec" class="form-control">
-							<option selected>Selecione...</option>
-							<option>SP</option>
-							<option>RJ</option>
-							<option>MG</option>
-						</select>
-					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="usuarioEtec">Usuário</label>
-						<input type="text" class="form-control" id="usuarioEtec" name="usuarioEtec" placeholder="etecjaragua">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="usuarioEtec">Usuário</label>
+							<input type="text" class="form-control" id="usuarioEtec" name="cad_etec_usuario" placeholder="etecjaragua">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="senhaEtec">Senha</label>
+							<input type="text" class="form-control" id="senhaEtec" name="cad_etec_senha" placeholder="etecCtps@@201832">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="telefoneEtec">Telefone</label>
+							<input type="text" class="form-control" id="telefoneEtec" name="cad_etec_telefone" placeholder="(11) 4302-2301">
+						</div>
 					</div>
-					<div class="form-group col-md-4">
-						<label for="senhaEtec">Senha</label>
-						<input type="text" class="form-control" id="senhaEtec" name="senhaEtec" placeholder="etecCtps@@201832">
-					</div>
-					<div class="form-group col-md-2">
-						<label for="telefoneEtec">Telefone</label>
-						<input type="text" class="form-control" id="telefoneEtec" name="telefoneEtec" placeholder="(11) 4302-2301">
-					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="diretorEtec">Diretor(a)</label>
-						<input type="text" class="form-control" id="diretorEtec" name="diretorEtec" placeholder="Maria Fortunato Lopes">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="diretorEtec">Diretor(a)</label>
+							<input type="text" class="form-control" id="diretorEtec" name="cad_etec_diretor" placeholder="Maria Fortunato Lopes">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="responsavelEtec">Responsável</label>
+							<input type="text" class="form-control" id="responsavelEtec" name="cad_etec_responsavel" placeholder="José Luís">
+						</div>
 					</div>
-					<div class="form-group col-md-6">
-						<label for="responsavelEtec">Responsável</label>
-						<input type="text" class="form-control" id="responsavelEtec" name="responsavelEtec" placeholder="José Luís">
-					</div>
-				</div>
+
+				</form>
+				
 				<div class="buttons text-center mt-2">
 					<button type="submit" class="btn btn-secondary">Cadastrar</button>
 					<button type="submit" class="btn btn-danger">Cancelar</button>
