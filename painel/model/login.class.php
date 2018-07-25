@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("../config.class.php");
 	/**
 	 * Captura login
@@ -10,11 +11,16 @@ include("../config.class.php");
 		{
 			$conexao = new conexao();
 			$this->conn = $conexao->conect();
-			$sql = "SELECT * FROM PESSOA WHERE PESSOA_EMAIL = '$username' AND PESSOA_SENHA = '$pass'";
+			$sql = "SELECT * FROM ETEC WHERE (ETEC_USUARIO = '$username' OR ETEC_EMAIL = '$username') AND ETEC_SENHA = '$pass'";
 			$db = $this->conn->prepare($sql);
 			$db->execute();
-			$result = $db->fetch(PDO::FETCH_OBJ);
+			$result = $db->fetch();
+			$resultfinal = $db->rowCount();
 			if($result){
+				foreach ($result as $results){
+					$_SESSION['idUser'] = $result['ETEC_ID'];	
+				}
+				
 				echo 'true';
 			}
 			else{
