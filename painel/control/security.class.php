@@ -1,9 +1,13 @@
 <?php
 	
 	//verifica se a sessão ativa:
+session_start();
+	if(isset($_SESSION['idUser'])){
 
-
-	if (isset($_SESSION['loged'])) {
+	}else{
+		$_SESSION['loged'] = 'false';
+	}
+	if ($_SESSION['loged'] == 'Logado') {
 		include 'loged.php';
 	}
 	else
