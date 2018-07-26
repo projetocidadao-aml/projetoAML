@@ -16,6 +16,18 @@ class Pessoa{
     public $protocolo;
     public $observacoes;
     public $idperfil;
+    public $prenome;
+    public $preemail;
+    public $preperfil;
+    public $preobs;
+    public $curso;
+    public $semestrecurso;
+    public $cursoupload;
+    public $buscapessoa;
+    public $buscapessoacurso;
+
+
+
     function __construct()
 	{
         $this->nome = $_POST['cad_pessoa_nome'];
@@ -26,13 +38,20 @@ class Pessoa{
         $this->email = $_POST['cad_pessoa_email'];
         $this->celular = $_POST['cadastro_celular_pessoa'];
         $this->descperfil = $_POST['cad_pessoa_descricao'];
-        $this->datacadastro = $_POST['telefoneEtec'];
-        $this->dataalteracao = $_POST['diretorEtec'];
         $this->status = $_POST['cad_pessoa_status'];
         $this->protocolo = $_POST['cad_pessoa_protocolo'];
         $this->observacoes = $_POST['cad_pessoa_obs'];
         $this->idperfil = $_POST['cad_pessoa_perfil'];
-        new capturaDadosP($this->nome, $this->email, $this->cep, $this->endereco, $this->cidade, $this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor, $this->responsavel);
+        $this->prenome = $_POST['preCad_pessoa_nome'];
+        $this->preemail = $_POST['preCad_pessoa_email'];
+        $this->preperfil = $_POST['preCad_pessoa_perfil'];
+        $this->preobs = $_POST['preCad_pessoa_obs'];
+        $this->curso = $_POST['upload_nome_curso'];
+        $this->semestrecurso = $_POST['upload_semestre_curso'];
+        $this->cursoupload = $_POST['upload_lista_pessoas'];
+        $this->buscapessoa = $_POST['busca_pessoa_nome'];
+        $this->buscapessoacurso= $_POST['busca_pessoa_curso'];
+        new capturaDadosP($this->nome, $this->email, $this->apelido, $this->usuario, $this->senha, $this->cpf, $this->email, $this->celular, $this->descperfil, $this->status, $this->protocolo,$this->observacoes,$this->idperfil,$this->prenome,$this->preemail,$this->preperfil,$this->preobs,$this->curso,$this->semestrecurso,$this->cursoupload,$this->buscapessoa,$this->buscapessoacurso);
     }
 }
 new Pessoa();
