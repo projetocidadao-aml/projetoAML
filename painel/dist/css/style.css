@@ -38,3 +38,13 @@ body {
 
 #imgIndex{
 }
+
+
+
+.swal-button:active {
+    background-color: #6610f2;
+}
+
+.swal-button {
+    background-color: #6610f2;
+}
