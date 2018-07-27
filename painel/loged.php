@@ -10,6 +10,11 @@ include 'control/router.class.php';
 	<link rel="stylesheet" href="dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
+	<script type="text/javascript" src="dist/js/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="dist/js/ajaxLoading.js"></script>
 </head>
 
 <body>
@@ -64,9 +69,5 @@ include 'control/router.class.php';
 			</ul>
 		</div>
 	</footer>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
 </body>
 </html>

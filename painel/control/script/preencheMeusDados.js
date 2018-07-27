@@ -11,15 +11,4 @@ document.getElementById('diretorEtec').value = response[0].nomeDiretor;
 document.getElementById('telefoneEtec').value = response[0].telefoneEtec;
 document.getElementById('cepEtec').value = response[0].cepEtec;
 document.getElementById('ufEtec').value = response[0].ufEtec;
-
-
-
-
-
-
-
-
-
-
-
 });

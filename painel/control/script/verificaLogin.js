@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(".aml-form").submit(function(){
-
+		carregando();
 		usuario = $("#usuario").val();
 		pass = $("#senha").val();
 		console.log(usuario+" "+pass);
@@ -13,8 +13,14 @@ $(document).ready(function(){
 					window.location.href = "?page=painel";
 				}
 				else{
-					console.log("Não foi");
+					parar();
+					swal({
+					  title: "Erro de Login",
+					  text: "Usuario e/ou Senha incorretos!",
+					  icon: "success",
+					});
 				}
 			});
+		return false;
 	});
 });
