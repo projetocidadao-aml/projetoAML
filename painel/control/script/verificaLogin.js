@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$(".aml-form").submit(function(){
+
 		usuario = $("#usuario").val();
 		pass = $("#senha").val();
 		console.log(usuario+" "+pass);
@@ -15,6 +16,5 @@ $(document).ready(function(){
 					console.log("Não foi");
 				}
 			});
-		return false;
-	})
+	});
 });
