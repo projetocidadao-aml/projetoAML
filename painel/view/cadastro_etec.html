@@ -14,34 +14,62 @@
 					<form>
 						<div class="form-group col-md-6">
 							<label for="nomeEtec">Nome ETEC</label>
-							<input type="name" class="form-control" id="nomeEtec" name="cad_etec_nome" placeholder="Etec Jaraguá">
+							<input type="name" class="form-control" id="nomeEtec" name="cad_etec_nome" placeholder="Etec Jaraguá" required>
 						</div>
 						<div class="form-group col-md-4">
 							<label for="emailEtec">Email</label>
-							<input type="email" class="form-control" id="emailEtec" name="cad_etec_email" placeholder="etecjaragua@cps.com.br">
+							<input type="email" class="form-control" id="emailEtec" name="cad_etec_email" placeholder="etecjaragua@cps.com.br" required>
 						</div>
 						<div class="form-group col-md-2">
 							<label for="cepEtec">CEP</label>
-							<input type="password" class="form-control" id="cepEtec" name="cad_etec_cep" placeholder="01.047-000">
+							<input type="tel" class="form-control" id="cepEtec" name="cad_etec_cep" placeholder="01.047-000" minlength="10">
 						</div>
 					</div>
 
 					<div class="form-row">
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-4">
 							<label for="enderecoEtec">Endereço</label>
 							<input type="text" class="form-control" id="enderecoEtec" name="cad_etec_endereco" placeholder="Rua Jabuiutí, n° 104">
 						</div>
-						<div class="form-group col-md-4">
+						<div class="form-group col-md-3">
 							<label for="cidadeEtec">Cidade</label>
 							<input type="text" class="form-control" id="cidadeEtec" name="cad_etec_cidade" placeholder="São Paulo">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="bairroEtec">Bairro</label>
+							<input type="text" class="form-control" id="bairroEtec" name="cad_etec_bairro" placeholder="Jaragua">
 						</div>
 						<div class="form-group col-md-2">
 							<label for="ufEtec">UF</label>
 							<select id="ufEtec" name="cad_etec_uf" class="form-control">
 								<option selected>Selecione...</option>
-								<option>SP</option>
-								<option>RJ</option>
-								<option>MG</option>
+								<option value="SP">SP</option>
+								<option value="AC">AC</option>
+								<option value="AL">AL</option>
+								<option value="AP">AP</option>
+								<option value="AM">AM</option>
+								<option value="BA">BA</option>
+								<option value="CE">CE</option>
+								<option value="DF">DF</option>
+								<option value="ES">ES</option>
+								<option value="GO">GO</option>
+								<option value="MA">MA</option>
+								<option value="MT">MT</option>
+								<option value="MS">MS</option>
+								<option value="MG">MG</option>
+								<option value="PA">PA</option>
+								<option value="PB">PB</option>
+								<option value="PR">PR</option>
+								<option value="PE">PE</option>
+								<option value="PI">PI</option>
+								<option value="RJ">RJ</option>
+								<option value="RN">RN</option>
+								<option value="RS">RS</option>
+								<option value="RO">RO</option>
+								<option value="RR">RR</option>
+								<option value="SC">SC</option>
+								<option value="SE">SE</option>
+								<option value="TO">TO</option>	
 							</select>
 						</div>
 					</div>
@@ -49,15 +77,15 @@
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label for="usuarioEtec">Usuário</label>
-							<input type="text" class="form-control" id="usuarioEtec" name="cad_etec_usuario" placeholder="etecjaragua">
+							<input type="text" class="form-control" id="usuarioEtec" name="cad_etec_usuario" placeholder="etecjaragua" required>
 						</div>
 						<div class="form-group col-md-4">
 							<label for="senhaEtec">Senha</label>
-							<input type="text" class="form-control" id="senhaEtec" name="cad_etec_senha" placeholder="etecCtps@@201832">
+							<input type="text" class="form-control" id="senhaEtec" name="cad_etec_senha" placeholder="etecCtps@@201832" required>
 						</div>
 						<div class="form-group col-md-2">
 							<label for="telefoneEtec">Telefone</label>
-							<input type="text" class="form-control" id="telefoneEtec" name="cad_etec_telefone" placeholder="(11) 4302-2301">
+							<input type="tel" class="form-control" id="telefoneEtec" name="cad_etec_telefone" placeholder="(11) 4302-2301">
 						</div>
 					</div>
 
@@ -68,7 +96,7 @@
 						</div>
 						<div class="form-group col-md-6">
 							<label for="responsavelEtec">Responsável</label>
-							<input type="text" class="form-control" id="responsavelEtec" name="cad_etec_responsavel" placeholder="José Luís">
+							<input type="text" class="form-control" id="responsavelEtec" name="cad_etec_responsavel" placeholder="José Luís" required>
 						</div>
 					</div>
 
@@ -85,3 +113,7 @@
 </div>
 <script type="text/javascript" src="control/script/verificaEtec.js"></script>
 <!-- Container -->
+
+<script src="dist/js/jquery.mask.js"></script>
+<script src="dist/js/mascaras.js"></script>
+

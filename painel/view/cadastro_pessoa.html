@@ -29,11 +29,11 @@
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="nomePessoa">Nome</label>
-								<input type="name" class="form-control" id="nomePessoa" name="preCad_pessoa_nome" placeholder="Pedro Travalon Tavares">
+								<input type="name" class="form-control" id="nomePessoa" name="preCad_pessoa_nome" placeholder="Pedro Travalon Tavares" required>
 							</div>
 							<div class="form-group col-md-6">
 								<label for="emailPessoa">Email</label>
-								<input type="email" class="form-control" id="emailPessoa" name="preCad_pessoa_email" placeholder="Pedro.Travalon@gmail.com">
+								<input type="email" class="form-control" id="emailPessoa" name="preCad_pessoa_email" placeholder="Pedro.Travalon@gmail.com" required>
 							</div>
 
 						</div>
@@ -41,8 +41,12 @@
 						<div class="form-row">
 							<div class="form-group col-md-4">
 								<label for="perfilPessoa">Perfil</label>
-								<select class="form-control" id="perfilPessoa" name="preCad_pessoa_perfil">
+								<select class="form-control" id="perfilPessoa" name="preCad_pessoa_perfil" required>
 									<option>Selecione...</option>
+									<option value="Aluno">Aluno</option>
+									<option value="Professor">Professor</option>
+									<option value="Coordenador">Coordenador</option>
+
 								</select>
 							</div>
 							<div class="form-group col-md-8">
@@ -172,7 +176,7 @@
 						<div class="form-row">
 							<div class="form-group col-md-5">
 								<label for="cad_pessoa_nome">Nome</label>
-								<input type="name" class="form-control" id="cad_pessoa_nome" name="cad_pessoa_nome" placeholder="Pedro Travalon Tavares">
+								<input type="name" class="form-control" id="cad_pessoa_nome" name="cad_pessoa_nome" placeholder="Pedro Travalon Tavares" required>
 							</div>
 							<div class="form-group col-md-4">
 								<label for="cad_pessoa_apelido">Apelido</label>
@@ -181,7 +185,7 @@
 
 							<div class="form-group col-md-3">
 								<label for="cad_pessoa_cpf">CPF</label>
-								<input type="email" class="form-control" id="cad_pessoa_cpf" name="cad_pessoa_cpf" placeholder="300.002.123-23">
+								<input type="email" class="form-control" id="cad_pessoa_cpf" name="cad_pessoa_cpf" placeholder="300.002.123-23" required>
 							</div>
 
 						</div>
@@ -189,17 +193,19 @@
 						<div class="form-row">
 							<div class="form-group col-md-5">
 								<label for="cad_pessoa_email">Email</label>
-								<input type="email" class="form-control" id="cad_pessoa_email" name="cad_pessoa_email" placeholder="pedrinho_tavares91@gmail.com">
+								<input type="email" class="form-control" id="cad_pessoa_email" name="cad_pessoa_email" placeholder="pedrinho_tavares91@gmail.com" required>
 							</div>
 							<div class="form-group col-md-4">
-								<label for="cadastro_celular_pessoa">Celular</label>
+								<label for="cadastro_celular_pessoa">Telefone / Celular</label>
 								<input type="tel" class="form-control" id="cadastro_celular_pessoa" name="cadastro_celular_pessoa" placeholder="(11) 97834-2343">
 							</div>
 
 							<div class="form-group col-md-3">
 								<label for="cad_pessoa_status">Status</label>
 								<select class="form-control" id="cad_pessoa_status" name="cad_pessoa_status">
-									<option>Selecione...</option>
+									<option value="ATIVO">Ativo</option>
+									<option value="INATIVO">Inativo</option>
+
 								</select>
 							</div>
 
@@ -208,17 +214,21 @@
 						<div class="form-row">
 							<div class="form-group col-md-5">
 								<label for="cad_pessoa_usuario">Usuário</label>
-								<input type="text" class="form-control" id="cad_pessoa_usuario" name="cad_pessoa_usuario" placeholder="pedrinho_tavares91">
+								<input type="text" class="form-control" id="cad_pessoa_usuario" name="cad_pessoa_usuario" placeholder="pedrinho_tavares91" required>
 							</div>
 							<div class="form-group col-md-4">
 								<label for="cad_pessoa_senha">Senha</label>
-								<input type="text" class="form-control" id="cad_pessoa_senha" name="cad_pessoa_senha" placeholder="hexx201899288301@1">
+								<input type="text" class="form-control" id="cad_pessoa_senha" name="cad_pessoa_senha" placeholder="hexx201899288301@1" required>
 							</div>
 
 							<div class="form-group col-md-3">
 								<label for="cad_pessoa_perfil">Perfil</label>
 								<select class="form-control" id="cad_pessoa_perfil" name="cad_pessoa_perfil">
 									<option>Selecione...</option>
+									<option value="Aluno">Aluno</option>
+									<option value="Professor">Professor</option>
+									<option value="Coordenador">Coordenador</option>
+
 								</select>
 							</div>
 						</div>
@@ -233,7 +243,7 @@
 						<div class="form-row">
 							<div class="form-group col-md-4">
 								<label for="cad_pessoa_protocolo">Protocolo</label>
-								<input type="text" class="form-control" id="cad_pessoa_protocolo" name="cad_pessoa_protocolo" placeholder="1812018100701461022">
+								<input type="text" class="form-control" id="cad_pessoa_protocolo" name="cad_pessoa_protocolo" placeholder="CODETEC+YMD+HMI+2DIGITOSCPF">
 							</div>
 							<div class="form-group col-md-8">
 								<label for="cad_pessoa_obs">Observações</label>
@@ -257,5 +267,7 @@
 </div>
 
 
+<script src="dist/js/jquery.mask.js"></script>
+<script src="dist/js/mascaras.js"></script>
 
 
