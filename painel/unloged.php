@@ -24,7 +24,7 @@
 
 
 	<?php 
-		new routers();
+		new routers('login');
 	?>
 
 	<footer class="footer navbar navbar-expand-lg navbar-dark">

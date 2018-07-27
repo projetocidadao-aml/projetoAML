@@ -41,7 +41,7 @@ include 'control/router.class.php';
 						<a class="nav-link" href="#">Relatórios</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="index.php">Sair</a>
+						<a class="nav-link" href="control/deslogar.php">Sair</a>
 					</li>
 				</ul>
 			</div>
@@ -49,7 +49,7 @@ include 'control/router.class.php';
 	</nav>
 	
 	<?php 
-	new routers();
+	new routers('painel');
 	?>
 
 	<footer class="footer navbar navbar-expand-lg navbar-dark">

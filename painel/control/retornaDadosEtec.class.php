@@ -1,4 +1,4 @@
-   <?php
+<?php
    session_start();
    $retorno[] = array('idUser'=>utf8_encode($_SESSION['idUser']), 
    						'nomeEtec'=> utf8_encode($_SESSION['nomeEtec']), 
@@ -12,6 +12,6 @@
    						'emailEtec'=> utf8_encode($_SESSION['emailEtec']), 
    						'ufEtec'=> utf8_encode($_SESSION['ufEtec']), 
    						'telefoneEtec'=>utf8_encode($_SESSION['telefoneEtec']));
-echo json_encode($retorno);
+   echo json_encode($retorno);
    
 ?>

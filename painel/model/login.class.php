@@ -31,7 +31,6 @@ include("../config.class.php");
 					$_SESSION['emailEtec'] = $result['ETEC_EMAIL'];
 					$_SESSION['ufEtec'] = $result['ETEC_UF']; 
 					$_SESSION['telefoneEtec'] = $result['ETEC_TELEFONE'];
-
 				}
 				
 				echo 'true';

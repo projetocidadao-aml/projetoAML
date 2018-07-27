@@ -9,7 +9,7 @@ $(document).ready(function(){
 			},
 			function(data){
 				if(data == 'true'){
-					console.log("Foi");
+					window.location.href = "?page=painel";
 				}
 				else{
 					console.log("Não foi");

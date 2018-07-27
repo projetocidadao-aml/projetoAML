@@ -1,16 +1,15 @@
 <?php
-	
-	//verifica se a sessão ativa:
 session_start();
-	if(isset($_SESSION['idUser'])){
-
-	}else{
-		$_SESSION['loged'] = 'false';
+class seguranca{
+	public $page;
+	function __construct(){
+		//se o usuario estiver logado ele inclui a página de logado
+		if (isset($_SESSION['idUser'])){
+			include 'loged.php';
+		}
+		//se o usuario não estiver logado ele inclui a página não logado
+		else{
+			include 'unloged.php';
+		}
 	}
-	if ($_SESSION['loged'] == 'Logado') {
-		include 'loged.php';
-	}
-	else
-	{
-		include 'unloged.php';
-	}
+}

@@ -2,7 +2,7 @@
 	 //Config de Routers
 	 
 	 class routers{
- 		function __construct(){
+ 		function __construct($loged_status){
  			if(isset($_GET['page']))
  			{
  				//Se tiver uma rota na url da página ele adiciona uma das views
@@ -12,7 +12,7 @@
  			else
  			{
  				//Se não tiver rota na url da página ele adiciona a pagina inicial
- 				include "view/login.html";
+ 				include "view/$loged_status.html";
  			}
  		}
  	}
