@@ -7,7 +7,14 @@
  			{
  				//Se tiver uma rota na url da página ele adiciona uma das views
 				$page = $_GET['page'];
- 				include "view/".$page.".html";
+ 				if ($loged_status == "login") {
+ 					if ($page != 'login') {
+ 						header("location:index.php");
+ 					}
+ 				}
+ 				else{
+					include "view/".$page.".html";
+ 				}
  			}
  			else
  			{

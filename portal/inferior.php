@@ -31,7 +31,7 @@
     <div class="row text-center tirar_margin_row pt-3 cinza">
         <div class="col-sm-12 col-md-12">
 
-            <p>AML + ETEC'S = CIDADÃO DO FUTURO</p>
+            <p>© Copyright 2018 - AML Consulting, todos os direitos reservados.</p>
 
         </div>
     </div>

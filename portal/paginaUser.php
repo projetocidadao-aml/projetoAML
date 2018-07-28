@@ -4,32 +4,33 @@ require_once "superior.php" ;
 
 
 
-  
-        <div class="cover perfil mb-3">
-          
-            <div class="wrapper">
-                <div class="image">
-                    <img src="img/capa1.jpg" alt="people" />
-                </div>
 
+    <div class="cover perfil mb-3 ">
+
+        <div class="wrapper">
+            <div class="image">
+                <img src="img/capa1.jpg" alt="people" />
             </div>
-             <div class="container">
-            <div class="cover-info">
-                <div class="avatar">
-                    <img src="img/avatar.png" alt="people" />
+
+        </div>
+        <div class="laranja">
+            <div class="container ">
+                <div class="cover-info">
+                    <div class="avatar">
+                        <img src="img/avatar.png" alt="people" />
+                    </div>
+                    <div class="name"><a href="#">Nome do aluno</a></div>
+                    <ul class="cover-nav">
+
+                        <li><a href="perfil.php"> Perfil</a></li>
+                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="grupo.php"> Grupo</a></li>
+
+                    </ul>
                 </div>
-                <div class="name"><a href="#">Nome do aluno</a></div>
-                <ul class="cover-nav">
-
-                    <li><a href="perfil.php"> Perfil</a></li>
-                    <li><a href="sobre.php">Sobre</a></li>
-                    <li><a href="grupo.php"> Grupo</a></li>
-
-                </ul>
             </div>
         </div>
-        </div>
-
+    </div>
 
 
 
@@ -106,9 +107,9 @@ require_once "superior.php" ;
             <div class="col-sm-12 col-md-8 primary mb-4">
                 <div class="card mb-4">
 
-                     <div class="fazerPost">
+                    <div class="fazerPost">
 
-                       O que há de novo
+                        O que há de novo
                     </div>
 
                     <div class="fazerPostMensagem">
@@ -116,16 +117,18 @@ require_once "superior.php" ;
                         <textarea name="" id="">compartilhe seu status</textarea>
                     </div>
 
-                   <div class="fazerPost">
-                       <div class="fazerPostVidImg">
-                        <ul>
-                            <li> <i class="fas fa-video"></i></li>
-                            
-                            <li><i class="fas fa-image"></i></li>
-                        </ul>
+                    <div class="fazerPost">
+                        <div class="fazerPostVidImg">
+                            <ul>
+                                <li> <i class="fas fa-video"></i></li>
+
+                                <li><i class="fas fa-image"></i></li>
+                            </ul>
                         </div>
-                        <div class="fazerPostBotao">
-                        <input type="submit">
+                        <div class="fazerPostBotao ">
+                            <button type="submit" class="btn btn-primary float-right">Enviar</button>
+
+
                         </div>
                     </div>
                 </div>
@@ -136,11 +139,13 @@ require_once "superior.php" ;
 
                     <div class="mensagem">
                         <div class="avatarMensagem">
-                           <a href="coordenador.php"> <img src="img/avatar.png" class="rounded-circle" alt=""></a>
+                            <a href="coordenador.php"> <img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
                         <div class="nomeAvatarMensagem">
-                            <a href="coordenador.php"><p>Nome do coordenador <br>compartilhado em 00/00/0000</p></a>
+                            <a href="coordenador.php">
+                                <p>Nome do coordenador <br>compartilhado em 00/00/0000</p>
+                            </a>
 
                         </div>
                     </div>
@@ -161,13 +166,13 @@ require_once "superior.php" ;
                     <div class="fotoPost">
                         <img src="img/banner1.png" alt="">
                     </div>
-                    <div class="botaoMensagem cinza">
+                    <div class="botaoMensagem cinza py-2">
 
-                        <button><i class="fas fa-thumbs-up"></i></button>
-                        <button><i class="fas fa-share"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-thumbs-up"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-share"></i></button>
 
 
-                        <p>10 Curtidas </p>
+                        <p>10 curtidas </p>
                         <p> 10 Comentarios</p>
                     </div>
 
@@ -180,9 +185,11 @@ require_once "superior.php" ;
                         </div>
 
                         <div class="nomeAvatarMensagem">
-                           <a href="paginaUser.php"> <p>Nome do aluno <br> Compartilhado em 00/00/0000
+                            <a href="paginaUser.php">
+                                <p>Nome do aluno <br> Compartilhado em 00/00/0000
 
-                            </p></a>
+                                </p>
+                            </a>
                         </div>
 
                         <div class="card-body">
@@ -199,9 +206,11 @@ require_once "superior.php" ;
                         </div>
 
                         <div class="nomeAvatarMensagem">
-                            <a href="coordenador.php"><p>Nome do coordenador <br> Compartilhado em 00/00/0000
+                            <a href="coordenador.php">
+                                <p>Nome do coordenador <br> Compartilhado em 00/00/0000
 
-                            </p></a>
+                                </p>
+                            </a>
                         </div>
 
                         <div class="card-body">
@@ -223,9 +232,11 @@ require_once "superior.php" ;
                         </div>
 
                         <div class="nomeAvatarMensagemResposta">
-                            <a href="paginaUser.php"><p>Nome do aluno <br> Compartilhado em 00/00/0000
+                            <a href="paginaUser.php">
+                                <p>Nome do aluno <br> Compartilhado em 00/00/0000
 
-                            </p></a>
+                                </p>
+                            </a>
                         </div>
 
                         <div class="card-body">
@@ -245,7 +256,8 @@ require_once "superior.php" ;
                             <input type="text">
                         </div>
                         <div class="respondaMensagemBotao">
-                            <input type="submit">
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </div>
                 </div>

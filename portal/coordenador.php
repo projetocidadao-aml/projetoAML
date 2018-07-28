@@ -12,19 +12,21 @@ require_once "superior.php" ;
             </div>
 
         </div>
-        <div class="container">
-            <div class="cover-info">
-                <div class="avatar">
-                    <img src="img/avatar.png" alt="people" />
+        <div class="laranja">
+            <div class="container">
+                <div class="cover-info">
+                    <div class="avatar">
+                        <img src="img/avatar.png" alt="people" />
+                    </div>
+                    <div class="name"><a href="#">Nome do coordenador</a></div>
+                    <ul class="cover-nav">
+
+                        <li><a href="perfil.php"> Perfil</a></li>
+                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="grupo.php" data-toggle="modal" data-target="#criarDesafioModal"> Criar desafio</a></li>
+
+                    </ul>
                 </div>
-                <div class="name"><a href="#">Nome do coordenador</a></div>
-                <ul class="cover-nav">
-
-                    <li><a href="perfil.php"> Perfil</a></li>
-                    <li><a href="sobre.php">Sobre</a></li>
-                    <li><a href="grupo.php" data-toggle="modal" data-target="#criarDesafioModal"> Criar desafio</a></li>
-
-                </ul>
             </div>
         </div>
     </div>
@@ -47,13 +49,14 @@ require_once "superior.php" ;
                     </p>
 
                     <p class="text-center text-muted">
-                        <label for="">Titulo do desafio</label>
+                        <label for="">Texto do desafio</label>
                         <textarea name="" id="" cols="26" rows="10"></textarea>
                     </p>
-                    <input type="submit">
 
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary ">Enviar</button>
 
-
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,8 +158,10 @@ require_once "superior.php" ;
                                 <li><i class="fas fa-image"></i></li>
                             </ul>
                         </div>
-                        <div class="fazerPostBotao">
-                            <input type="submit">
+                        <div class="fazerPostBotao ">
+                            <button type="submit" class="btn btn-primary float-right">Enviar</button>
+
+
                         </div>
                     </div>
                 </div>
@@ -194,13 +199,13 @@ require_once "superior.php" ;
                     <div class="fotoPost">
                         <img src="img/banner1.png" alt="">
                     </div>
-                    <div class="botaoMensagem cinza">
+                    <div class="botaoMensagem cinza py-2">
 
-                        <button><i class="fas fa-thumbs-up"></i></button>
-                        <button><i class="fas fa-share"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-thumbs-up"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-share"></i></button>
 
 
-                        <p>10 Curtidas </p>
+                        <p>10 curtidas </p>
                         <p> 10 Comentarios</p>
                     </div>
 
@@ -282,7 +287,8 @@ require_once "superior.php" ;
                             <input type="text">
                         </div>
                         <div class="respondaMensagemBotao">
-                            <input type="submit">
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </div>
                 </div>

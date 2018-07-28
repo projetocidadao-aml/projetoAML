@@ -17,7 +17,7 @@ $(document).ready(function(){
 					swal({
 					  title: "Erro de Login",
 					  text: "Usuario e/ou Senha incorretos!",
-					  icon: "success",
+					  icon: "error",
 					});
 				}
 			});

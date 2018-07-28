@@ -1,4 +1,15 @@
+body {
+    background: rgba(235, 225, 225, 0.19);
+}
 
+.btn-primary {
+    background: #5F259F !important;
+}
+
+.float-right {
+
+    float: right;
+}
 
 @font-face {
     font-family: LondonBetween;
@@ -29,7 +40,27 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #969595;
+}
+
+.imgRedonda {
+    background: rgba(153, 153, 153, 0.53);
+    padding: 5px;
+
+}
+
+.tirarBorda {
+    border: 0 !important;
+}
+
+.circuloIndex {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.tirarBorda img {
+    width: 60%;
 }
 
 .tirar_margin_row {
@@ -48,6 +79,10 @@ a:hover {
 
 .cinza {
     background: #425563;
+}
+
+.cinza-claro {
+    background: rgba(197, 210, 219, 0.15);
 }
 
 .clear {
@@ -99,38 +134,39 @@ a:hover {
 }
 
 
-#container{
-	position:absolute;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left:0px;
-	background-color: #eee;
-	display: block;
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #eee;
+    display: block;
 }
-#teste{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left:0px;
-	background-color: #eee;
-	background-image: url('../img/load.gif');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
+#teste {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #eee;
+    background-image: url('../img/load.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 999;
 }
 
-.carousel-caption h4{
-        font-size: 50px;
-    }
+.carousel-caption h4 {
+    font-size: 50px;
+}
 
 /*PAGINA USUARIO*/
 
 textarea {
     color: #999;
-     resize: none;
+    resize: none;
 }
 
 .mensagem {
@@ -193,16 +229,17 @@ textarea {
 }
 
 
- .fazerPostVidImg, .fazerPostBotao{
-        width: 50%;
-        float: left;
-    }
-    
-    .fazerPostVidImg li {
-        font-size: 20px;
-        margin-right: 30px;
-        color: #999;
-    }
+.fazerPostVidImg,
+.fazerPostBotao {
+    width: 50%;
+    float: left;
+}
+
+.fazerPostVidImg li {
+    font-size: 20px;
+    margin-right: 30px;
+    color: #999;
+}
 
 .mensagemPost {
     width: 100%;
@@ -275,13 +312,16 @@ textarea {
 
 .respondaMensagemInput input {
     width: 100%;
+    height: 38px;
 }
 
 .respondaMensagemBotao {
     width: 20%;
     float: left;
     margin-top: 30px;
+
 }
+
 
 
 .imgCracha {
@@ -313,7 +353,7 @@ textarea {
     position: relative;
     background: #ffffff;
     border-bottom: 1px solid #e2e9e6;
-    
+
 }
 
 .cover {
@@ -330,7 +370,7 @@ textarea {
     border-bottom: 1px solid #e2e9e6;
 }
 
-.image{
+.image {
     width: 100%;
 }
 

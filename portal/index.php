@@ -10,13 +10,13 @@ require_once "superior.php" ;
                 </div>
             </div>
             <div class="carousel-item ">
-                 <img class="d-block img-fluid" src="img/banner1.png" alt="slider">
+                <img class="d-block img-fluid" src="img/banner2.jpg" alt="slider">
                 <div class="carousel-caption">
                     <h4>SEU FUTURO COMEÇA AQUI ! </h4>
                 </div>
             </div>
             <div class="carousel-item ">
-             <img class="d-block img-fluid" src="img/banner1.png" alt="slider">
+                <img class="d-block img-fluid" src="img/banner3.jpg" alt="slider">
 
                 <div class="carousel-caption">
                     <h4>SEU FUTURO COMEÇA AQUI !</h4>
@@ -29,18 +29,21 @@ require_once "superior.php" ;
     <span class="sr-only">Previous</span>
   </a>
         <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
     </div>
 
     <div class="jumbotron jumbotron-fluid text-center rounded-0 laranja">
         <div class="container">
             <h1 class="display-3">O PROJETO</h1>
             <p class="lead">O Projeto Cidadão do Futuro, iniciativa a ser desenvolvida pela AML Consulting em parceria com as ETECs Basilides de Godoy, André Bogasian e Jaraguá, tem como objetivo desenvolver uma plataforma online para abrigar o concurso Cidadão do Futuro. A iniciativa busca a participação dos alunos e professores em ações para o exercício da cidadania, contribuindo na formação de cidadãos conscientes dos seus deveres e obrigações na sociedade. </p>
+
         </div>
 
     </div>
+
+
 
 
 
@@ -53,31 +56,14 @@ require_once "superior.php" ;
             </div>
         </div>
         <style>
-            .imgRedonda{
-                background: rgba(153, 153, 153, 0.53);
-                padding: 5px;
-              
-            }
-            
-            .tirarBorda {
-                border: 0 !important;
-            }
-            .circuloIndex{
-                width: 100%;
-                text-align: center;
-                height: 100%;
-            }
-            
-            .tirarBorda img{
-                width: 60%;
-            }
+           
 
         </style>
         <div class="row">
             <div class="col-sm-12 col-md-3 mb-3 d-flex align-self-stretch  flex-column">
                 <div class="card tirarBorda">
-                   <div class=" circuloIndex">
-                    <img class="card-img-top rounded-circle imgRedonda" src="img/2.png" alt="">
+                    <div class=" circuloIndex">
+                        <img class="card-img-top rounded-circle imgRedonda" src="img/2.png" alt="">
                     </div>
                     <div class="card-body text-center">
 
@@ -86,7 +72,7 @@ require_once "superior.php" ;
                             1º ETAPA
                         </h4>
                         <p class="card-text">entregar por meio do portal proposta da ação que será realiza para comunidade interno ou externo.</p>
-                    
+
 
                     </div>
                 </div>
@@ -98,8 +84,8 @@ require_once "superior.php" ;
 
             <div class="col-sm-12 col-md-3 mb-3 d-flex align-self-stretch  flex-column">
                 <div class="card tirarBorda">
-                   <div class=" circuloIndex">
-                    <img class="card-img-top rounded-circle imgRedonda" src="img/3.png" alt="">
+                    <div class=" circuloIndex">
+                        <img class="card-img-top rounded-circle imgRedonda" src="img/3.png" alt="">
                     </div>
                     <div class="card-body text-center">
 
@@ -108,7 +94,7 @@ require_once "superior.php" ;
                             2º ETAPA
                         </h4>
                         <p class="card-text">publicar vídeo de até 1 minuto com o pitch do projeto.</p>
-                      
+
 
                     </div>
                 </div>
@@ -120,8 +106,8 @@ require_once "superior.php" ;
 
             <div class="col-sm-12 col-md-3 mb-3 d-flex align-self-stretch  flex-column">
                 <div class="card tirarBorda">
-                   <div class=" circuloIndex">
-                    <img class="card-img-top rounded-circle imgRedonda" src="img/1.png" alt="">
+                    <div class=" circuloIndex">
+                        <img class="card-img-top rounded-circle imgRedonda" src="img/1.png" alt="">
                     </div>
                     <div class="card-body text-center">
 
@@ -130,7 +116,7 @@ require_once "superior.php" ;
                             3º ETAPA
                         </h4>
                         <p class="card-text">Diário de bordo virtual - Publicar no portal até 10 fotos dos bastidores da ação com textos de até 100 caracteres.</p>
-                    
+
 
                     </div>
                 </div>
@@ -142,8 +128,8 @@ require_once "superior.php" ;
 
             <div class="col-sm-12 col-md-3 mb-3 d-flex align-self-stretch  flex-column">
                 <div class="card tirarBorda">
-                   <div class=" circuloIndex">
-                    <img class="card-img-top rounded-circle imgRedonda" src="img/3.png" alt="">
+                    <div class=" circuloIndex">
+                        <img class="card-img-top rounded-circle imgRedonda" src="img/3.png" alt="">
                     </div>
                     <div class="card-body text-center">
 
@@ -152,7 +138,7 @@ require_once "superior.php" ;
                             4º ETAPA
                         </h4>
                         <p class="card-text">Publicar no portal vídeo de até 3 minutos com o resultado da ação executada.</p>
-                        
+
 
                     </div>
                 </div>
@@ -173,7 +159,7 @@ require_once "superior.php" ;
     <div class="jumbotron jumbotron-fluid text-center rounded-0 roxo">
         <div class="container">
             <h1 class="display-3"><a href="registrar.php">INSCREVA SUA ETEC</a></h1>
-            
+
         </div>
 
     </div>
