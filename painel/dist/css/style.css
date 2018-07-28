@@ -39,6 +39,10 @@ body {
 #imgIndex{
 }
 
+.text-primary{
+  color: #5F259F !important;
+}
+
 
 
 .swal-button:active {
@@ -47,4 +51,28 @@ body {
 
 .swal-button {
     background-color: #6610f2;
+}
+
+
+.atividades{
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  
+
+    background-color: #6610f2;
+
+
+}
+
+
+.nav-link{
+  color: #6610f2;
+}
+
+.nav-link:hover{
+  color: #FE5000;
 }
