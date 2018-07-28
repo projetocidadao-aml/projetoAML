@@ -9,7 +9,7 @@ require_once "superior.php" ;
                 <h1>Registra-se</h1>
             </div>
             <div class="col-sm-12 col-md-12 primary mb-4">
-                <div class="card cinza">
+                <div class="card cinza-claro">
 
                     <div class="card-body">
                         <div class="caixaRegistrar">
@@ -77,7 +77,8 @@ require_once "superior.php" ;
 
 
                         <div class="caixaRegistrarBotao clear">
-                            <input type="submit" data-toggle="modal" data-target="#registroMoldal">
+                            <button type="submit" class="btn btn-primary  float-right" data-toggle="modal" data-target="#registroMoldal">Cadatrar</button>
+
                         </div>
 
                         <div class="modal fade" id="registroMoldal" tabindex="-1" role="dialog" aria-hidden="true">

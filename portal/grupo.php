@@ -12,16 +12,18 @@ require_once "superior.php" ;
             </div>
 
         </div>
-        <div class="container">
-            <div class="cover-info">
+        <div class="laranja">
+            <div class="container">
+                <div class="cover-info">
 
-                <div class="name"><a href="#">Nome do Grupo</a></div>
-                <ul class="cover-nav">
+                    <div class="name"><a href="#">Nome do Grupo</a></div>
+                    <ul class="cover-nav">
 
-                      <li><a href="sobre.php">Sobre</a></li>
-                   
+                        <li><a href="sobre.php">Sobre</a></li>
 
-                </ul>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -123,8 +125,10 @@ require_once "superior.php" ;
                                 <li><i class="fas fa-image"></i></li>
                             </ul>
                         </div>
-                        <div class="fazerPostBotao">
-                            <input type="submit">
+                        <div class="fazerPostBotao ">
+                            <button type="submit" class="btn btn-primary float-right">Enviar</button>
+
+
                         </div>
                     </div>
                 </div>
@@ -162,10 +166,10 @@ require_once "superior.php" ;
                     <div class="fotoPost">
                         <img src="img/banner1.png" alt="">
                     </div>
-                    <div class="botaoMensagem cinza">
+                    <div class="botaoMensagem cinza py-2">
 
-                        <button><i class="fas fa-thumbs-up"></i></button>
-                        <button><i class="fas fa-share"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-thumbs-up"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-share"></i></button>
 
 
                         <p>10 curtidas </p>
@@ -187,7 +191,7 @@ require_once "superior.php" ;
                                 </p></a>
                             </a>
                         </div>
-                        
+
 
                         <div class="card-body">
                             <div class="card-text clear">
@@ -203,9 +207,11 @@ require_once "superior.php" ;
                         </div>
 
                         <div class="nomeAvatarMensagem">
-                           <a href="paginaUser.php"><p>Nome do aluno<br> Compartilhado em 00/00/0000
+                            <a href="paginaUser.php">
+                                <p>Nome do aluno<br> Compartilhado em 00/00/0000
 
-                            </p></a> 
+                                </p>
+                            </a>
                         </div>
 
                         <div class="card-body">
@@ -227,14 +233,18 @@ require_once "superior.php" ;
                         </div>
 
                         <div class="nomeAvatarMensagemResposta">
-                            <a href="coordenador.php"><p>Nome do coordenador <br> Compartilhado em 00/00/0000
+                            <a href="coordenador.php">
+                                <p>Nome do coordenador <br> Compartilhado em 00/00/0000
 
-                            </p></a>
+                                </p>
+                            </a>
                         </div>
 
                         <div class="card-body">
                             <div class="card-text clear">
-                                <a href="coordenador.php"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p></a>
+                                <a href="coordenador.php">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
+                                </a>
 
                             </div>
                         </div>
@@ -249,7 +259,8 @@ require_once "superior.php" ;
                             <input type="text">
                         </div>
                         <div class="respondaMensagemBotao">
-                            <input type="submit">
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </div>
                 </div>
