@@ -1,9 +1,9 @@
 <?php
-include("../config.class.php");
+include("config.class.php");
 	/**
-	 * Captura dados etec
+	 * Insere dados no banco ETEC
 	 */
-	class capturaDados
+	class insereDados
 	{
 		private $conn;
 		function __construct($nome,$email,$cep,$endereco,$cidade,$uf,$usuario,$senha,$telefone,$diretor,$responsavel)
@@ -11,11 +11,16 @@ include("../config.class.php");
 			$conexao = new conexao();
 			$this->conn = $conexao->conect();
 			//CÓDIGO ETEC NÃO É AUTO_INCREMENT...
-			$sql = "INSERT INTO ETEC VALUES ('4','$nome','$diretor','$responsavel','$usuario','$senha','$cep','$endereco','$cidade','$email','$uf','$telefone')";
+			$sql = "INSERT INTO `ETEC` (`ETEC_NOME`, `ETEC_DIRETOR`, `ETEC_RESPONSAVEL`, `ETEC_USUARIO`, `ETEC_SENHA`, `ETEC_CEP`, `ETEC_LOGRADOURO`, `ETEC_CIDADE`, `ETEC_EMAIL`, `ETEC_UF`, `ETEC_TELEFONE`) VALUES ('$nome', '$diretor', '$responsavel', '$usuario', '$senha', '$cep', '$endereco', '$cidade', '$email', '$uf', '$telefone')";
 			$db = $this->conn->prepare($sql);
-			$db->execute();
-			$result = $db->fetch(PDO::FETCH_OBJ);
-			echo var_dump($result);
+			try{
+				echo "true";
+				$db->execute();
+			}
+			catch(PDOException $ex){
+				echo 'false';
+				return "Erro ao cadastrar, Erro: ".$ex->getMessage();
+			}
 		}
 	}
 ?>
