@@ -18,7 +18,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark mb-4">
 		<div class="container">
-			<a class="navbar-brand" href="index.php">Cidadão do Futuro</a>
+			<a class="navbar-brand" href="index.php?page=painel"><img src="dist/img/logoHeaderCut.png" id="imgHeader"></a>
 		</div>
 	</nav>
 

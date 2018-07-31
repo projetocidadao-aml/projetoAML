@@ -36,15 +36,39 @@
 
    }
 
-   #imgHeader{
+   .navbar.navbar-expand-lg.navbar-dark.mb-4{
+    padding-top: 0;
+    padding-bottom: 3px;
+  }
+
+  .desafio{
+    height: 140px;
+    margin-bottom: 20px !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 5px solid #425563;
+    border-color: #5F259F;
+    border-style: inset;
+    border-radius: 5px !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    background-color: rgba(0,0,0,0.8);
+
+  }
+
+  .desafio a{
+    color: white;
+    text-decoration: none;
+  }
+
+  #imgHeader{
     width: 150px;
     transition: all 0.8s;
-
   }
 
   #imgHeader:hover{
     -webkit-filter: blur(0) opacity(1) grayscale(0) drop-shadow(0 0 8px rgba(255, 255, 255, .5));
-
 
   }
   /*---------------------------------------------- BOOTSTRAP ------------------------------------------------------*/
@@ -70,8 +94,22 @@
     box-shadow: 0 0 0 0.2rem rgba(95,37,159, 0.5) !important;
   }
 
+  .border-primary {
+    border: 2px solid #8f51d4 !important;
+  }
+
+  input:focus{
+    box-shadow: 0 0 0 0.2rem rgba(95,37,159, 0.5) !important;
+    border: 0 !important;
+  }
+
+  label{
+    color: #425563;
+  }
+
   .text-secondary{
     color: #425563 !important;
+    border:0!important;
   }
 
   .bg-secondary{
@@ -101,6 +139,16 @@
 
 
   /*---------------------------------------------- BOOTSTRAP ------------------------------------------------------*/
+
+  .linkLogin{
+    color: #425563;
+  }
+
+  .linkLogin:hover{
+    color: #5F259F;
+    text-decoration: none;
+
+  }
 
   .footer ul{
     display: inline;
@@ -159,18 +207,25 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
-  background-color: #6610f2;
+  background-color: #425563;
 }
 
 
 .nav-link{
-  color: #6610f2;
+  color: #425563;
 }
 
 .nav-link:hover{
-  color: #FE5000;
+  color: #5F259F;
 }
 
+.custom-file-input ~ .custom-file-label::after {
+    content: "Procurar";
+}
+
+textarea {
+    resize: none !important;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -185,5 +240,5 @@
   .atividades h2{
     font-size: 1.6em;
   }
-  
+
 }
