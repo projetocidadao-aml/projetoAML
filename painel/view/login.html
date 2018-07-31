@@ -1,12 +1,12 @@
 <div class="container">
-	<h4 class="text-secondary text-center pt-4">Cadastre-se! Vamos agir por um amanhã melhor!</h4>
+	<h4 class="text-secondary text-center pt-4" id="headerIndex">Cadastre-se! Vamos agir por um amanhã melhor!</h4>
 
 	<div class="row">
 
 		<div class="col-md-6 d-flex align-items-center">
 			<div class="row m-auto">
 				<div class="col-12 px-5 py-2 border">
-					<h3 class="text-center text-secondary">Acessar</h3>
+					<h3 class="text-center text-secondary title">Acessar</h3>
 					<form action="#" method="POST" class="aml-form">
 
 						<div class="form-row">
@@ -78,3 +78,14 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
+<script>
+	function escreverText(texto){
+			const arrayTexto = texto.innerHTML.split('');
+			texto.innerHTML = '';
+			arrayTexto.forEach((letra, i) => {
+				setTimeout(() => texto.innerHTML += letra, 100 * i);
+			});
+		}
+		const textoInterativo = document.querySelector('#headerIndex');
+		escreverText(textoInterativo);
+</script>

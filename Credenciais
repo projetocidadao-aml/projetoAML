@@ -1,0 +1,11 @@
+AML
+
+Endereço de Domínio: (FTP ou SSH)
+Host: etecdev.amlconsulting.com.br
+Usuario: etecdev 
+senha: uZ9Qz8yx 
+
+Banco de dados (é possível acessar via phpmyadmin pelo mesmo endereço)
+Host: mysql.w2it.com.br
+Usuario: etecdev
+senha: 5J%2dt2ds
