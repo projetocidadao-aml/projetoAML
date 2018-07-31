@@ -11,12 +11,15 @@
     }
     body {
       margin-bottom: 100px;
+      min-width: 300px;
     }
     .footer {
       position: absolute;
       bottom: 0;
       width: 100%;
       background-color: #f5f5f5;
+      min-width: 300px;
+
     }
 
 
@@ -59,12 +62,14 @@
     .navbar{
      background-color: #5F259F;
      color: white;
+     border-bottom: 2px solid #000;
 
    }
 
    .footer{
      /*background-color: #425563;*/
      background-color: #5F259F;
+     border-top: 2px solid #000;
 
    }
 
@@ -96,14 +101,25 @@
     border-radius: 5px !important;
     border-top-right-radius: 50px !important;
     border-bottom-left-radius: 50px !important;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.6);
+    transition: all 0.7s;
+  }
 
+  .desafio:hover{
+    cursor: pointer;
+    background-color: rgba(95,37,159,0.6);
+    border-top-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
   }
 
   .desafio a{
     color: white;
     text-decoration: none;
   }
+
+
 
   #imgHeader{
     width: 150px;
@@ -127,6 +143,10 @@
   .btn-primary{
     background-color: #5F259F !important;
     border-color: #8f51d4 !important;
+  }
+
+  .bg-success{
+    background-color: #d7b3ff !important;
   }
 
   .btn-primary:hover{
@@ -209,12 +229,12 @@
   }
 
   .caixaPainel{
-    border: 2px solid  #425563;
+    border: 2px solid  #000;
     border-top-right-radius: 90px;
     border-bottom-left-radius: 90px;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: rgba(95,37,159,0.87);
+    background-color: rgba(95,37,159,10);
     color: white;
     max-width: 280px;
   }
@@ -307,14 +327,24 @@ td{
     height: 100px;
   }
 
+  .title{
+    font-size: 1.5em;
+  }
+
+  .imgHeaderTitle{
+    width: 100px !important;
+  }
+
+
 }
 
 
-@media only screen and (min-width: 300px) {
+@media  (min-width: 300px) {
 
   .desafiosTitle{
     font-size: 1.5em;
   }
+
 
 
 }

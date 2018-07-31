@@ -16,9 +16,9 @@ $(document).ready(function(){
 			else{
 				parar();
 				swal({
-				  title: "Alteração",
-				  text: "Alteração realizada com sucesso!",
-				  icon: "success",
+					title: "Alteração",
+					text: "Alteração realizada com sucesso!",
+					icon: "success",
 				});
 			}
 		});
