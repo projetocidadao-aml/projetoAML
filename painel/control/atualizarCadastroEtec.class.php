@@ -32,7 +32,6 @@ include('../model/atualizaEtec.class.php');
 			$this->responsavel = $_POST['responsavelEtec'];
 
 			$atualizaEtec = new capturaDados($this->nome, $this->email, $this->cep, $this->endereco, $this->cidade,$this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor,$this->responsavel); 
-			echo "true";
 
 		}
 	} 

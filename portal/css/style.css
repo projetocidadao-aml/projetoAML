@@ -11,6 +11,25 @@ body {
     float: right;
 }
 
+.float-left {
+
+    float: left;
+}
+
+.text-branco{
+    color: #fff!important;
+}
+
+.text-preto{
+    color: #000!important;
+}
+
+/*
+body{
+    min-width:  400px;
+}
+*/
+
 @font-face {
     font-family: LondonBetween;
     src: url(fonts/LondonBetween.ttf);
@@ -35,7 +54,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 a:hover {
@@ -103,7 +122,7 @@ a:hover {
     background: #5F259F;
     font-size: 14px;
     text-align: right;
-    padding: 10px 0;
+    padding: 5px 0;
     color: #fff;
 }
 
@@ -442,6 +461,14 @@ img {
     margin: 78px auto 20px auto;
 }
 
+.titulo1{
+    font-size: 60px;
+}
+
+.titulo2{
+    font-size: 45px;
+}
+
 .caixaRegistrar {
     width: 70%;
     margin: 25px auto;
@@ -492,12 +519,16 @@ img {
 
 
 
+.menu ul li{
+    margin-top: 16px;
+}
 
 
 
 
-
-
+.logo img{
+    width: 90%;
+}
 
 
 
@@ -505,4 +536,81 @@ img {
 
 .integrantes li {
     display: block;
+}
+
+ #menu ul li{
+         text-align: right;
+     }
+
+#menu ul {
+         margin-left: auto;
+     }
+
+
+@media(max-width: 1024px){
+     body{
+/*         background: green;*/
+     }
+    
+      #menu ul li{
+         text-align: left;
+     }
+ 
+}
+
+
+@media (max-width:992px) {
+    body{
+/*        background: black;*/
+    }
+     #menu{
+   border-top:  3px solid #753ab7;;
+}
+    
+}
+
+
+@media (max-width: 768px) {
+     body{
+/*         background: blue;*/
+     }
+    .carousel-item h4 {
+         font-size: 24px;
+     }
+    
+    
+     
+   
+}
+
+ @media (max-width: 500px){
+     body{
+/*         background: red;*/
+     }
+     
+     .footerMenu{
+         float: none;
+         text-align: center;
+     }
+     
+     .carousel-item h4 {
+         font-size: 20px;
+     }
+     
+     .menu ul li{
+    margin-top: 0px;
+}
+
+        .titulo1{
+    font-size: 40px;
+}
+
+.titulo2{
+    font-size: 30px;
+}
+     .cover-nav li {
+    margin-right: 16px;
+} 
+   
+
 }

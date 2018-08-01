@@ -63,7 +63,7 @@ include 'control/router.class.php';
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Desafios</a>
+						<a class="nav-link" href="index.php?page=desafio">Desafios</a>
 					</li>
 					
 					<li class="nav-item">

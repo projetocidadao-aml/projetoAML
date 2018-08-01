@@ -138,13 +138,13 @@ require_once "superior.php" ;
                 <div class="card">
 
                     <div class="mensagem">
-                        <a href="paginaUser.php">
+                        <a href="aluno.php">
                             <div class="avatarMensagem">
                                 <img src="img/avatar.png" class="rounded-circle" alt="">
                             </div>
 
                             <div class="nomeAvatarMensagem">
-                                <p>Nome do aluno <br>compartilhado em 00/00/0000</p>
+                                <p class="text-preto">Nome do aluno <br>compartilhado em 00/00/0000</p>
 
                             </div>
                         </a>
@@ -185,8 +185,8 @@ require_once "superior.php" ;
                         </div>
 
                         <div class="nomeAvatarMensagem">
-                            <a href="paginaUser.php">
-                               <a href="coordenador.php"> <p>Nome do coordenador <br> Compartilhado em 00/00/0000
+                            <a href="aluno.php">
+                               <a href="coordenador.php"> <p class="text-preto">Nome do coordenador <br> Compartilhado em 00/00/0000
 
                                 </p></a>
                             </a>
@@ -196,19 +196,19 @@ require_once "superior.php" ;
                         <div class="card-body">
                             <div class="card-text clear">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
-
+                                <p> Responder</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="mensagemPost">
                         <div class="avatarMensagemPost">
-                            <a href="paginaUser.php"> <img src="img/avatar.png" class="rounded-circle" alt=""></a>
+                            <a href="aluno.php"> <img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
                         <div class="nomeAvatarMensagem">
-                            <a href="paginaUser.php">
-                                <p>Nome do aluno<br> Compartilhado em 00/00/0000
+                            <a href="aluno.php">
+                                <p class="text-preto">Nome do aluno<br> Compartilhado em 00/00/0000
 
                                 </p>
                             </a>
@@ -217,7 +217,7 @@ require_once "superior.php" ;
                         <div class="card-body">
                             <div class="card-text clear">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
-
+                                <p> Responder</p>
                             </div>
                         </div>
                     </div>
@@ -234,7 +234,7 @@ require_once "superior.php" ;
 
                         <div class="nomeAvatarMensagemResposta">
                             <a href="coordenador.php">
-                                <p>Nome do coordenador <br> Compartilhado em 00/00/0000
+                                <p class="text-preto">Nome do coordenador <br> Compartilhado em 00/00/0000
 
                                 </p>
                             </a>
@@ -242,10 +242,10 @@ require_once "superior.php" ;
 
                         <div class="card-body">
                             <div class="card-text clear">
-                                <a href="coordenador.php">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
-                                </a>
 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
+
+                                <p> Responder</p>
                             </div>
                         </div>
                     </div>
