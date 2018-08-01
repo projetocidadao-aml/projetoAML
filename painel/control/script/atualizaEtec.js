@@ -10,16 +10,24 @@ $(document).ready(function(){
 			diretorEtec: diretor, responsavelEtec: responsavel
 		},
 		function(data){
+			alert(data);
 			if(data == 'true'){
-				window.location.href = "?page=painel";
-			}
-			else{
 				parar();
 				swal({
 					title: "Alteração",
 					text: "Alteração realizada com sucesso!",
 					icon: "success",
 				});
+
+			}
+			else{
+				parar();
+				swal({
+					title: "Alteração",
+					text: "Erro ao alterar dados!",
+					icon: "error",
+				});
+
 			}
 		});
 		return false;
