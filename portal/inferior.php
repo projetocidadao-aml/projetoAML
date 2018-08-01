@@ -17,7 +17,7 @@
     <div class="row tirar_margin_row pt-4 pb-1 laranja">
         <div class="container">
 
-            <div class="col-sm-12 col-md-12">
+            <div class="col-sm-12 col-md-12  text-branco">
 
                 <ul class="footerMenu">
                     <li><a href="privacidade.php">Privacidade</a></li>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="row text-center tirar_margin_row pt-3 cinza">
-        <div class="col-sm-12 col-md-12">
+        <div class="col-sm-12 col-md-12  text-branco">
 
             <p>© Copyright 2018 - AML Consulting, todos os direitos reservados.</p>
 

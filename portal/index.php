@@ -36,7 +36,7 @@ require_once "superior.php" ;
 
     <div class="jumbotron jumbotron-fluid text-center rounded-0 laranja">
         <div class="container">
-            <h1 class="display-3">O PROJETO</h1>
+            <h1 class="display-3 titulo1">O PROJETO</h1>
             <p class="lead">O Projeto Cidadão do Futuro, iniciativa a ser desenvolvida pela AML Consulting em parceria com as ETECs Basilides de Godoy, André Bogasian e Jaraguá, tem como objetivo desenvolver uma plataforma online para abrigar o concurso Cidadão do Futuro. A iniciativa busca a participação dos alunos e professores em ações para o exercício da cidadania, contribuindo na formação de cidadãos conscientes dos seus deveres e obrigações na sociedade. </p>
 
         </div>
@@ -51,14 +51,11 @@ require_once "superior.php" ;
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 mb-3 text-center">
-                <h2>Etapas</h2>
+                <h2 class="titulo2">ETAPAS</h2>
 
             </div>
         </div>
-        <style>
-           
 
-        </style>
         <div class="row">
             <div class="col-sm-12 col-md-3 mb-3 d-flex align-self-stretch  flex-column">
                 <div class="card tirarBorda">
@@ -158,7 +155,7 @@ require_once "superior.php" ;
 
     <div class="jumbotron jumbotron-fluid text-center rounded-0 roxo">
         <div class="container">
-            <h1 class="display-3"><a href="registrar.php">INSCREVA SUA ETEC</a></h1>
+            <h1 class="display-3 titulo1 "><a href="registrar.php">INSCREVA SUA ETEC</a></h1>
 
         </div>
 

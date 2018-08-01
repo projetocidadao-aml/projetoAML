@@ -20,9 +20,7 @@ require_once "superior.php" ;
                         <img src="img/avatar.png" alt="people" />
                     </div>
                     <div class="name"><a href="#">Nome do aluno</a></div>
-                    <ul class="cover-nav">
-
-                        <li><a href="perfil.php"> Perfil</a></li>
+                    <ul class="cover-nav menuPerfil">
                         <li><a href="sobre.php">Sobre</a></li>
                         <li><a href="grupo.php"> Grupo</a></li>
 
@@ -144,7 +142,7 @@ require_once "superior.php" ;
 
                         <div class="nomeAvatarMensagem">
                             <a href="coordenador.php">
-                                <p>Nome do coordenador <br>compartilhado em 00/00/0000</p>
+                                <p class="text-preto">Nome do coordenador <br>compartilhado em 00/00/0000</p>
                             </a>
 
                         </div>
@@ -157,6 +155,7 @@ require_once "superior.php" ;
 
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio at suscipit id iure in ratione, aliquam, corporis odio fuga rerum dolore facere, labore necessitatibus accusantium voluptatem molestias praesentium temporibus distinctio!
                             </p>
+                           
 
 
                         </div>
@@ -181,12 +180,12 @@ require_once "superior.php" ;
 
                     <div class="mensagemPost">
                         <div class="avatarMensagemPost">
-                            <a href="paginaUser.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
+                            <a href="aluno.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
                         <div class="nomeAvatarMensagem">
-                            <a href="paginaUser.php">
-                                <p>Nome do aluno <br> Compartilhado em 00/00/0000
+                            <a href="aluno.php">
+                                <p class="text-preto">Nome do aluno <br> Compartilhado em 00/00/0000
 
                                 </p>
                             </a>
@@ -195,6 +194,7 @@ require_once "superior.php" ;
                         <div class="card-body">
                             <div class="card-text clear">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
+                                <p> Responder</p>
 
                             </div>
                         </div>
@@ -207,7 +207,7 @@ require_once "superior.php" ;
 
                         <div class="nomeAvatarMensagem">
                             <a href="coordenador.php">
-                                <p>Nome do coordenador <br> Compartilhado em 00/00/0000
+                                <p class="text-preto">Nome do coordenador <br> Compartilhado em 00/00/0000
 
                                 </p>
                             </a>
@@ -216,6 +216,7 @@ require_once "superior.php" ;
                         <div class="card-body">
                             <div class="card-text clear">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
+                                <p> Responder</p>
 
                             </div>
                         </div>
@@ -228,12 +229,12 @@ require_once "superior.php" ;
 
                     <div class="mensagemPostResposta">
                         <div class="avatarMensagemPostResposta">
-                            <a href="paginaUser.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
+                            <a href="aluno.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
                         <div class="nomeAvatarMensagemResposta">
-                            <a href="paginaUser.php">
-                                <p>Nome do aluno <br> Compartilhado em 00/00/0000
+                            <a href="aluno.php">
+                                <p class="text-preto">Nome do aluno <br> Compartilhado em 00/00/0000
 
                                 </p>
                             </a>
@@ -242,7 +243,7 @@ require_once "superior.php" ;
                         <div class="card-body">
                             <div class="card-text clear">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
-
+                                <p> Responder</p>
                             </div>
                         </div>
                     </div>
