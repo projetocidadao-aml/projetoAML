@@ -78,7 +78,7 @@ require_once "superior.php" ;
                 </div>
 
 
-                <div class="card subir mb-4">
+                <div class="card subir mb-4 testePTColorgray">
 
 
 
@@ -100,7 +100,7 @@ require_once "superior.php" ;
 
 
 
-                <div class="card subir">
+                <div class="card subir testePTColorgray">
 
 
 
@@ -132,10 +132,6 @@ require_once "superior.php" ;
                 </div>
 
             </div>
-            <style>
-
-
-            </style>
 
             <div class="col-sm-12 col-md-8 primary mb-4">
                 <div class="card mb-4">
@@ -145,7 +141,7 @@ require_once "superior.php" ;
                         O que há de novo
                     </div>
 
-                    <div class="fazerPostMensagem">
+                    <div class="fazerPostMensagem testePTColorgray">
 
                         <textarea name="" id="">compartilhe seu status</textarea>
                     </div>
@@ -168,7 +164,7 @@ require_once "superior.php" ;
 
 
 
-                <div class="card">
+                <div class="card testePTColorgray">
 
                     <div class="mensagem">
                         <a href="aluno.php">
@@ -213,7 +209,7 @@ require_once "superior.php" ;
 
 
                     <div class="mensagemPost">
-                        <div class="avatarMensagemPost">
+                        <div class="avatarMensagem">
                             <a href="coordenador.php"><img src="img/avatar.png" class="rounded-circle" alt="">
                         </div>
 
@@ -232,7 +228,7 @@ require_once "superior.php" ;
                     </div>
 
                     <div class="mensagemPost">
-                        <div class="avatarMensagemPost">
+                        <div class="avatarMensagem">
                             <a href="aluno.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
@@ -258,7 +254,7 @@ require_once "superior.php" ;
 
 
                     <div class="mensagemPostResposta">
-                        <div class="avatarMensagemPostResposta">
+                        <div class="avatarMensagem">
                             <a href="aluno.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
