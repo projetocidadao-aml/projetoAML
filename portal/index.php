@@ -35,7 +35,7 @@ require_once "superior.php" ;
     </div>
 
     <div class="jumbotron jumbotron-fluid text-center rounded-0 laranja">
-        <div class="container">
+        <div class="containe">
             <h1 class="display-3 titulo1">O PROJETO</h1>
             <p class="lead">O Projeto Cidadão do Futuro, iniciativa a ser desenvolvida pela AML Consulting em parceria com as ETECs Basilides de Godoy, André Bogasian e Jaraguá, tem como objetivo desenvolver uma plataforma online para abrigar o concurso Cidadão do Futuro. A iniciativa busca a participação dos alunos e professores em ações para o exercício da cidadania, contribuindo na formação de cidadãos conscientes dos seus deveres e obrigações na sociedade. </p>
 
@@ -175,14 +175,14 @@ require_once "superior.php" ;
             <div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column ">
                 <div class="card roxo">
                     <img class="card-img-top" src="img/capaGrupoIndex.png" alt="">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center testPTColorWhite">
 
 
                         <h4 class="card-title">
                             nome do grupo
                         </h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus necessitatibus atque dicta unde numquam ut...</p>
-                        <a class="card-link" href="grupo.php">ver grupo</a>
+                        <a class="card-link btn btn-outline-primary testPTbuton" href="grupo.php">Ver Grupo</a>
 
                     </div>
                 </div>
@@ -191,14 +191,14 @@ require_once "superior.php" ;
             <div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column">
                 <div class="card roxo">
                     <img class="card-img-top" src="img/capaGrupoIndex.png" alt="">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center testPTColorWhite">
 
 
                         <h4 class="card-title">
                             nome do grupo
                         </h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus necessitatibus atque dicta unde numquam ut...</p>
-                        <a class="card-link" href="grupo.php">ver grupo</a>
+                        <a class="card-link btn btn-outline-primary testPTbuton" href="grupo.php">Ver Grupo</a>
 
                     </div>
                 </div>
@@ -207,14 +207,14 @@ require_once "superior.php" ;
             <div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column">
                 <div class="card roxo">
                     <img class="card-img-top" src="img/capaGrupoIndex.png" alt="">
-                    <div class="card-body text-center">
+                        <div class="card-body text-center testPTColorWhite">
 
 
                         <h4 class="card-title">
                             nome do grupo
                         </h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus necessitatibus atque dicta unde numquam ut...</p>
-                        <a class="card-link" href="grupo.php">ver grupo</a>
+                        <a class="card-link btn btn-outline-primary testPTbuton" href="grupo.php">Ver Grupo</a>
 
                     </div>
                 </div>
@@ -226,14 +226,14 @@ require_once "superior.php" ;
         </div>
         <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">&lsaquo;</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#">&rsaquo;</a>
+                    <a class="page-link testPTpagecolor" href="#" tabindex="-1">&lsaquo;</a>
+                </li>
+                <li class="page-item"><a class="page-link testPTpagecolor" href="#">1</a></li>
+                <li class="page-item"><a class="page-link testPTpagecolor" href="#">2</a></li>
+                <li class="page-item"><a class="page-link testPTpagecolor" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link testPTpagecolor" href="#">&rsaquo;</a>
                 </li>
             </ul>
         </nav>

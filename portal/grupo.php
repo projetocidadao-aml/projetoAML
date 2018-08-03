@@ -12,16 +12,14 @@ require_once "superior.php" ;
             </div>
 
         </div>
-        <div class="laranja">
+        <div class="testePTColororange">
             <div class="container">
                 <div class="cover-info">
 
                     <div class="name"><a href="#">Nome do Grupo</a></div>
+                    
                     <ul class="cover-nav">
-
                         <li><a href="sobre.php">Sobre</a></li>
-
-
                     </ul>
                 </div>
             </div>
@@ -38,7 +36,7 @@ require_once "superior.php" ;
                 </div>
 
 
-                <div class="card subir mb-4">
+                <div class="card subir mb-4 testePTColorgray">
 
 
                     <div class="card-body paddingCracha">
@@ -75,7 +73,7 @@ require_once "superior.php" ;
 
 
 
-                <div class="card subir">
+                <div class="card subir testePTColorgray">
                     <div class="card-body">
 
 
@@ -112,7 +110,7 @@ require_once "superior.php" ;
                         O que há de novo
                     </div>
 
-                    <div class="fazerPostMensagem">
+                    <div class="fazerPostMensagem testePTColorgray">
 
                         <textarea name="" id="" placeholder="compartilhe seu status"></textarea>
                     </div>
@@ -135,7 +133,7 @@ require_once "superior.php" ;
 
 
 
-                <div class="card">
+                <div class="card testePTColorgray">
 
                     <div class="mensagem">
                         <a href="aluno.php">
@@ -180,7 +178,7 @@ require_once "superior.php" ;
 
 
                     <div class="mensagemPost">
-                        <div class="avatarMensagemPost">
+                        <div class="avatarMensagem">
                             <a href="coordenador.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
@@ -202,7 +200,7 @@ require_once "superior.php" ;
                     </div>
 
                     <div class="mensagemPost">
-                        <div class="avatarMensagemPost">
+                        <div class="avatarMensagem">
                             <a href="aluno.php"> <img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
@@ -228,7 +226,7 @@ require_once "superior.php" ;
 
 
                     <div class="mensagemPostResposta">
-                        <div class="avatarMensagemPostResposta">
+                        <div class="avatarMensagem">
                             <a href="coordenador.php"><img src="img/avatar.png" class="rounded-circle" alt=""></a>
                         </div>
 
@@ -248,6 +246,7 @@ require_once "superior.php" ;
                                 <p> Responder</p>
                             </div>
                         </div>
+
                     </div>
 
 

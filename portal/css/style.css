@@ -130,8 +130,38 @@ a:hover {
     color: #fff;
 }
 
+/*card dos grupos da page index.php*/
+.testPTColorWhite{
+    color: white;
+}
+.testPTbuton{
+    border: 1px solid #5F259F;
+    background-color: white;
+    color: #723eae;
+}
+.testPTbuton:hover{
+    background-color: #5F259F;
+    border: 1px solid white;
+    color: white;
+}
+.testPTpagecolor{
+    color: #5F259F;
+    border: 1px solid #5F259F;
+}
+.testPTpagecolor:hover{
+    color: white;
+    background-color: #5F259F;
+}
+/*fim*/
 
-
+/*cores dos perfis e Grupos*/
+.testePTColororange{
+   background-color: #ff7400 !important;
+}
+.testePTColorgray{
+    background-color: #d5d8d6;
+}
+/*fim*/
 
 .modal {
     text-align: center;
@@ -456,6 +486,13 @@ img {
 
 
 /*REGISTRAR*/
+
+
+/*modal concordo não concordo*/
+.testPTcolorConcordo:hover{
+    color: #5F259F !important;
+}
+/*fim*/
 
 .titulo {
     margin: 78px auto 20px auto;
