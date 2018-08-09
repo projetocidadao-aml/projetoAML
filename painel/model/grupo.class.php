@@ -74,7 +74,7 @@ include("config.class.php");
 			foreach ($linha as $value) {
 				echo "
 					<div class='desafio col-md-2  m-auto d-flex align-items-center'>
-						<h4 class='text-center text-white titleBordered d-block w-100'><a href='?page=detalhamento_desafio'>".$value['DESAFIO_TEMA']."</a></h4>
+						<h4 class='text-center text-white titleBordered d-block w-100'><a href='?page=detalhamento_desafio&id=".$value['DESAFIO_ID']."'>".$value['DESAFIO_TEMA']."</a></h4>
 					</div>";
 			}
 		}
