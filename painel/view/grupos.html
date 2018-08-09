@@ -1,4 +1,4 @@
-	
+<?php include("control/grupo.class.php"); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-12 mb-5">
@@ -22,20 +22,7 @@
 					</thead>
 
 					<tbody>
-						<tr>
-							<td>1</td>
-							<td>NotGroup</td>
-							<td>Etec Jaraguá</td>
-							<td>2</td>
-							<td><a class="btn btn-secondary" href="index.php?page=detalhamento_grupo">Detalhar</a></td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>GroupNot</td>
-							<td>Etec Bogasian</td>
-							<td>3</td>
-							<td><a class="btn btn-secondary" href="index.php?page=detalhamento_grupo">Detalhar</a></td>
-						</tr>
+						<?php $grupo->listaGrupos(); ?>
 					</tbody>
 				</table>	
 			</div>			

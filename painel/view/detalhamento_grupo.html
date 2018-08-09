@@ -1,10 +1,11 @@
+	<?php include("control/grupo.class.php"); ?>
 	<div class="container">
 		
 		<div class="row">
 			<div class="col-12">
 				<img src="./dist/img/groupDetails.png" class="img-thumbnail img-responsive float-left border-0 imgHeaderTitle" style="width: 140px;">
-				<h2 class="text-center pt-4 text-secondary titleBordered title desafiosTitle">Grupo {Nome}</h2>
-				<h4 class="text-center mb-5 text-secondary titleBordered title ">Etec {Nome}</h4>
+				<h2 class="text-center pt-4 text-secondary titleBordered title desafiosTitle"><?php $grupo->capturaDados('GRUPO_NOME') ?></h2>
+				<h4 class="text-center mb-5 text-secondary titleBordered title "><?php $grupo->capturaDados('ETEC_NOME') ?></h4>
 			</div>
 		</div>
 		<hr>
@@ -22,24 +23,7 @@
 				</thead>
 
 				<tbody>
-					<tr>
-						<td>1</td>
-						<td>Alex Santos</td>
-						<td>Aluno</td>
-						<td><a class="btn btn-secondary" href="?page=cadastro_pessoa">Detalhar</a></td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Alex Santos</td>
-						<td>Aluno</td>
-						<td><a class="btn btn-secondary" href="?page=cadastro_pessoa">Detalhar</a></td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Alex Santos</td>
-						<td>Aluno</td>
-						<td><a class="btn btn-secondary" href="?page=cadastro_pessoa">Detalhar</a></td>
-					</tr>
+					<?php $grupo->listaIntegrantes(); ?>
 				</tbody>
 			</table>	
 		</div>
@@ -51,25 +35,7 @@
 
 		<div class="desafios col-md-12 pt-3">
 			<div class="row">
-				<div class="desafio col-md-2  m-auto d-flex align-items-center">
-					<h4 class="text-center text-white titleBordered d-block w-100"><a href="?page=detalhamento_desafio">Nome do Desafio</a></h4>
-				</div>
-
-				<div class="desafio col-md-2  m-auto d-flex align-items-center">
-					<h4 class="text-center text-white titleBordered d-block w-100"><a href="?page=detalhamento_desafio">Nome do Desafio</a></h4>
-				</div>
-
-				<div class="desafio col-md-2  m-auto d-flex align-items-center">
-					<h4 class="text-center text-white titleBordered d-block w-100"><a href="?page=detalhamento_desafio">Nome do Desafio</a></h4>
-				</div>
-
-				<div class="desafio col-md-2  m-auto d-flex align-items-center">
-					<h4 class="text-center text-white titleBordered d-block w-100"><a href="?page=detalhamento_desafio">Nome do Desafio</a></h4>
-				</div>
-
-
-
-
+				<?php $grupo->listaDesafios(); ?>
 			</div>
 		</div>
 

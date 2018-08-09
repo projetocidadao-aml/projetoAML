@@ -1,5 +1,7 @@
 <?php
 include 'control/router.class.php';
+include 'control/dal.class.php';
+$dalGeral = new dalGeral();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
