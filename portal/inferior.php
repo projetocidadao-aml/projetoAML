@@ -1,11 +1,12 @@
+<script src="js/jquery.min.js">
 
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#teste").fadeOut("show");
+    });
 
-<script src="js/jquery.min.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$("#teste").fadeOut("show");
-		});
-	</script>
+</script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
@@ -14,26 +15,33 @@
 
 <footer>
 
-    <div class="row tirar_margin_row pt-4 pb-1 laranja">
+    <div class="row tirar_margin_row pt-4 pb-1 cinza">
         <div class="container">
 
-            <div class="col-sm-12 col-md-12  text-branco">
 
-                <ul class="footerMenu">
-                    <li><a href="privacidade.php">Privacidade</a></li>
-                    <li><a href="contato.php">Contato</a></li>
-                </ul>
+
+            <div class="row">
+         
+               
+              
+                
+                
+                <div class="col-sm-6 col-md-8  text-branco ">
+                    <img class="logoFooter float-left" src="img/logoBranco.png" alt="">
+
+                    <p class="float-left">© Copyright 2018 - AML Consulting, todos os direitos reservados.</p>
+                    
+                </div>
+
+                 <div class="col-sm-6 col-md-4 text-branco  ">
+
+                    <ul class="footerMenu  float-right">
+                        <li><a href="privacidade.php">Privacidade</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                    </ul>
+                </div>
+
             </div>
-
         </div>
     </div>
-
-    <div class="row text-center tirar_margin_row pt-3 cinza">
-        <div class="col-sm-12 col-md-12  text-branco">
-
-            <p>© Copyright 2018 - AML Consulting, todos os direitos reservados.</p>
-
-        </div>
-    </div>
-
 </footer>

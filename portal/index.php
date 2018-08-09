@@ -4,22 +4,22 @@ require_once "superior.php" ;
     <div id="carouselSite" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block img-fluid" src="img/banner1.png" alt="slider">
+                <img class="d-block img-fluid" src="img/banner1.jpg" alt="slider">
                 <div class="carousel-caption">
-                    <h4>SEU FUTURO COMEÇA AQUI !</h4>
+                    <h4 class="text-preto">SEU FUTURO COMEÇA AQUI !</h4>
                 </div>
             </div>
             <div class="carousel-item ">
                 <img class="d-block img-fluid" src="img/banner2.jpg" alt="slider">
                 <div class="carousel-caption">
-                    <h4>SEU FUTURO COMEÇA AQUI ! </h4>
+                    <h4 class="text-preto">texto 2 </h4>
                 </div>
             </div>
             <div class="carousel-item ">
                 <img class="d-block img-fluid" src="img/banner3.jpg" alt="slider">
 
                 <div class="carousel-caption">
-                    <h4>SEU FUTURO COMEÇA AQUI !</h4>
+                    <h4 class="text-preto">texto3</h4>
                 </div>
             </div>
 
@@ -36,8 +36,8 @@ require_once "superior.php" ;
 
     <div class="jumbotron jumbotron-fluid text-center rounded-0 laranja">
         <div class="containe">
-            <h1 class="display-3 titulo1">O PROJETO</h1>
-            <p class="lead">O Projeto Cidadão do Futuro, iniciativa a ser desenvolvida pela AML Consulting em parceria com as ETECs Basilides de Godoy, André Bogasian e Jaraguá, tem como objetivo desenvolver uma plataforma online para abrigar o concurso Cidadão do Futuro. A iniciativa busca a participação dos alunos e professores em ações para o exercício da cidadania, contribuindo na formação de cidadãos conscientes dos seus deveres e obrigações na sociedade. </p>
+            <h1 class="display-3 titulo1 text-branco">O PROJETO</h1>
+            <p class="lead text-branco">O Projeto Cidadão do Futuro, iniciativa a ser desenvolvida pela AML Consulting em parceria com as ETECs Basilides de Godoy, André Bogasian e Jaraguá, tem como objetivo desenvolver uma plataforma online para abrigar o concurso Cidadão do Futuro. A iniciativa busca a participação dos alunos e professores em ações para o exercício da cidadania, contribuindo na formação de cidadãos conscientes dos seus deveres e obrigações na sociedade. </p>
 
         </div>
 
@@ -189,7 +189,7 @@ require_once "superior.php" ;
             </div>
 
             <div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column">
-                <div class="card roxo">
+                <div class="card laranja">
                     <img class="card-img-top" src="img/capaGrupoIndex.png" alt="">
                     <div class="card-body text-center testPTColorWhite">
 
@@ -229,7 +229,7 @@ require_once "superior.php" ;
                 <li class="page-item">
                     <a class="page-link testPTpagecolor" href="#" tabindex="-1">&lsaquo;</a>
                 </li>
-                <li class="page-item"><a class="page-link testPTpagecolor" href="#">1</a></li>
+                <li class="page-item"><a class="page-link testPTpagecolor activePag" href="#">1</a></li>
                 <li class="page-item"><a class="page-link testPTpagecolor" href="#">2</a></li>
                 <li class="page-item"><a class="page-link testPTpagecolor" href="#">3</a></li>
                 <li class="page-item">

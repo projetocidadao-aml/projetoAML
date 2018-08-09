@@ -16,9 +16,9 @@ require_once "superior.php" ;
             <div class="container">
                 <div class="cover-info">
 
-                    <div class="name"><a href="#">Nome do Grupo</a></div>
+                    <div class="nome-grupo"><a href="#">Nome do Grupo</a></div>
                     
-                    <ul class="cover-nav">
+                    <ul class="cover-nav-grupo">
                         <li><a href="sobre.php">Sobre</a></li>
                     </ul>
                 </div>
@@ -115,7 +115,7 @@ require_once "superior.php" ;
                         <textarea name="" id="" placeholder="compartilhe seu status"></textarea>
                     </div>
 
-                    <div class="fazerPost">
+                    <div class="fazerPost  cinza-claro">
                         <div class="fazerPostVidImg">
                             <ul>
                                 <li> <i class="fas fa-video"></i></li>
@@ -164,14 +164,14 @@ require_once "superior.php" ;
                     <div class="fotoPost">
                         <img src="img/banner1.png" alt="">
                     </div>
-                    <div class="botaoMensagem cinza py-2">
+                    <div class="botaoMensagem cinza-claro2 py-2">
 
                         <button class="btn btn-primary"><i class="fas fa-thumbs-up"></i></button>
                         <button class="btn btn-primary"><i class="fas fa-share"></i></button>
 
 
-                        <p>10 curtidas </p>
-                        <p> 10 Comentarios</p>
+                       <p class="ml-4 mt-1">10 curtidas </p>
+                        <p class=" mt-1"> 10 Comentarios</p>
                     </div>
 
 
