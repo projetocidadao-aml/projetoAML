@@ -27,7 +27,7 @@
         }
 
         #login {
-            color: black;
+          
             text-align: center;
         }
 
@@ -86,12 +86,12 @@
                     </nav>
                 </div>
 
-                <div class="modal fade" id="loginMoldal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content px-3 py-3">
+                <div class="modal fade " id="loginMoldal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                    <div class="modal-dialog modal-sm ">
+                        <div class="modal-content px-3 py-3 laranja">
                             <div class="modalTitulo">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="login">Login</h4>
+                                <button type="button" class="text-branco close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="login" class=" text-branco"><u>Login</u></h4>
                             </div>
                             <div class="modal-body">
                                 <form class="formLogCli">
@@ -110,8 +110,8 @@
                                         <label class="returnFormLogCli"></label>
                                     </p>
                                 </form>
-                                <p class="text-center text-muted">
-                                    <a href="registrar.php" class="text-center text-muted">Inscreva sua ETEC</a>
+                                <p class="text-center  ">
+                                    <a href="registrar.php" class="text-center text-branco">Inscreva sua ETEC</a>
                                 </p>
 
 

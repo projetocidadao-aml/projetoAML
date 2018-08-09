@@ -50,14 +50,14 @@ require_once "superior.php" ;
 
 
                         <div class="modal fade" id="regulamentoModal" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content px-3 py-3">
+                            <div class="modal-dialog modal-desafio  modal-sm">
+                                <div class="modal-content px-3 py-3 laranja">
                                     <div class="modalTitulo">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="login">Regulamento</h4>
+                                        <button type="button" class="close text-branco" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-branco" id="login" ><u>Regulamento</u></h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p class="text-center text-muted" style="overflow:auto; height: 300px;">
+                                        <p class="text-center text-branco" style="overflow:auto; height: 300px;">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente incidunt odio. Non nihil tenetur recusandae eaque, ducimus veniam assumenda, quaerat qui atque, itaque aspernatur, ipsam corporis distinctio laborum quasi!
                                         </p>
 
@@ -83,17 +83,17 @@ require_once "superior.php" ;
 
                         <div class="modal fade" id="registroMoldal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
-                                <div class="modal-content px-3 py-3">
+                                <div class="modal-content px-3 py-3 laranja">
                                     <div class="modalTitulo">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="login">Registrado com sucesso</h4>
+                                        <button type="button" class="close text-branco" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title text-branco" id="login"><u>Registrado com sucesso</u></h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p class="text-center text-muted">
+                                        <p class="text-center text-branco">
                                             enviamos uma confirmação para seu email
                                         </p>
 
-                                        <p class="text-center text-muted">
+                                        <p class="text-center text-branco">
                                             user@email.com
                                         </p>
 

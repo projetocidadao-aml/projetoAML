@@ -16,12 +16,12 @@ body {
     float: left;
 }
 
-.text-branco{
-    color: #fff!important;
+.text-branco {
+    color: #fff !important;
 }
 
-.text-preto{
-    color: #000!important;
+.text-preto {
+    color: #000 !important;
 }
 
 /*
@@ -29,6 +29,11 @@ body{
     min-width:  400px;
 }
 */
+
+.activePag {
+    background: #5F259F;
+    color: #fff !important;
+}
 
 @font-face {
     font-family: LondonBetween;
@@ -59,7 +64,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #969595;
+    color: #fff;
 }
 
 .imgRedonda {
@@ -101,8 +106,15 @@ a:hover {
 }
 
 .cinza-claro {
-    background: rgba(197, 210, 219, 0.15);
+
+    background: #d5d8d6;
 }
+
+.cinza-claro2 {
+    background: rgba(150, 159, 170, 1);
+
+}
+
 
 .clear {
     clear: both;
@@ -114,6 +126,17 @@ a:hover {
 
 .footerMenu li {
     margin-right: 30px;
+    line-height: 80px;
+}
+
+footer p {
+    line-height: 80px;
+}
+
+.logoFooter {
+    margin-right: 30px;
+    margin-top: 13px;
+    line-height: 2px;
 }
 
 /*INDEX*/
@@ -130,8 +153,47 @@ a:hover {
     color: #fff;
 }
 
+/*card dos grupos da page index.php*/
 
+.testPTColorWhite {
+    color: white;
+}
 
+.testPTbuton {
+    border: 1px solid #5F259F;
+    background-color: white;
+    color: #723eae;
+}
+
+.testPTbuton:hover {
+    background-color: #5F259F;
+    border: 1px solid white;
+    color: white;
+}
+
+.testPTpagecolor {
+    color: #5F259F;
+    border: 1px solid #5F259F;
+}
+
+.testPTpagecolor:hover {
+    color: white;
+    background-color: #5F259F;
+}
+
+/*fim*/
+
+/*cores dos perfis e Grupos*/
+
+.testePTColororange {
+    background-color: #ff7400 !important;
+}
+
+.testePTColorgray {
+    background-color: #d5d8d6;
+}
+
+/*fim*/
 
 .modal {
     text-align: center;
@@ -143,7 +205,7 @@ a:hover {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -4px;
+   
 }
 
 .modal-dialog {
@@ -152,6 +214,25 @@ a:hover {
     vertical-align: middle;
 }
 
+.modal-desafio {
+    max-width: 700px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-desafio label,
+.modal-desafio input,
+.modal-desafio textarea {
+    width: 100%;
+}
+
+.modal-regulamento{
+     max-width: 700px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
 
 #container {
     position: absolute;
@@ -203,6 +284,8 @@ textarea {
 .avatarMensagem img {
     width: 60%;
 }
+
+
 
 .nomeAvatarMensagem {
     width: 80%;
@@ -412,7 +495,8 @@ textarea {
 }
 
 
-.cover.perfil .cover-info .name {
+
+.cover.perfil .cover-info .nome {
     position: absolute;
     left: 155px;
     bottom: 0px;
@@ -421,8 +505,40 @@ textarea {
     z-index: 3;
 }
 
-.name a {
+
+.nome a {
     color: #fff;
+}
+
+
+.nome-grupo {
+    position: absolute;
+    left: 90px;
+    bottom: 0px;
+    margin-bottom: 80px;
+    display: block;
+    z-index: 3;
+}
+
+.nome-grupo a {
+    color: #fff;
+}
+
+
+.cover-nav-grupo {
+    position: absolute;
+    bottom: 0;
+    left: 74px;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.cover-nav-grupo li {
+    margin-right: 20px;
 }
 
 .cover.perfil .cover-info .avatar img {
@@ -454,18 +570,33 @@ img {
     margin-right: 20px;
 }
 
+.nome {
+    font-size: 26px;
+}
+
+.nome-grupo {
+    font-size: 26px;
+}
+
 
 /*REGISTRAR*/
+
+
+.testPTcolorConcordo:hover {
+    color: #5F259F !important;
+}
+
+/*fim*/
 
 .titulo {
     margin: 78px auto 20px auto;
 }
 
-.titulo1{
+.titulo1 {
     font-size: 60px;
 }
 
-.titulo2{
+.titulo2 {
     font-size: 45px;
 }
 
@@ -519,14 +650,14 @@ img {
 
 
 
-.menu ul li{
+.menu ul li {
     margin-top: 16px;
 }
 
 
 
 
-.logo img{
+.logo img {
     width: 90%;
 }
 
@@ -538,79 +669,99 @@ img {
     display: block;
 }
 
- #menu ul li{
-         text-align: right;
-     }
+#menu ul li {
+    text-align: right;
+}
 
 #menu ul {
-         margin-left: auto;
-     }
+    margin-left: auto;
+}
 
 
-@media(max-width: 1024px){
-     body{
-/*         background: green;*/
-     }
-    
-      #menu ul li{
-         text-align: left;
-     }
- 
+@media(max-width: 1024px) {
+    body {
+        /*         background: green;*/
+    }
+
+    #menu ul li {
+        text-align: left;
+    }
+
 }
 
 
 @media (max-width:992px) {
-    body{
-/*        background: black;*/
+    body {
+        /*        background: black;*/
     }
-     #menu{
-   border-top:  3px solid #753ab7;;
-}
-    
+    #menu {
+        border-top: 3px solid #753ab7;
+        ;
+    }
+
 }
 
 
 @media (max-width: 768px) {
-     body{
-/*         background: blue;*/
-     }
+    body {
+        /*         background: blue;*/
+    }
     .carousel-item h4 {
-         font-size: 24px;
-     }
+        font-size: 24px;
+    }
     
+  
+
+  .footerMenu {
+        float: none !important;
+        text-align: center;
+    }
+
+    .footerMenu li {
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    footer p {
+        float: none !important;
+        line-height: 0px;
+        font-size: 10px;
+        text-align: center;
+
+        background: red;
+    }
+    .logoFooter {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    body {
+        /*         background: red;*/
+    }
+
     
-     
-   
-}
 
- @media (max-width: 500px){
-     body{
-/*         background: red;*/
-     }
-     
-     .footerMenu{
-         float: none;
-         text-align: center;
-     }
-     
-     .carousel-item h4 {
-         font-size: 20px;
-     }
-     
-     .menu ul li{
-    margin-top: 0px;
-}
+    .carousel-item h4 {
+        font-size: 20px;
+    }
 
-        .titulo1{
-    font-size: 40px;
-}
+    .menu ul li {
+        margin-top: 0px;
+    }
 
-.titulo2{
-    font-size: 30px;
-}
-     .cover-nav li {
-    margin-right: 16px;
-} 
-   
+    .titulo1 {
+        font-size: 40px;
+    }
+
+    .titulo2 {
+        font-size: 30px;
+    }
+    .cover-nav li {
+        margin-right: 16px;
+    }
+  
 
 }
