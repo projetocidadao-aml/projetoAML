@@ -80,12 +80,22 @@
 
 <script>
 	function escreverText(texto){
-			const arrayTexto = texto.innerHTML.split('');
-			texto.innerHTML = '';
-			arrayTexto.forEach((letra, i) => {
-				setTimeout(() => texto.innerHTML += letra, 100 * i);
-			});
-		}
-		const textoInterativo = document.querySelector('#headerIndex');
+		const arrayTexto = texto.innerHTML.split('');
+		texto.innerHTML = '';
+		arrayTexto.forEach((letra, i) => {
+			setTimeout(() => texto.innerHTML += letra, 100 * i);
+		});
+	}
+	const textoInterativo = document.querySelector('#headerIndex');
+
+
+	setTimeout(function recursivity() {
 		escreverText(textoInterativo);
+
+		setTimeout(recursivity, 15000);
+	}, 10000);
+	escreverText(textoInterativo);
+
+
+
 </script>

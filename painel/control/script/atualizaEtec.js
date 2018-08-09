@@ -10,7 +10,6 @@ $(document).ready(function(){
 			diretorEtec: diretor, responsavelEtec: responsavel
 		},
 		function(data){
-			alert(data);
 			if(data == 'true'){
 				parar();
 				swal({

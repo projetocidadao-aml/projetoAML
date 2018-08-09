@@ -28,13 +28,22 @@ include 'control/router.class.php';
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="dist/img/icons/ms-icon-144x144.png">
 
-
+	
 	<meta name="theme-color" content="#5F259F">
-
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function () {
+			$('.table').DataTable();
+		} );
+
+	</script>
 </head>
 
 <body>
@@ -95,4 +104,6 @@ include 'control/router.class.php';
 		</div>
 	</footer>
 </body>
+
+
 </html>
