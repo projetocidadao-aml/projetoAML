@@ -60,14 +60,15 @@
 				<p>Digite o email que está cadastrado para recriar a sua senha.</p>
 				<form class="aml-form-esqueci">
 					<div class="form-group">
-						<input type="text" class="form-control" name="emailSenha" placeholder="Email">
+						<input type="text" class="form-control" id="inputEmail" name="emailSenha" placeholder="Email">
 					</div>
 
-
-					<input type="submit" class="btn btn-secondary" value="Enviar">
-
 					<label class="returnFormLogCli"></label>
+
+
 				</form>
+				<button class="btn btn-secondary" id="btnSenha">Enviar</button>
+
 			</div>
 		</div>
 	</div>
@@ -96,6 +97,31 @@
 	}, 10000);
 	escreverText(textoInterativo);
 
+// ---------------------------------------------------------------------------------------------------
 
+$("#btnSenha").click(function(){
+	
+	var email = $("#inputEmail").val();
+	$.ajax({url: "./control/esqueciSenha.php?email="+email, success: function(response){
+
+		if(response == "Erro ao enviar o Email."){
+			swal({
+				title: "Erro ao Enviar Email.",
+				text: "Não foi encontrado o email ou não foi possível enviar o email.",
+				icon: "error",
+			});
+		}
+
+		else{
+			swal({
+				title: "Envio com Sucesso.",
+				text: "Foi enviado o seu login e senha para o email "+email,
+				icon: "success",
+			});
+		}
+
+	}});
+
+});
 
 </script>
