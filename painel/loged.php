@@ -97,10 +97,10 @@ $dalGeral = new dalGeral();
 		<div class="container">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Contato</a>
+					<a class="nav-link" href="index.php?page=contato">Contato</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Privacidade</a>
+					<a class="nav-link" href="index.php?page=privacidade">Privacidade</a>
 				</li>
 			</ul>
 		</div>

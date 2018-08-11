@@ -3,7 +3,9 @@ include("model/grupo.class.php");
 class grupo{
     public $id;
     function __construct(){
-        $this->id = $_GET['id'];
+        // $this->id = $_GET['id'];
+        $this->id = $_SESSION['idUser'];
+        
     }
     function listaGrupos(){
         $grupoModel = new grupoModel();
