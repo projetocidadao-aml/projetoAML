@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 
     <style>
         a {
@@ -71,7 +71,7 @@
                 <div class="col-md-6 ">
                     <ul class="menu">
                         <li><a href="index.php">HOME</a></li>
-                        <li><a href="regulamento.php">REGULAMENTO</a></li>
+                        <li><a href="index.php?page=regulamento">REGULAMENTO</a></li>
                         <li class="caixaLogin"><a href="#" data-toggle="modal" data-target="#loginMoldal">LOGIN</a></li>
 
                     </ul>
@@ -105,7 +105,7 @@
                                 </p>
                             </form>
                             <p class="text-center text-muted">
-                                <a href="registrar.php" class="text-center text-muted">Inscreva sua ETEC</a>
+                                <a href="index.php?page=registrar" class="text-center text-muted">Inscreva sua ETEC</a>
                             </p>
 
 
@@ -191,8 +191,8 @@
             <div class="col-sm-12 col-md-12  text-branco">
 
                 <ul class="footerMenu">
-                    <li><a href="privacidade.php">Privacidade</a></li>
-                    <li><a href="contato.php">Contato</a></li>
+                    <li><a href="index.php?page=privacidade">Privacidade</a></li>
+                    <li><a href="index.php?page=contato">Contato</a></li>
                 </ul>
             </div>
 
