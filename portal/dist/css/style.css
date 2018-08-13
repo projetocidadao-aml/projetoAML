@@ -2,34 +2,6 @@ body {
     background: rgba(235, 225, 225, 0.19);
 }
 
-.btn-primary {
-    background: #5F259F !important;
-}
-
-.float-right {
-
-    float: right;
-}
-
-.float-left {
-
-    float: left;
-}
-
-.text-branco{
-    color: #fff!important;
-}
-
-.text-preto{
-    color: #000!important;
-}
-
-/*
-body{
-    min-width:  400px;
-}
-*/
-
 @font-face {
     font-family: LondonBetween;
     src: url(fonts/LondonBetween.ttf);
@@ -59,7 +31,39 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #969595;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #5F259F !important;
+}
+
+.float-right {
+
+    float: right;
+}
+
+.float-left {
+
+    float: left;
+}
+
+.text-branco {
+    color: #fff !important;
+}
+
+.text-preto {
+    color: #000 !important;
+}
+
+.esconder {
+    display: none !important;
+    visibility: 0 !important;
+}
+
+.activePag {
+    background: #5F259F;
+    color: #fff !important;
 }
 
 .imgRedonda {
@@ -89,7 +93,8 @@ a:hover {
 }
 
 .laranja {
-    background: #FE5000;
+    /*    background: #FE5000;*/
+    background: rgb(233, 152, 71);
 }
 
 .roxo {
@@ -101,117 +106,37 @@ a:hover {
 }
 
 .cinza-claro {
-    background: rgba(197, 210, 219, 0.15);
+
+    background: #d5d8d6;
+}
+
+.cinza-claro2 {
+    background: rgba(150, 159, 170, 1);
+
 }
 
 .clear {
     clear: both;
 }
 
-.footerMenu {
-    float: left;
-}
-
-.footerMenu li {
-    margin-right: 30px;
-}
-
-/*INDEX*/
-
-#topo {
-    background: #5F259F;
-    font-size: 14px;
-    text-align: right;
-    padding: 5px 0;
-    color: #fff;
-}
-
-#topo a {
-    color: #fff;
-}
-
-/*card dos grupos da page index.php*/
-.testPTColorWhite{
-    color: white;
-}
-.testPTbuton{
-    border: 1px solid #5F259F;
-    background-color: white;
-    color: #723eae;
-}
-.testPTbuton:hover{
-    background-color: #5F259F;
-    border: 1px solid white;
-    color: white;
-}
-.testPTpagecolor{
-    color: #5F259F;
-    border: 1px solid #5F259F;
-}
-.testPTpagecolor:hover{
-    color: white;
-    background-color: #5F259F;
-}
-/*fim*/
-
-/*cores dos perfis e Grupos*/
-.testePTColororange{
-   background-color: #ff7400 !important;
-}
-.testePTColorgray{
-    background-color: #d5d8d6;
-}
-/*fim*/
-
-.modal {
-    text-align: center;
-    padding: 0 !important;
-}
-
-.modal:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -4px;
-}
-
-.modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-}
 
 
-#container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: #eee;
-    display: block;
-}
 
-#teste {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: #eee;
-    background-image: url('../img/load.gif');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 999;
-}
+/**************************************************INDEX*****************************************************************************************/
 
 .carousel-caption h4 {
     font-size: 50px;
 }
 
-/*PAGINA USUARIO*/
+/**************************************************ALUNO(USUARIO)*****************************************************************************************/
+
+.responder {
+    cursor: pointer;
+}
+
+.responderMsg {
+    display: none;
+}
 
 textarea {
     color: #999;
@@ -233,6 +158,8 @@ textarea {
 .avatarMensagem img {
     width: 60%;
 }
+
+
 
 .nomeAvatarMensagem {
     width: 80%;
@@ -371,8 +298,6 @@ textarea {
 
 }
 
-
-
 .imgCracha {
     text-align: center;
 
@@ -386,7 +311,6 @@ textarea {
 .subir {
     top: -40px;
     z-index: -1;
-
 }
 
 .paddingCracha {
@@ -402,7 +326,6 @@ textarea {
     position: relative;
     background: #ffffff;
     border-bottom: 1px solid #e2e9e6;
-
 }
 
 .cover {
@@ -423,14 +346,10 @@ textarea {
     width: 100%;
 }
 
-
-
-
 .cover.perfil .cover-info {
     position: relative;
     height: 57px;
 }
-
 
 .cover.perfil .cover-info .avatar {
     position: absolute;
@@ -442,7 +361,8 @@ textarea {
 }
 
 
-.cover.perfil .cover-info .name {
+
+.cover.perfil .cover-info .nome {
     position: absolute;
     left: 155px;
     bottom: 0px;
@@ -451,8 +371,37 @@ textarea {
     z-index: 3;
 }
 
-.name a {
+.nome a {
     color: #fff;
+}
+
+.nome-grupo {
+    position: absolute;
+    left: 90px;
+    bottom: 0px;
+    margin-bottom: 80px;
+    display: block;
+    z-index: 3;
+}
+
+.nome-grupo a {
+    color: #fff;
+}
+
+.cover-nav-grupo {
+    position: absolute;
+    bottom: 0;
+    left: 74px;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.cover-nav-grupo li {
+    margin-right: 20px;
 }
 
 .cover.perfil .cover-info .avatar img {
@@ -460,8 +409,6 @@ textarea {
     height: 110px;
     border-radius: 50%;
     border: 3px solid #fff;
-
-
 }
 
 img {
@@ -484,39 +431,74 @@ img {
     margin-right: 20px;
 }
 
+.nome {
+    font-size: 26px;
+}
 
-/*REGISTRAR*/
+.nome-grupo {
+    font-size: 26px;
+}
 
 
-/*modal concordo não concordo*/
-.testPTcolorConcordo:hover{
+
+/**************************************************CADASTRO FINAL*****************************************************************************************/
+
+.olhoSenha {
+    width: 30px;
+    cursor: pointer;
+    top: -34px;
+    position: relative;
+
+    float: right;
+    margin-right: 10px;
+}
+
+
+.olhoConfirmaSenha {
+    width: 30px;
+    cursor: pointer;
+    top: -34px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
+.testPTcolorConcordo:hover {
     color: #5F259F !important;
 }
-/*fim*/
+
+/**************************************************CRIAR GRUPO*****************************************************************************************/
+
+.caixaAddIntegrantes {
+    margin-bottom: 0;
+    margin-top: 0.6rem;
+    height: 40px;
+    padding-left: 10px !important;
+}
+
+.bordaAddIntegrante {
+    border-radius: 8px;
+    background: #ccc;
+    overflow: hidden;
+    padding: 5px 5px;
+    width: 76%;
+}
+
+.bordaAddIntegrante p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
 
 .titulo {
     margin: 78px auto 20px auto;
 }
 
-.titulo1{
+.titulo1 {
     font-size: 60px;
 }
 
-.titulo2{
+.titulo2 {
     font-size: 45px;
-}
-
-.caixaRegistrar {
-    width: 70%;
-    margin: 25px auto;
-}
-
-.caixaRegistrar label {
-    display: block;
-}
-
-.caixaRegistrar input {
-    width: 90%;
 }
 
 .caixaRegistrar span {
@@ -555,99 +537,359 @@ img {
 }
 
 
+/**************************************************DESAFIOS****************************************************************************************/
 
-.menu ul li{
+
+.play {
+    cursor: pointer;
+    top: 10px;
+    position: absolute;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 32%;
+    opacity: 0.9;
+}
+
+
+.play:hover {
+   
+    
+    opacity: 0.5;
+}
+
+.videoPlayDesafio A DIV {
+    visibility: visible;
+    background: rgba(0, 0, 0, .8);
+}
+
+.videoPlayDesafio A:hover DIV {
+    visibility: hidden;
+}
+
+.videoPlayDesafio A:hover {
+    border: 1px solid #F00;
+}
+
+#mPlayer {
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    left: 0;
+    top: 0;
+}
+
+#mPlayer DIV {
+    position: fixed;
+    background: #000;
+    width: 560px;
+    height: 315px;
+    left: calc(50vw - 280px);
+    top: calc(50vh - 157px);
+}
+
+.curtir {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.curtirAtivo {
+    color: #db0fbc !important;
+    cursor: pointer;
+}
+
+.avatarPequeno img {
+    width: 80%;
+    right: 0;
+    border-radius: 50%;
+}
+
+.justificarTexto p {
+    text-align: justify;
+}
+
+.tirarMargenLeft {
+    padding-left: 0px !important;
+}
+
+.nomeEtec {
+    font-size: 14px;
+}
+
+/**************************************************SUPERIOR****************************************************************************************/
+
+#topo {
+    background: #5F259F;
+    font-size: 14px;
+    text-align: right;
+    padding: 5px 0;
+    color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+#topo a {
+    color: #fff;
+}
+
+#login {
+
+    text-align: center;
+}
+
+.caixaLogin {
+    background: rgb(233, 152, 71);
+    padding: 0px;
+
+}
+
+.menu li {
+    margin-left: 20px;
+
+}
+
+.menuTopo {
+    padding: 0 !important;
+}
+
+
+.testPTColorWhite {
+    color: white;
+}
+
+.testPTbuton {
+    border: 1px solid #5F259F;
+    background-color: white;
+    color: #723eae;
+}
+
+.testPTbuton:hover {
+    background-color: #5F259F;
+    border: 1px solid white;
+    color: white;
+}
+
+.testPTpagecolor {
+    color: #5F259F;
+    border: 1px solid #5F259F;
+}
+
+.testPTpagecolor:hover {
+    color: white;
+    background-color: #5F259F;
+}
+
+/**************************************************INFERIOR****************************************************************************************/
+
+.footerMenu {
+    float: left;
+}
+
+.footerMenu li {
+    margin-right: 30px;
+    line-height: 80px;
+}
+
+footer p {
+    line-height: 80px;
+}
+
+.logoFooter {
+    margin-right: 30px;
+    margin-top: 13px;
+    line-height: 2px;
+    width: 150px;
+}
+
+
+/**************************************************PRIVACIDADE****************************************************************************************/
+
+/**************************************************REGULAMENTO****************************************************************************************/
+
+/*cores dos perfis e Grupos*/
+
+.testePTColororange {
+    background-color: #ff7400 !important;
+}
+
+.testePTColorgray {
+    background-color: #d5d8d6;
+}
+
+/*fim*/
+
+/**************************************************MODAL****************************************************************************************/
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-desafio {
+    max-width: 700px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-desafio label,
+.modal-desafio input,
+.modal-desafio textarea {
+    width: 100%;
+}
+
+.modal-regulamento {
+    max-width: 700px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #eee;
+    display: block;
+}
+
+#teste {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #eee;
+    background-image: url('../img/load.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.menu ul li {
     margin-top: 16px;
 }
 
-
-
-
-.logo img{
-    width: 90%;
+.logo img {
+    width: 150px;
+    padding: 5px;
+    vertical-align: middle;
+    border-style: none;
 }
 
-
-
 /*grupo*/
+
+.videoInserir {
+    cursor: pointer;
+}
+
+.fotoInserir {
+    cursor: pointer;
+}
 
 .integrantes li {
     display: block;
 }
 
- #menu ul li{
-         text-align: right;
-     }
+#menu ul li {
+    text-align: right;
+}
 
 #menu ul {
-         margin-left: auto;
-     }
-
-
-@media(max-width: 1024px){
-     body{
-/*         background: green;*/
-     }
-    
-      #menu ul li{
-         text-align: left;
-     }
- 
+    margin-left: auto;
 }
 
+
+/**************************************************1024px****************************************************************************************/
+
+@media(max-width: 1024px) {
+    #menu ul li {
+        text-align: left;
+        z-index: 999;
+    }
+}
+
+/**************************************************992px****************************************************************************************/
 
 @media (max-width:992px) {
-    body{
-/*        background: black;*/
+    .caixaLogin {
+        background: rgba(0, 0, 0, 0);
     }
-     #menu{
-   border-top:  3px solid #753ab7;;
-}
-    
-}
+    #menu {
+        border-top: 3px solid #753ab7;
+        ;
+    }
+    #menu {
+        z-index: 999;
+        overflow: hidden;
+        width: 100%;
+    }
 
+    /**************************************************768px****************************************************************************************/
+    @media (max-width: 768px) {
+        .carousel-item h4 {
+            font-size: 24px;
+        }
+        .footerMenu {
+            float: none !important;
+            text-align: center;
+        }
 
-@media (max-width: 768px) {
-     body{
-/*         background: blue;*/
-     }
-    .carousel-item h4 {
-         font-size: 24px;
-     }
-    
-    
-     
-   
-}
+        .footerMenu li {
+            margin-right: 30px;
+            text-align: center;
+        }
 
- @media (max-width: 500px){
-     body{
-/*         background: red;*/
-     }
-     
-     .footerMenu{
-         float: none;
-         text-align: center;
-     }
-     
-     .carousel-item h4 {
-         font-size: 20px;
-     }
-     
-     .menu ul li{
-    margin-top: 0px;
-}
+        footer p {
+            float: none !important;
+            line-height: 0px;
+            font-size: 10px;
+            text-align: center;
 
-        .titulo1{
-    font-size: 40px;
-}
+            background: red;
+        }
+        .logoFooter {
+            display: none;
+        }
+    }
 
-.titulo2{
-    font-size: 30px;
-}
-     .cover-nav li {
-    margin-right: 16px;
-} 
-   
+    /**************************************************500px****************************************************************************************/
+    @media (max-width: 500px) {
+        .carousel-item h4 {
+            font-size: 20px;
+        }
 
-}
+        .menu ul li {
+            margin-top: 0px;
+        }
+
+        .titulo1 {
+            font-size: 40px;
+        }
+
+        .titulo2 {
+            font-size: 30px;
+        }
+        .cover-nav li {
+            margin-right: 16px;
+        }
+    }
