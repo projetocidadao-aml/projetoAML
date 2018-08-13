@@ -1,4 +1,7 @@
-
+<?php
+    include 'control/capturaDesafios.class.php';
+	$desafio = new desafioControl();
+?>
 <div class="container">
 	<div class="row">
 		<div class="col-12">
@@ -13,7 +16,7 @@
 				<div class="col-12 p-4">
 					<h2 class="text-center text-secondary mb-5">Cadastro de Desafios</h2>
 
-					<form>
+					<form class="form-desafio">
 						<div class="form-row">
 							<div class="form-group col-md-8">
 								<label for="desafio_tema">Tema</label>
@@ -53,20 +56,7 @@
 
 							</thead>
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Combate a Homofobia</td>
-									<td>21/07/2018</td>
-									<td>Not Group</td>
-									<td><button class="btn btn-secondary" onclick="window.location.href = 'index.php?page=detalhamento_desafio'">Ver</button></td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Combate ao Preconceito</td>
-									<td>21/09/2018</td>
-									<td>Em Andamento</td>
-									<td><button class="btn btn-secondary" onclick="window.location.href = 'index.php?page=detalhamento_desafio'">Ver</button></td>
-								</tr>
+								<?php $desafio->capturaDados() ?>
 							</tbody>
 						</table>
 					</div>
@@ -83,6 +73,10 @@
 
 </div>
 </div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="dist/js/jquery.blockUI.js"></script>
+<script src="dist/js/ajaxLoading.js"></script>
+<script src="control/script/desafio.js"></script>
 <!-- Container -->
 
 

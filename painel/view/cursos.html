@@ -1,4 +1,7 @@
-
+<?php 
+	include 'control/capturaCurso.class.php';
+	$cursos = new cursoControl() 
+?>
 <div class="container">
 	<div class="row">
 		<div class="col-12">
@@ -24,7 +27,7 @@
 				<div class="col-12 p-4">
 					<h2 class="text-center text-secondary mb-5">Cadastro de Cursos</h2>
 
-					<form>
+					<form class="form-cadastra-curso" action="#">
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="cursos_nome_curso">Curso</label>
@@ -34,6 +37,9 @@
 								<label for="cursos_duracao_curso">Duração</label>
 								<select class="form-control" id="cursos_duracao_curso" name="cursos_duracao_curso" required>
 									<option>Selecione...</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
 								</select>
 							</div>
 
@@ -56,18 +62,7 @@
 								<th>Ações</th>
 							</thead>
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Informática para Internet</td>
-									<td>3 Semestres</td>
-									<td><button class="btn btn-secondary">Alterar</button></td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Logística</td>
-									<td>3 Semestres</td>
-									<td><button class="btn btn-secondary">Alterar</button></td>
-								</tr>
+								<?php $cursos->capturaDados(); ?>
 							</tbody>
 						</table>
 					</div>
@@ -141,6 +136,10 @@
 
 </div>
 </div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="dist/js/jquery.blockUI.js"></script>
+<script src="dist/js/ajaxLoading.js"></script>
+<script src="control/script/cadastraCurso.js"></script>
 <!-- Container -->
 
 

@@ -1,5 +1,6 @@
 <?php
 include('../model/cadastroPessoa.class.php');
+include('../model/pessoa.class.php');
 
 class Pessoa{
     public $nome;
@@ -42,16 +43,8 @@ class Pessoa{
         $this->protocolo = $_POST['cad_pessoa_protocolo'];
         $this->observacoes = $_POST['cad_pessoa_obs'];
         $this->idperfil = $_POST['cad_pessoa_perfil'];
-        $this->prenome = $_POST['preCad_pessoa_nome'];
-        $this->preemail = $_POST['preCad_pessoa_email'];
-        $this->preperfil = $_POST['preCad_pessoa_perfil'];
-        $this->preobs = $_POST['preCad_pessoa_obs'];
-        $this->curso = $_POST['upload_nome_curso'];
-        $this->semestrecurso = $_POST['upload_semestre_curso'];
-        $this->cursoupload = $_POST['upload_lista_pessoas'];
-        $this->buscapessoa = $_POST['busca_pessoa_nome'];
-        $this->buscapessoacurso= $_POST['busca_pessoa_curso'];
-        new capturaDadosP($this->nome, $this->email, $this->apelido, $this->usuario, $this->senha, $this->cpf, $this->email, $this->celular, $this->descperfil, $this->status, $this->protocolo,$this->observacoes,$this->idperfil,$this->prenome,$this->preemail,$this->preperfil,$this->preobs,$this->curso,$this->semestrecurso,$this->cursoupload,$this->buscapessoa,$this->buscapessoacurso);
+        new cadastraPessoa($this->nome, $this->email, $this->apelido, $this->usuario, $this->senha, $this->cpf, $this->email, $this->celular, $this->descperfil, $this->status, $this->protocolo,$this->observacoes,$this->idperfil,$this->prenome,$this->preemail,$this->preperfil,$this->preobs,$this->curso,$this->semestrecurso,$this->cursoupload,$this->buscapessoa,$this->buscapessoacurso);
+        
     }
 }
 new Pessoa();
