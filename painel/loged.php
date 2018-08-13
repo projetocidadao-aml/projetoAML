@@ -30,13 +30,22 @@ $dalGeral = new dalGeral();
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="dist/img/icons/ms-icon-144x144.png">
 
-
+	
 	<meta name="theme-color" content="#5F259F">
-
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function () {
+			$('.table').DataTable();
+		} );
+
+	</script>
 </head>
 
 <body>
@@ -68,9 +77,9 @@ $dalGeral = new dalGeral();
 						<a class="nav-link" href="index.php?page=desafio">Desafios</a>
 					</li>
 					
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="#">Relatórios</a>
-					</li>
+					</li> -->
 
 					<li class="nav-item">
 						<a class="nav-link" href="control/deslogar.php">Sair</a>
@@ -88,13 +97,15 @@ $dalGeral = new dalGeral();
 		<div class="container">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Contato</a>
+					<a class="nav-link" href="index.php?page=contato">Contato</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Privacidade</a>
+					<a class="nav-link" href="index.php?page=privacidade">Privacidade</a>
 				</li>
 			</ul>
 		</div>
 	</footer>
 </body>
+
+
 </html>

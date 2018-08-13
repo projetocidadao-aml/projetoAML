@@ -1,0 +1,895 @@
+body {
+    background: rgba(235, 225, 225, 0.19);
+}
+
+@font-face {
+    font-family: LondonBetween;
+    src: url(fonts/LondonBetween.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: myFirstFont;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #5F259F !important;
+}
+
+.float-right {
+
+    float: right;
+}
+
+.float-left {
+
+    float: left;
+}
+
+.text-branco {
+    color: #fff !important;
+}
+
+.text-preto {
+    color: #000 !important;
+}
+
+.esconder {
+    display: none !important;
+    visibility: 0 !important;
+}
+
+.activePag {
+    background: #5F259F;
+    color: #fff !important;
+}
+
+.imgRedonda {
+    background: rgba(153, 153, 153, 0.53);
+    padding: 5px;
+
+}
+
+.tirarBorda {
+    border: 0 !important;
+}
+
+.circuloIndex {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.tirarBorda img {
+    width: 60%;
+}
+
+.tirar_margin_row {
+
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.laranja {
+    /*    background: #FE5000;*/
+    background: rgb(233, 152, 71);
+}
+
+.roxo {
+    background: #5F259F;
+}
+
+.cinza {
+    background: #425563;
+}
+
+.cinza-claro {
+
+    background: #d5d8d6;
+}
+
+.cinza-claro2 {
+    background: rgba(150, 159, 170, 1);
+
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
+/**************************************************INDEX*****************************************************************************************/
+
+.carousel-caption h4 {
+    font-size: 50px;
+}
+
+/**************************************************ALUNO(USUARIO)*****************************************************************************************/
+
+.responder {
+    cursor: pointer;
+}
+
+.responderMsg {
+    display: none;
+}
+
+textarea {
+    color: #999;
+    resize: none;
+}
+
+.mensagem {
+    width: 100%;
+    border-top: 4px solid #000;
+}
+
+.avatarMensagem {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.avatarMensagem img {
+    width: 60%;
+}
+
+
+
+.nomeAvatarMensagem {
+    width: 80%;
+    float: left;
+    margin-top: 40px;
+}
+
+.post img {
+    width: 100%;
+}
+
+.botaoMensagem {
+    width: 100%;
+    float: left;
+    padding: 10px 10px 0 10px;
+}
+
+.botaoMensagem p {
+    float: right;
+}
+
+.fotoPost img {
+    width: 100%;
+    height: 400px;
+}
+
+.fazerPostMensagem textarea {
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    height: 100px;
+}
+
+.fazerPost {
+
+    padding: 5px;
+}
+
+
+
+.fazerPost input {
+    float: right;
+}
+
+
+.fazerPostVidImg,
+.fazerPostBotao {
+    width: 50%;
+    float: left;
+}
+
+.fazerPostVidImg li {
+    font-size: 20px;
+    margin-right: 30px;
+    color: #999;
+}
+
+.mensagemPost {
+    width: 100%;
+}
+
+.avatarMensagemPost {
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 30px;
+}
+
+.avatarMensagemPost img {
+    width: 100%;
+
+}
+
+.nomeAvatarMensagem {
+    width: 80%;
+    float: left;
+}
+
+
+.mensagemPostResposta {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.avatarMensagemPostResposta {
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 30px;
+}
+
+.avatarMensagemPostResposta img {
+    width: 100%;
+
+}
+
+.nomeAvatarMensagemResposta {
+    margin-top: 30px;
+    width: 80%;
+    float: left;
+}
+
+.respondaMensagem {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.avatarResponda {
+    width: 25%;
+
+    text-align: center;
+    float: left;
+
+}
+
+.avatarResponda img {
+    width: 50%;
+
+}
+
+.respondaMensagemInput {
+    width: 55%;
+    float: left;
+    margin-top: 30px;
+}
+
+.respondaMensagemInput input {
+    width: 100%;
+    height: 38px;
+}
+
+.respondaMensagemBotao {
+    width: 20%;
+    float: left;
+    margin-top: 30px;
+
+}
+
+.imgCracha {
+    text-align: center;
+
+}
+
+.imgCracha img {
+    width: 70%;
+
+}
+
+.subir {
+    top: -40px;
+    z-index: -1;
+}
+
+.paddingCracha {
+    padding-top: 70px;
+}
+
+.dataEtapas {
+    float: right;
+}
+
+
+.cover.perfil {
+    position: relative;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e9e6;
+}
+
+.cover {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.cover.perfil .wrapper {
+    position: relative;
+    overflow: hidden;
+    max-height: 250px;
+    border-bottom: 1px solid #e2e9e6;
+}
+
+.image {
+    width: 100%;
+}
+
+.cover.perfil .cover-info {
+    position: relative;
+    height: 57px;
+}
+
+.cover.perfil .cover-info .avatar {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    margin-bottom: 5px;
+    left: 30px;
+    z-index: 4;
+}
+
+
+
+.cover.perfil .cover-info .nome {
+    position: absolute;
+    left: 155px;
+    bottom: 0px;
+    margin-bottom: 80px;
+    display: block;
+    z-index: 3;
+}
+
+.nome a {
+    color: #fff;
+}
+
+.nome-grupo {
+    position: absolute;
+    left: 90px;
+    bottom: 0px;
+    margin-bottom: 80px;
+    display: block;
+    z-index: 3;
+}
+
+.nome-grupo a {
+    color: #fff;
+}
+
+.cover-nav-grupo {
+    position: absolute;
+    bottom: 0;
+    left: 74px;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.cover-nav-grupo li {
+    margin-right: 20px;
+}
+
+.cover.perfil .cover-info .avatar img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.cover.perfil .cover-info .cover-nav {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.cover-nav li {
+    margin-right: 20px;
+}
+
+.nome {
+    font-size: 26px;
+}
+
+.nome-grupo {
+    font-size: 26px;
+}
+
+
+
+/**************************************************CADASTRO FINAL*****************************************************************************************/
+
+.olhoSenha {
+    width: 30px;
+    cursor: pointer;
+    top: -34px;
+    position: relative;
+
+    float: right;
+    margin-right: 10px;
+}
+
+
+.olhoConfirmaSenha {
+    width: 30px;
+    cursor: pointer;
+    top: -34px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
+.testPTcolorConcordo:hover {
+    color: #5F259F !important;
+}
+
+/**************************************************CRIAR GRUPO*****************************************************************************************/
+
+.caixaAddIntegrantes {
+    margin-bottom: 0;
+    margin-top: 0.6rem;
+    height: 40px;
+    padding-left: 10px !important;
+}
+
+.bordaAddIntegrante {
+    border-radius: 8px;
+    background: #ccc;
+    overflow: hidden;
+    padding: 5px 5px;
+    width: 76%;
+}
+
+.bordaAddIntegrante p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.titulo {
+    margin: 78px auto 20px auto;
+}
+
+.titulo1 {
+    font-size: 60px;
+}
+
+.titulo2 {
+    font-size: 45px;
+}
+
+.caixaRegistrar span {
+    width: 10%;
+    float: right;
+
+    text-align: center;
+}
+
+.caixaRegistrar p {
+    text-align: center;
+}
+
+.caixaRegistrarCkb {
+    width: 70%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.caixaRegistrarCkb input {
+    margin-right: 20px;
+}
+
+.caixaRegistrarCkb p {
+
+    width: 100%;
+}
+
+
+.caixaRegistrarBotao {
+    width: 80%;
+}
+
+.caixaRegistrarBotao input {
+    float: right;
+}
+
+
+/**************************************************DESAFIOS****************************************************************************************/
+
+
+.play {
+    cursor: pointer;
+    top: 10px;
+    position: absolute;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 32%;
+    opacity: 0.9;
+}
+
+
+.play:hover {
+   
+    
+    opacity: 0.5;
+}
+
+.videoPlayDesafio A DIV {
+    visibility: visible;
+    background: rgba(0, 0, 0, .8);
+}
+
+.videoPlayDesafio A:hover DIV {
+    visibility: hidden;
+}
+
+.videoPlayDesafio A:hover {
+    border: 1px solid #F00;
+}
+
+#mPlayer {
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    left: 0;
+    top: 0;
+}
+
+#mPlayer DIV {
+    position: fixed;
+    background: #000;
+    width: 560px;
+    height: 315px;
+    left: calc(50vw - 280px);
+    top: calc(50vh - 157px);
+}
+
+.curtir {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.curtirAtivo {
+    color: #db0fbc !important;
+    cursor: pointer;
+}
+
+.avatarPequeno img {
+    width: 80%;
+    right: 0;
+    border-radius: 50%;
+}
+
+.justificarTexto p {
+    text-align: justify;
+}
+
+.tirarMargenLeft {
+    padding-left: 0px !important;
+}
+
+.nomeEtec {
+    font-size: 14px;
+}
+
+/**************************************************SUPERIOR****************************************************************************************/
+
+#topo {
+    background: #5F259F;
+    font-size: 14px;
+    text-align: right;
+    padding: 5px 0;
+    color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+#topo a {
+    color: #fff;
+}
+
+#login {
+
+    text-align: center;
+}
+
+.caixaLogin {
+    background: rgb(233, 152, 71);
+    padding: 0px;
+
+}
+
+.menu li {
+    margin-left: 20px;
+
+}
+
+.menuTopo {
+    padding: 0 !important;
+}
+
+
+.testPTColorWhite {
+    color: white;
+}
+
+.testPTbuton {
+    border: 1px solid #5F259F;
+    background-color: white;
+    color: #723eae;
+}
+
+.testPTbuton:hover {
+    background-color: #5F259F;
+    border: 1px solid white;
+    color: white;
+}
+
+.testPTpagecolor {
+    color: #5F259F;
+    border: 1px solid #5F259F;
+}
+
+.testPTpagecolor:hover {
+    color: white;
+    background-color: #5F259F;
+}
+
+/**************************************************INFERIOR****************************************************************************************/
+
+.footerMenu {
+    float: left;
+}
+
+.footerMenu li {
+    margin-right: 30px;
+    line-height: 80px;
+}
+
+footer p {
+    line-height: 80px;
+}
+
+.logoFooter {
+    margin-right: 30px;
+    margin-top: 13px;
+    line-height: 2px;
+    width: 150px;
+}
+
+
+/**************************************************PRIVACIDADE****************************************************************************************/
+
+/**************************************************REGULAMENTO****************************************************************************************/
+
+/*cores dos perfis e Grupos*/
+
+.testePTColororange {
+    background-color: #ff7400 !important;
+}
+
+.testePTColorgray {
+    background-color: #d5d8d6;
+}
+
+/*fim*/
+
+/**************************************************MODAL****************************************************************************************/
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-desafio {
+    max-width: 700px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-desafio label,
+.modal-desafio input,
+.modal-desafio textarea {
+    width: 100%;
+}
+
+.modal-regulamento {
+    max-width: 700px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #eee;
+    display: block;
+}
+
+#teste {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #eee;
+    background-image: url('../img/load.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.menu ul li {
+    margin-top: 16px;
+}
+
+.logo img {
+    width: 150px;
+    padding: 5px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/*grupo*/
+
+.videoInserir {
+    cursor: pointer;
+}
+
+.fotoInserir {
+    cursor: pointer;
+}
+
+.integrantes li {
+    display: block;
+}
+
+#menu ul li {
+    text-align: right;
+}
+
+#menu ul {
+    margin-left: auto;
+}
+
+
+/**************************************************1024px****************************************************************************************/
+
+@media(max-width: 1024px) {
+    #menu ul li {
+        text-align: left;
+        z-index: 999;
+    }
+}
+
+/**************************************************992px****************************************************************************************/
+
+@media (max-width:992px) {
+    .caixaLogin {
+        background: rgba(0, 0, 0, 0);
+    }
+    #menu {
+        border-top: 3px solid #753ab7;
+        ;
+    }
+    #menu {
+        z-index: 999;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    /**************************************************768px****************************************************************************************/
+    @media (max-width: 768px) {
+        .carousel-item h4 {
+            font-size: 24px;
+        }
+        .footerMenu {
+            float: none !important;
+            text-align: center;
+        }
+
+        .footerMenu li {
+            margin-right: 30px;
+            text-align: center;
+        }
+
+        footer p {
+            float: none !important;
+            line-height: 0px;
+            font-size: 10px;
+            text-align: center;
+
+            background: red;
+        }
+        .logoFooter {
+            display: none;
+        }
+    }
+
+    /**************************************************500px****************************************************************************************/
+    @media (max-width: 500px) {
+        .carousel-item h4 {
+            font-size: 20px;
+        }
+
+        .menu ul li {
+            margin-top: 0px;
+        }
+
+        .titulo1 {
+            font-size: 40px;
+        }
+
+        .titulo2 {
+            font-size: 30px;
+        }
+        .cover-nav li {
+            margin-right: 16px;
+        }
+    }

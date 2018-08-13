@@ -5,12 +5,11 @@ $(document).ready(function(){
 		$.post("control/atualizarCadastroEtec.class.php",
 		{
 			nomeEtec: nome, emailEtec: email, cepEtec: cep, 
-			enderecoEtec: endereco, cidadeEtec: cidade, ufEtec: uf, 
+			enderecoEtec: endereco, cidadeEtec: cidade, bairroEtec: bairro, ufEtec: uf, 
 			usuarioEtec: usuario,  senhaEtec: senha, telefoneEtec: telefone,
 			diretorEtec: diretor, responsavelEtec: responsavel
 		},
 		function(data){
-			alert(data);
 			if(data == 'true'){
 				parar();
 				swal({
@@ -39,6 +38,7 @@ function capturaValores(){
 	email = $("#emailEtec").val();
 	cep =  $("#cepEtec").val();
 	endereco = $("#enderecoEtec").val();
+	bairro = $("#bairroEtec").val();
 	cidade = $("#cidadeEtec").val();
 	uf = $("#ufEtec").val();
 	usuario = $("#usuarioEtec").val();
@@ -46,4 +46,6 @@ function capturaValores(){
 	telefone = $("#telefoneEtec").val();
 	diretor = $("#diretorEtec").val();
 	responsavel = $("#responsavelEtec").val();
+
+	alert(nome);
 }

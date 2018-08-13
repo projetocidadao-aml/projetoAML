@@ -3,6 +3,7 @@ var response = JSON.parse(data);
 document.getElementById('nomeEtec').value = response[0].nomeEtec; 
 document.getElementById('emailEtec').value = response[0].emailEtec;
 document.getElementById('enderecoEtec').value = response[0].logradouroEtec;
+document.getElementById('bairroEtec').value = response[0].bairroEtec;
 document.getElementById('cidadeEtec').value = response[0].cidadeEtec;
 document.getElementById('usuarioEtec').value = response[0].nomeUsuario;
 document.getElementById('senhaEtec').value = response[0].senhaEtec;
