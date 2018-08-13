@@ -1,164 +1,48 @@
 <?php
 	include 'control/router.class.php';
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cidadão do Futuro</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="dist/img/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="dist/img/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="dist/img/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="dist/img/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="dist/img/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="dist/img/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="dist/img/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="dist/img/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="dist/img/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="dist/img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="dist/img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="dist/img/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="dist/img/icons/favicon-16x16.png">
+	<link rel="manifest" href="dist/img/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="dist/img/icons/ms-icon-144x144.png">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+	<meta name="theme-color" content="#5F259F">
 
-    <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        a {
-            text-decoration: none;
-        }
-
-        a:link {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-        #login{
-            color: black;
-            text-align: center;
-        }
-        
-        .caixaLogin{
-            background: green;
-            padding: 6px;
-            
-        }
-        
-        .menu{
-             padding-top: 20px;
-        }
-        .menu li{
-           margin-left: 20px;
-           
-        }
-        
-         .logo{
-    top:30px;
-        left: 30px;
-        position: absolute;
-        z-index: 10;
-        }
-    
-    </style>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
 </head>
 
 <body>
-    <div id="teste"></div>
-   
-    <div id="topo">
-       
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 ">
-                </div>
+	<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+		<div class="container">
+			<a class="navbar-brand" href="index.php?page=painel"><img src="dist/img/logoHeaderCut.png" id="imgHeader"></a>
+		</div>
+	</nav>
 
-                <div class="col-md-6 ">
-                    <ul class="menu">
-                        <li><a href="index.php">HOME</a></li>
-                        <li><a href="regulamento.php">REGULAMENTO</a></li>
-                        <li class="caixaLogin"><a href="#" data-toggle="modal" data-target="#loginMoldal">LOGIN</a></li>
-
-                    </ul>
-                </div>
-            </div>
-            
-            
-            <div class="modal fade" id="loginMoldal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-                <div class="modal-dialog modal-sm">
-                    <div class="modal-content px-3 py-3">
-                        <div class="modalTitulo">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="login">Login</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="formLogCli">
-                                <div class="form-group">
-                                    <input type="text" class="form-control emailLog" name="emailLog" placeholder="Email">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="password" class="form-control senha" name="senha" placeholder="Senha">
-                                </div>
-
-                                <p class="text-center">
-                                    <input type="hidden" name="logaCli" value="Entrar">
-                                    <button type="button" class="btn btn-primary logaCli" name="logaCli">
-							<i class="fa fa-sign-in"></i>Entrar
-						</button>
-                                    <label class="returnFormLogCli"></label>
-                                </p>
-                            </form>
-                            <p class="text-center text-muted">
-                                <a href="registrar.php" class="text-center text-muted">Inscreva sua ETEC</a>
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-       
-   <div class="logo">
-                <a href="index.php"><img src="dist/img/logo.png" alt=""></a>
-                
-                
-            </div>
-
-                <div class="modal fade" id="loginMoldal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content px-3 py-3">
-                            <div class="modalTitulo">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="login">Login</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form class="formLogCli">
-                                    <div class="form-group"> <input type="text" class="form-control emailLog" name="emailLog" placeholder="Email">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <input type="password" class="form-control senha" name="senha" placeholder="Senha">
-                                    </div>
-
-                                    <p class="text-center">
-                                        <input type="hidden" name="logaCli" value="Entrar">
-                                        <button type="button" class="btn btn-primary logaCli" name="logaCli">
-                                    <i class="fa fa-sign-in"></i>Entrar
-                                    </button>
-                                        <label class="returnFormLogCli"></label>
-                                    </p>
-                                </form>
-                                <p class="text-center text-muted">
-                                    <a href="registrar.php" class="text-center text-muted">Inscreva sua ETEC</a>
-                                </p>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
 	<?php 
 	if(@$_GET['page'] == 'cadastro_etec'){
@@ -170,44 +54,26 @@
 
 	?>
 
-
-<script src="dist/js/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#teste").fadeOut("show");
-        });
-    </script>
-<script src="dist/js/popper.min.js"></script>
-<script src="dist/js/bootstrap.min.js"></script>
-</body>
-
-</html>
-
-<footer>
-
-    <div class="row tirar_margin_row pt-4 pb-1 laranja">
-        <div class="container">
-
-            <div class="col-sm-12 col-md-12  text-branco">
-
-                <ul class="footerMenu">
-                    <li><a href="privacidade.php">Privacidade</a></li>
-                    <li><a href="contato.php">Contato</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="row text-center tirar_margin_row pt-3 cinza">
-        <div class="col-sm-12 col-md-12  text-branco">
-
-            <p>© Copyright 2018 - AML Consulting, todos os direitos reservados.</p>
-
-        </div>
-    </div>
-
+	<footer class="footer navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contato</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Privacidade</a>
+				</li>
+			</ul>
+		</div>
 </footer>
+	<script>
+		$("#forgotPassword").click(function(){
+			$("#senhaModal").modal();
+		});
+	</script>
+
+
+
 
 </body>
 </html>
