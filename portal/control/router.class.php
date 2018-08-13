@@ -9,7 +9,7 @@
 				$page = $_GET['page'];
  				if ($loged_status == "login") {
  					if ($page != 'login') {
- 						header("location:index.php");
+ 						include "view/".$page.".html";
  					}
  				}
  				else{
@@ -19,7 +19,7 @@
  			else
  			{
  				//Se não tiver rota na url da página ele adiciona a pagina inicial
- 				include "view/$loged_status.html";
+ 				include "view/index.html";
  			}
  		}
  	}

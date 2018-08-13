@@ -77,9 +77,9 @@ $dalGeral = new dalGeral();
 						<a class="nav-link" href="index.php?page=desafio">Desafios</a>
 					</li>
 					
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="#">Relatórios</a>
-					</li>
+					</li> -->
 
 					<li class="nav-item">
 						<a class="nav-link" href="control/deslogar.php">Sair</a>
@@ -97,10 +97,10 @@ $dalGeral = new dalGeral();
 		<div class="container">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Contato</a>
+					<a class="nav-link" href="index.php?page=contato">Contato</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Privacidade</a>
+					<a class="nav-link" href="index.php?page=privacidade">Privacidade</a>
 				</li>
 			</ul>
 		</div>

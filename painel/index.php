@@ -7,3 +7,4 @@ include 'control/security.class.php';
 
 //instancia a classe de segurança
 new seguranca();
+

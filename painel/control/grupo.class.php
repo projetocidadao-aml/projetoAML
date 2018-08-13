@@ -3,7 +3,15 @@ include("model/grupo.class.php");
 class grupo{
     public $id;
     function __construct(){
-        $this->id = $_GET['id'];
+<<<<<<< HEAD
+        if(isset($_GET['id'])){
+            $this->id = $_GET['id'];
+        }
+=======
+        // $this->id = $_GET['id'];
+        $this->id = $_SESSION['idUser'];
+        
+>>>>>>> c15a65f24ad18b4f3cdd3a7e668c3e2aaa079399
     }
     function listaGrupos(){
         $grupoModel = new grupoModel();

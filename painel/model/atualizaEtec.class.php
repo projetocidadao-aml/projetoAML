@@ -8,12 +8,12 @@ session_start();
 	class capturaDados
 	{
 		private $conn;
-		function __construct($nome,$email,$cep,$endereco,$cidade,$uf,$usuario,$senha,$telefone,$diretor,$responsavel)
+		function __construct($nome,$email,$cep,$endereco,$bairro,$cidade,$uf,$usuario,$senha,$telefone,$diretor,$responsavel)
 		{
 
 			$conexao = new conexao();
 			$this->conn = $conexao->conect();
-			$sql = "UPDATE ETEC SET ETEC_NOME = '$nome', ETEC_DIRETOR = '$diretor', ETEC_RESPONSAVEL ='$responsavel', ETEC_USUARIO = '$usuario', ETEC_CEP = '$cep', ETEC_LOGRADOURO = '$endereco',ETEC_CIDADE = '$cidade', ETEC_EMAIL = '$email', ETEC_UF = '$uf', ETEC_TELEFONE = '$telefone' WHERE ETEC_ID = '1'";
+			$sql = "UPDATE ETEC SET ETEC_NOME = '$nome', ETEC_DIRETOR = '$diretor', ETEC_RESPONSAVEL ='$responsavel', ETEC_USUARIO = '$usuario', ETEC_CEP = '$cep', ETEC_LOGRADOURO = '$endereco', ETEC_BAIRRO = '$bairro',ETEC_CIDADE = '$cidade', ETEC_EMAIL = '$email', ETEC_UF = '$uf', ETEC_TELEFONE = '$telefone' WHERE ETEC_ID = '1'";
 			$db = $this->conn->prepare($sql);
 			try{
 				$db->execute();
@@ -25,6 +25,7 @@ session_start();
 				$_SESSION['cepEtec'] = $cep; 
 				$_SESSION['logradouroEtec'] = $endereco; 
 				$_SESSION['cidadeEtec'] = $cidade; 
+				$_SESSION['bairroEtec'] = $bairro; 
 				$_SESSION['emailEtec'] = $email;
 				$_SESSION['ufEtec'] = $uf; 
 				$_SESSION['telefoneEtec'] = $telefone;

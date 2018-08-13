@@ -1,4 +1,6 @@
-
+<?php 
+include 'control/pessoa.class.php';
+$pessoa = new pessoaControl(); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-12">
@@ -150,24 +152,7 @@
 								<th>Ações</th>
 							</thead>
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Alex Santos</td>
-									<td>Aluno</td>
-									<td>Jaraguá</td>
-									<td>NoGroup</td>
-									<td><button class="btn btn-secondary">Alterar</button></td>
-								</tr>
-
-								<tr>
-									<td>2</td>
-									<td>Gustavo Silva</td>
-									<td>Aluno</td>
-									<td>Jaraguá</td>
-									<td>NoGroup</td>
-									<td><button class="btn btn-secondary">Alterar</button></td>
-								</tr>
-								
+								<?php $pessoa->capturaDados(); ?>
 							</tbody>
 						</table>
 					</div>
@@ -179,7 +164,7 @@
 				<div class="col-12 mt-3 p-4">
 					<h2 class="text-center text-secondary mb-5 title">Cadastro de Pessoas</h2>
 
-					<form>
+					<form class="x-form-cadastro-full" action="#">
 						<div class="form-row">
 							<div class="form-group col-md-5">
 								<label for="cad_pessoa_nome">Nome</label>
@@ -276,5 +261,6 @@
 
 <script src="dist/js/jquery.mask.js"></script>
 <script src="dist/js/mascaras.js"></script>
+<script src="control/script/cadastraPessoa.js"></script>
 
 

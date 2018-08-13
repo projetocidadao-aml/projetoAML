@@ -45,7 +45,13 @@
 
 
 	<?php 
+	if(@$_GET['page'] == 'cadastro_etec'){
+		new routers('cadastro_etec');
+	}
+	else{
 		new routers('login');
+	}
+
 	?>
 
 	<footer class="footer navbar navbar-expand-lg navbar-dark">

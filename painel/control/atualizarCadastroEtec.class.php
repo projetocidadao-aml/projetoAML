@@ -10,6 +10,7 @@ include('../model/atualizaEtec.class.php');
 		public $email;
 		public $cep;
 		public $endereco;
+		public $bairro;
 		public $cidade;
 		public $uf;
 		public $usuario;
@@ -23,6 +24,7 @@ include('../model/atualizaEtec.class.php');
 			$this->email = $_POST['emailEtec'];
 			$this->cep = $_POST['cepEtec'];
 			$this->endereco = $_POST['enderecoEtec'];
+			$this->bairro = $_POST['bairroEtec'];
 			$this->cidade = $_POST['cidadeEtec'];
 			$this->uf = $_POST['ufEtec'];
 			$this->usuario = $_POST['usuarioEtec'];
@@ -31,7 +33,7 @@ include('../model/atualizaEtec.class.php');
 			$this->diretor = $_POST['diretorEtec'];
 			$this->responsavel = $_POST['responsavelEtec'];
 
-			$atualizaEtec = new capturaDados($this->nome, $this->email, $this->cep, $this->endereco, $this->cidade,$this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor,$this->responsavel); 
+			$atualizaEtec = new capturaDados($this->nome, $this->email, $this->cep, $this->endereco, $this->bairro, $this->cidade,$this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor,$this->responsavel); 
 
 		}
 	} 
