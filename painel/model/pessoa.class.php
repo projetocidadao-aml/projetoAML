@@ -11,12 +11,12 @@
         function listaPessoas(){
             $sql = "SELECT P.*, PER.*, PC.*, C.*, PG.*, G.*,E.*
             FROM PESSOA AS P
-            JOIN PERFIL AS PER ON P.ID_PERFIL = PER.PERFIL_ID
-            JOIN PESSOA_CURSO AS PC ON P.PESSOA_ID = PC.ID_PESSOA
-            JOIN CURSOS AS C ON PC.ID_CURSO = C.CURSO_ID
-            JOIN PESSOA_GRUPO AS PG ON P.PESSOA_ID = PG.PESSOA_ID
-            JOIN GRUPO AS G ON PG.GRUPO_ID = G.GRUPO_ID
-            JOIN ETEC AS E ON E.ETEC_ID = G.ID_ETEC";
+            LEFT JOIN PERFIL AS PER ON P.ID_PERFIL = PER.PERFIL_ID
+            LEFT JOIN PESSOA_CURSO AS PC ON P.PESSOA_ID = PC.ID_PESSOA
+            LEFT JOIN CURSOS AS C ON PC.ID_CURSO = C.CURSO_ID
+            LEFT JOIN PESSOA_GRUPO AS PG ON P.PESSOA_ID = PG.PESSOA_ID
+            LEFT JOIN GRUPO AS G ON PG.GRUPO_ID = G.GRUPO_ID
+            LEFT JOIN ETEC AS E ON E.ETEC_ID = G.ID_ETEC";
             $db = $this->conn->prepare($sql);
             $db->execute();
 			$linha = $db->fetchAll();
