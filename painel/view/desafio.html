@@ -18,7 +18,7 @@
 
 					<form class="form-desafio">
 
-					<input type="text" name="idDesafio" id="idDesafio">
+					<input type="hidden" name="idDesafio" id="desafio_id">
 
 
 						<div class="form-row">
@@ -42,7 +42,7 @@
 						</div>
 
 						<div class="buttons text-center mt-2">
-							<button type="submit" class="btn btn-secondary">Cadastrar</button>
+							<button type="submit" id="btnDesafio" class="btn btn-secondary">Cadastrar</button>
 							<button type="submit" class="btn btn-danger">Cancelar</button>
 						</div>
 
@@ -82,10 +82,12 @@
 	$(".alteraDesafio").click(function(){
 
 		// desafio
-		$("#idDesafio").val($(".desafio"+this.id)[0].innerHTML);
+		$("#desafio_id").val($(".desafio"+this.id)[0].innerHTML);
 		$("#desafio_tema").val($(".desafio"+this.id)[1].innerHTML);
 		$("#desafio_dataFinalizacao").val($(".desafio"+this.id)[2].innerHTML);
 		$("#desafio_descricao").val($(".desafio"+this.id)[4].innerHTML);
+
+		$("#btnDesafio").text("Alterar");
 
 	});
 
