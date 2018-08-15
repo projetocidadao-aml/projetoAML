@@ -5,10 +5,10 @@ class cadastraDesafio
     private $conn;
     function __construct()
     {
-     $conexao = new conexao();
-     $this->conn = $conexao->conect();
- }
- function cadastraDesafio($id, $tema, $data, $descricao){
+       $conexao = new conexao();
+       $this->conn = $conexao->conect();
+   }
+   function cadastraDesafio($id, $tema, $data, $descricao){
 
     if($id == null){
 
