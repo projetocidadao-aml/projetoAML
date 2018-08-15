@@ -29,6 +29,30 @@ function cadastraCurso(){
 			}, 2000)
 
 		}
+		else if(data == 'altrue'){
+
+			parar();
+			swal({
+				title: "Alteração",
+				text: "Alteração realizada com sucesso!",
+				icon: "success",
+			});
+			setTimeout(function(){
+				window.location.reload();
+
+			}, 2000)
+
+
+		}
+		else if(data == 'alfalse'){
+			parar();
+			swal({
+				title: "Alteração",
+				text: "Erro ao alterar dados!",
+				icon: "error",
+			});
+
+		}
 		else{
 			parar();
 			swal({
@@ -36,7 +60,6 @@ function cadastraCurso(){
 				text: "Erro ao cadastrar dados!",
 				icon: "error",
 			});
-
 		}
 	});
 }
