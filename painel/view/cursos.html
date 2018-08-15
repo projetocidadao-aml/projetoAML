@@ -30,6 +30,9 @@
 					<h2 class="text-center text-secondary mb-5 titleBordered title">Cadastro de Cursos</h2>
 
 					<form class="form-cadastra-curso" action="#">
+
+					<input type="hidden" name="cursos_id_curso" id="cursos_id_curso">
+
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="cursos_nome_curso">Curso</label>
@@ -38,7 +41,7 @@
 							<div class="form-group col-md-6">
 								<label for="cursos_duracao_curso">Duração em Semestres</label>
 								<select class="form-control" id="cursos_duracao_curso" name="cursos_duracao_curso" required>
-									<option>Selecione...</option>
+									<option value="">Selecione...</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -51,7 +54,7 @@
 						</div>
 
 						<div class="buttons text-center mt-2">
-							<button type="submit" class="btn btn-secondary">Cadastrar</button>
+							<button type="submit" id="btnCurso" class="btn btn-secondary">Cadastrar</button>
 							<button type="submit" class="btn btn-danger">Cancelar</button>
 						</div>
 
@@ -141,6 +144,22 @@
 <script src="control/script/cadastraCurso.js"></script>
 <!-- Container -->
 
+
+
+<script>
+	$(".alteraCurso").click(function(){
+
+
+		$("#cursos_id_curso").val($(".curso"+this.id)[0].innerHTML);
+
+		$("#cursos_nome_curso").val($(".curso"+this.id)[1].innerHTML);
+		$("#cursos_duracao_curso").val($(".curso"+this.id)[2].innerHTML);
+		
+		$("#btnCurso").text("Alterar");
+
+	});
+
+</script>
 
 
 

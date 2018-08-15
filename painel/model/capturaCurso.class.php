@@ -15,10 +15,10 @@ class capturaCursos
     $linha = $db->fetchAll();
     foreach ($linha as $value) {
         echo "<tr>
-        <td>".$value['CURSO_ID']."</td>
-        <td>".$value['CURSO_NOME']."</td>
-        <td>".$value['CURSO_DURACAO']."</td>
-        <td><button class='btn btn-secondary'>Alterar</button></td>
+        <td class = 'curso$value[CURSO_ID]'>".$value['CURSO_ID']."</td>
+        <td class = 'curso$value[CURSO_ID]'>".$value['CURSO_NOME']."</td>
+        <td class = 'curso$value[CURSO_ID]'>".$value['CURSO_DURACAO']."</td>
+        <td><button class='btn btn-secondary alteraCurso' id='$value[CURSO_ID]'>Alterar</button></td>
         </tr>";
     }
 
