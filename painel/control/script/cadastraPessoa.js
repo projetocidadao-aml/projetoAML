@@ -28,5 +28,21 @@ function capturaValores(){
 			},
 			function(data){
 				console.log(data);
+				if(data == 'true'){
+					parar();
+					swal({
+					  title: "Sucesso",
+					  text: "Cadastrado com Sucesso",
+					  icon: "success",
+					});
+				}
+				else{
+					parar();
+					swal({
+					  title: "Erro",
+					  text: "Erro ao cadastrar",
+					  icon: "success",
+					});
+				}
 			});
 }

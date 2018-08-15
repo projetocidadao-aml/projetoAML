@@ -4,7 +4,7 @@ class seguranca{
 	public $page;
 	function __construct(){
 		//se o usuario estiver logado ele inclui a página de logado
-		if (isset($_SESSION['idUser'])){
+		if (isset($_SESSION['idUser_portal'])){
 			include 'loged.php';
 		}
 		//se o usuario não estiver logado ele inclui a página não logado

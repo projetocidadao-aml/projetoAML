@@ -4,9 +4,6 @@
     <!doctype html>
     <html lang="pt-br">
 
-    <!doctype html>
-    <html lang="pt-br">
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +56,7 @@
                                 <h4 class="modal-title" id="login" class=" text-branco"><u>Login do aluno</u></h4>
                             </div>
                             <div class="modal-body">
-                                <form class="formLogCli">
+                                <form class="formLogCli" action="#">
                                     <div class="form-group"> <input type="text" class="form-control emailLog" name="emailLog" placeholder="Email">
                                     </div>
                                     <div class="form-group">
@@ -67,7 +64,7 @@
                                     </div>
                                     <p class="text-center">
                                         <input type="hidden" name="logaCli" value="Entrar">
-                                        <button type="button" class="btn btn-primary logaCli" name="logaCli">
+                                        <button class="btn btn-primary logaCli" name="logaCli">
                                     <i class="fa fa-sign-in"></i>Entrar
                                     </button>
                                         <label class="returnFormLogCli"></label>
@@ -128,8 +125,10 @@
                 </div>
             </div>
         </footer>
-
-
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="dist/js/jquery.blockUI.js"></script>
+        <script src="dist/js/ajaxLoading.js"></script>
+        <script src="control/script/verificaLogin.js"></script>
     </body>
 
     </html>

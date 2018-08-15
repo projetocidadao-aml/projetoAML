@@ -1,6 +1,5 @@
 <?php
 include('../model/cadastroPessoa.class.php');
-include('../model/pessoa.class.php');
 
 class Pessoa{
     public $nome;
