@@ -186,7 +186,7 @@ body {
   border: 2px solid #8f51d4 !important;
 }
 
-input:focus{
+input:focus, select:focus{
   box-shadow: 0 0 0 0.2rem rgba(95,37,159, 0.5) !important;
   border: 0 !important;
 }

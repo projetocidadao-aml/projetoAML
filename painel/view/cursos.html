@@ -1,6 +1,6 @@
 <?php 
-	include 'control/capturaCurso.class.php';
-	$cursos = new cursoControl();
+include 'control/capturaCurso.class.php';
+$cursos = new cursoControl();
 
 
 ?>
@@ -31,7 +31,7 @@
 
 					<form class="form-cadastra-curso" action="#">
 
-					<input type="hidden" name="cursos_id_curso" id="cursos_id_curso">
+						<input type="hidden" name="cursos_id_curso" id="cursos_id_curso">
 
 						<div class="form-row">
 							<div class="form-group col-md-6">
@@ -83,20 +83,23 @@
 				<div class="col-12 p-4">
 					<h2 class="text-center text-secondary titleBordered title mb-5">Associação de Cursos</h2>
 
-					<form>
+					<form class="form-associa-curso" action="#">
+
+						<input type="hidden" name="associacao_id_curso" id="associacao_id_curso">
+
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="associacao_nome_curso">Curso</label>
 								<select class="form-control" id="associacao_nome_curso" name="associacao_nome_curso" required>
-									<option>Selecione...</option>
-								<?php $cursos->listaCursosComboBox(); ?>
+									<option value="">Selecione...</option>
+									<?php $cursos->listaCursosComboBox(); ?>
 
 								</select>
 							</div>
 							<div class="form-group col-md-6">
 								<label for="associacao_periodo_curso">Período</label>
 								<select class="form-control" id="associacao_periodo_curso" name="associacao_periodo_curso" required>
-									<option>Selecione...</option>
+									<option value="">Selecione...</option>
 									<option value="Matutino">Matutino</option>
 									<option value="Vespertino">Vespertino</option>
 									<option value="Noturno">Noturno</option>
@@ -146,6 +149,30 @@
 
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="fuckaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Desassociação de Cursos</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Tem certeza que quer desassociar o curso?
+			</div>
+			<div class="modal-footer">
+				<input type="hidden" name="idExclusao" id="idExclusao">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+				<button type="button" class="btn btn-primary" id="desassociar">Desassociar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <script>
 	$(".alteraCurso").click(function(){
 
@@ -158,6 +185,51 @@
 		$("#btnCurso").text("Alterar");
 
 	});
+
+	function modalExcluir(id){
+		$("#idExclusao").val(id);
+		$("#fuckaModal").modal();
+	}
+
+
+	$("#desassociar").click(function(){
+		carregando();
+		$("#fuckaModal").hide();
+
+		var idCurso = $("#idExclusao").val();
+
+		$.ajax({url: "./control/dessassociaCurso.class.php?idCurso="+idCurso, success: function(result){
+
+			if(result == 'true'){
+				parar();
+				swal({
+					title: "Exclusão de Associação",
+					text: "Dessassociação realizada com sucesso!",
+					icon: "success",
+				});
+				setTimeout(function(){
+					window.location.reload();
+
+				}, 2000)
+
+			}
+
+			else{
+				parar();
+				swal({
+					title: "Exclusão de Associação",
+					text: "Erro ao dessassociar curso!",
+					icon: "error",
+				});
+			}
+
+		}});
+
+
+	});
+
+
+
 
 </script>
 

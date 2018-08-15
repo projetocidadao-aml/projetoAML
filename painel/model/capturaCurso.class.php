@@ -46,10 +46,11 @@ function listaCursosEtec(){
     $linha = $db->fetchAll();
     foreach ($linha as $value) {
         echo "<tr>
-        <td>".$value['CURSO_ID']."</td>
+        <td>".$value['ETEC_CURSO_ID']."</td>
         <td>".$value['CURSO_NOME']."</td>
         <td>".$value['ETEC_CURSO_PERIODO']."</td>
-        <td><button class='btn btn-secondary'>Alterar</button></td>
+        <td><button class='btn btn-danger' id = '$value[ETEC_CURSO_ID]' onclick = 'modalExcluir(this.id)'>Excluir</button></td>
+
         </tr>";
     }
 
