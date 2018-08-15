@@ -17,6 +17,10 @@
 					<h2 class="text-center text-secondary mb-5 titleBordered title">Cadastro de Desafios</h2>
 
 					<form class="form-desafio">
+
+					<input type="text" name="idDesafio" id="idDesafio">
+
+
 						<div class="form-row">
 							<div class="form-group col-md-8">
 								<label for="desafio_tema">Tema</label>
@@ -56,7 +60,7 @@
 
 							</thead>
 							<tbody>
-								<?php $desafio->capturaDados() ?>
+								<?php $desafio->capturaDados()?>
 							</tbody>
 						</table>
 					</div>
@@ -65,11 +69,6 @@
 			
 		</div>
 
-		
-
-
-
-
 
 </div>
 </div>
@@ -77,6 +76,23 @@
 <script src="dist/js/jquery.blockUI.js"></script>
 <script src="dist/js/ajaxLoading.js"></script>
 <script src="control/script/desafio.js"></script>
+
+
+<script>
+	$(".alteraDesafio").click(function(){
+
+		// desafio
+		$("#idDesafio").val($(".desafio"+this.id)[0].innerHTML);
+		$("#desafio_tema").val($(".desafio"+this.id)[1].innerHTML);
+		$("#desafio_dataFinalizacao").val($(".desafio"+this.id)[2].innerHTML);
+		$("#desafio_descricao").val($(".desafio"+this.id)[4].innerHTML);
+
+	});
+
+</script>
+
+
+
 <!-- Container -->
 
 

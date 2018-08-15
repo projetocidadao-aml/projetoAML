@@ -9,7 +9,7 @@
 			$this->conn = $conexao->conect();
 		}
         function listaDesafios(){
-            $sql = "SELECT D.*, C.*, G.*
+            $sql = "SELECT D.*, C.*, G.*, date_format(DESAFIO_DATA, '%d/%m/%Y') as DESAFIO_DATA_FT
             FROM DESAFIO AS D
             LEFT JOIN COLOCACAO AS C ON D.DESAFIO_ID = C.ID_DESAFIO
             LEFT JOIN GRUPO AS G ON C.ID_GRUPO = G.GRUPO_ID";
@@ -23,11 +23,13 @@
                     $vencedor = $value['GRUPO_NOME'];
                 }
 				echo "<tr>
-                        <td>".$value['DESAFIO_ID']."</td>
-                        <td>".$value['DESAFIO_TEMA']."</td>
-                        <td>".$value['DESAFIO_DATA']."</td>
-                        <td>".$vencedor."</td>
-                        <td><a href='index.php?page=detalhamento_desafio?id=".$value['DESAFIO_ID']."'><button class='btn btn-secondary' >Alterar</button></a></td>
+                        <td class = 'desafio$value[DESAFIO_ID]'>".$value['DESAFIO_ID']."</td>
+                        <td class = 'desafio$value[DESAFIO_ID]'>".$value['DESAFIO_TEMA']."</td>
+                        <td hidden class = 'desafio$value[DESAFIO_ID]'>".$value['DESAFIO_DATA']."</td>
+                        <td class = 'desafio$value[DESAFIO_ID]'>".$value['DESAFIO_DATA_FT']."</td>
+                        <td hidden class = 'desafio$value[DESAFIO_ID]'>".$value['DESAFIO_DESCRICAO1']."</td>
+                        <td class = 'desafio$value[DESAFIO_ID]'>".$vencedor."</td>
+                        <td><button class='btn btn-secondary alteraDesafio' id = '$value[DESAFIO_ID]'>Alterar</button></td>
                     </tr>";
             }
             
