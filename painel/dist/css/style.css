@@ -21,7 +21,19 @@
 .title{
   text-transform: uppercase;
   /*background-color: rgb(95,37,159, 0.9);*/
-  color: white !important;
+  color: #5F259F !important;
+  font-family: London;
+  font-size: 2.2em;
+  font-weight: bold;
+
+}
+
+.subTitle{
+  text-transform: uppercase;
+  font-family: London;
+  font-size: 1.7em;
+
+
 }
 
 
@@ -105,9 +117,6 @@ body {
 
 }
 
-.title{
- font-family: London;
-}
 
 .navbar.navbar-expand-lg.navbar-dark.mb-4{
   padding-top: 0;
@@ -172,6 +181,7 @@ body {
 
 .bg-success{
   background-color: #d7b3ff !important;
+
 }
 
 .btn-primary:hover{
@@ -276,8 +286,8 @@ label{
   border-bottom-left-radius: 90px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: rgba(95,37,159,10);
-  color: white;
+  background-color: #d7b3ff;
+  color: #333;
   max-width: 280px;
 }
 
@@ -313,11 +323,14 @@ label{
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
   background-color: #425563;
+  font-size: 18px;
 }
 
 
 .nav-link{
   color: #425563;
+  font-size: 18px;
+
 }
 
 .nav-link:hover{

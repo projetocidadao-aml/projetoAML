@@ -1,11 +1,18 @@
 <?php 
 include 'control/pessoa.class.php';
-$pessoa = new pessoaControl(); ?>
+$pessoa = new pessoaControl(); 
+
+include 'control/capturaCurso.class.php';
+$cursos = new cursoControl();
+
+
+
+?>
 <div class="container">
 	<div class="row">
 		<div class="col-12">
 			<img src="./dist/img/people.png" class="img-thumbnail img-responsive float-left border-0 imgHeaderTitle" style="width: 140px;">
-			<h2 class="text-center mt-5 text-secondary titleBordered title">Pessoas</h2>
+			<h2 class="text-center titleBordered title">Pessoas</h2>
 		</div>
 	</div>
 	<hr>
@@ -15,11 +22,13 @@ $pessoa = new pessoaControl(); ?>
 		<li class="nav-item">
 			<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Pré Cadastro</a>
 		</li>
-		<li class="nav-item">
-			<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Buscar</a>
-		</li>
+		
 		<li class="nav-item">
 			<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Cadastro</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Buscar</a>
 		</li>
 	</ul>
 	<div class="tab-content" id="pills-tabContent">
@@ -27,23 +36,28 @@ $pessoa = new pessoaControl(); ?>
 
 			<div class="row">
 				<div class="col-12 mt-3 p-4">
-					<h2 class="text-center text-secondary titleBordered mb-5 title">Pré Cadastro</h2>
+					<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Pré Cadastro Alunos</h2>
 
 					<form>
 						<div class="form-row">
-							<div class="form-group col-md-6">
+							<div class="form-group col-md-5">
 								<label for="nomePessoa">Nome</label>
 								<input type="name" class="form-control" id="nomePessoa" name="preCad_pessoa_nome" placeholder="Pedro Travalon Tavares" required>
 							</div>
-							<div class="form-group col-md-6">
+							<div class="form-group col-md-4">
 								<label for="emailPessoa">Email</label>
 								<input type="email" class="form-control" id="emailPessoa" name="preCad_pessoa_email" placeholder="pedro.travalon@gmail.com" required>
+							</div>
+
+							<div class="form-group col-md-3">
+								<label for="emailPessoa">CPF</label>
+								<input type="email" class="form-control" id="preCad_pessoa_cpf" name="preCad_pessoa_cpf" placeholder="333.333.333-33" required>
 							</div>
 
 						</div>
 
 						<div class="form-row">
-							<div class="form-group col-md-4">
+							<div class="form-group col-md-5">
 								<label for="perfilPessoa">Perfil</label>
 								<select class="form-control" id="perfilPessoa" name="preCad_pessoa_perfil" required>
 									<option>Selecione...</option>
@@ -53,10 +67,27 @@ $pessoa = new pessoaControl(); ?>
 
 								</select>
 							</div>
-							<div class="form-group col-md-8">
-								<label for="obsPessoa">Observações</label>
-								<input type="text" class="form-control" id="obsPessoa" name="preCad_pessoa_obs" placeholder="Cadastro completado em 16/07/2018">
+
+							<div class="form-group col-md-4">
+								<label for="perfilPessoa">Curso</label>
+								<select class="form-control" id="cursoPessoa" name="preCad_pessoa_curso" required>
+									<option value="">Selecione...</option>
+									<?php $cursos->listaCursosComboBox(); ?>
+
+								</select>
 							</div>
+
+							<div class="form-group col-md-3">
+								<label for="perfilPessoa">Semestre</label>
+								<select class="form-control" id="semestrePessoa" name="preCad_pessoa_semestre" required>
+									<option>Selecione...</option>
+									<option value="Aluno">Aluno</option>
+									<option value="Professor">Professor</option>
+									<option value="Coordenador">Coordenador</option>
+
+								</select>
+							</div>
+							
 
 						</div>
 
@@ -71,7 +102,7 @@ $pessoa = new pessoaControl(); ?>
 				</div>
 
 				<div class="col-12 border mt-5 p-4">
-					<h2 class="text-center text-secondary titleBordered mb-5 title">Upload de Listas</h2>
+					<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Upload de Listas</h2>
 
 					<form>
 
@@ -79,7 +110,8 @@ $pessoa = new pessoaControl(); ?>
 							<div class="form-group col-md-8">
 								<label for="uploadCurso">Curso</label>
 								<select class="form-control" id="uploadCurso" name="upload_nome_curso">
-									<option>Selecione...</option>
+									<option value="">Selecione...</option>
+									<?php $cursos->listaCursosComboBox(); ?>
 								</select>
 							</div>
 							<div class="form-group col-md-4">
@@ -119,8 +151,8 @@ $pessoa = new pessoaControl(); ?>
 		<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 			<div class="row">
 				<div class="col-12 mt-3 p-4">
-					<h2 class="text-center text-secondary mb-5 title">Buscar Pessoas</h2>
-					<form>
+					<h2 class="text-center text-secondary mb-5 subTitle">Buscar Pessoas</h2>
+					<!-- <form>
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="busca_pessoa_nome">Nome</label>
@@ -133,127 +165,127 @@ $pessoa = new pessoaControl(); ?>
 								</select>
 							</div>
 						</div>
-					</form>
+					</form> -->
 
-					<div class="buttons text-center mt-2 mb-4">
+					<!-- <div class="buttons text-center mt-2 mb-4">
 						<button type="submit" class="btn btn-secondary">Buscar</button>
 					</div>
 
+				-->
 
-					
-					<div class="table-responsive">
-						<table class="table table-striped border text-center">
-							<thead>
-								<th>#</th>
-								<th>Nome</th>
-								<th>Perfil</th>
-								<th>Etec</th>
-								<th>Grupo</th>
-								<th>Ações</th>
-							</thead>
-							<tbody>
-								<?php $pessoa->capturaDados(); ?>
-							</tbody>
-						</table>
-					</div>
+				<div class="table-responsive">
+					<table class="table table-striped border text-center">
+						<thead>
+							<th>ID</th>
+							<th>Nome</th>
+							<th>Perfil</th>
+							<th>Etec</th>
+							<th>Grupo</th>
+							<th>Ações</th>
+						</thead>
+						<tbody>
+							<?php $pessoa->capturaDados(); ?>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
-		<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-			<div class="row">
-				<div class="col-12 mt-3 p-4">
-					<h2 class="text-center text-secondary mb-5 title">Cadastro de Pessoas</h2>
+	</div>
+	<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+		<div class="row">
+			<div class="col-12 mt-3 p-4">
+				<h2 class="text-center text-secondary mb-5 subTitle">Cadastro de Pessoas</h2>
 
-					<form class="x-form-cadastro-full" action="#">
-						<div class="form-row">
-							<div class="form-group col-md-5">
-								<label for="cad_pessoa_nome">Nome</label>
-								<input type="name" class="form-control" id="cad_pessoa_nome" name="cad_pessoa_nome" placeholder="Pedro Travalon Tavares" required>
-							</div>
-							<div class="form-group col-md-4">
-								<label for="cad_pessoa_apelido">Apelido</label>
-								<input type="text" class="form-control" id="cad_pessoa_apelido" name="cad_pessoa_apelido" placeholder="Pedrinho">
-							</div>
-
-							<div class="form-group col-md-3">
-								<label for="cad_pessoa_cpf">CPF</label>
-								<input type="text" class="form-control" id="cad_pessoa_cpf" name="cad_pessoa_cpf" placeholder="300.002.123-23" required>
-							</div>
-
+				<form class="x-form-cadastro-full" action="#">
+					<div class="form-row">
+						<div class="form-group col-md-5">
+							<label for="cad_pessoa_nome">Nome</label>
+							<input type="name" class="form-control" id="cad_pessoa_nome" name="cad_pessoa_nome" placeholder="Pedro Travalon Tavares" required>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="cad_pessoa_apelido">Apelido</label>
+							<input type="text" class="form-control" id="cad_pessoa_apelido" name="cad_pessoa_apelido" placeholder="Pedrinho">
 						</div>
 
-						<div class="form-row">
-							<div class="form-group col-md-5">
-								<label for="cad_pessoa_email">Email</label>
-								<input type="email" class="form-control" id="cad_pessoa_email" name="cad_pessoa_email" placeholder="pedrinho_tavares91@gmail.com" required>
-							</div>
-							<div class="form-group col-md-4">
-								<label for="cadastro_celular_pessoa">Telefone / Celular</label>
-								<input type="tel" class="form-control" id="cadastro_celular_pessoa" name="cadastro_celular_pessoa" placeholder="(11) 97834-2343">
-							</div>
-
-							<div class="form-group col-md-3">
-								<label for="cad_pessoa_status">Status</label>
-								<select class="form-control" id="cad_pessoa_status" name="cad_pessoa_status">
-									<option value="ATIVO">Ativo</option>
-									<option value="INATIVO">Inativo</option>
-
-								</select>
-							</div>
-
+						<div class="form-group col-md-3">
+							<label for="cad_pessoa_cpf">CPF</label>
+							<input type="text" class="form-control" id="cad_pessoa_cpf" name="cad_pessoa_cpf" placeholder="300.002.123-23" required>
 						</div>
 
-						<div class="form-row">
-							<div class="form-group col-md-5">
-								<label for="cad_pessoa_usuario">Usuário</label>
-								<input type="text" class="form-control" id="cad_pessoa_usuario" name="cad_pessoa_usuario" placeholder="pedrinho_tavares91" required>
-							</div>
-							<div class="form-group col-md-4">
-								<label for="cad_pessoa_senha">Senha</label>
-								<input type="text" class="form-control" id="cad_pessoa_senha" name="cad_pessoa_senha" placeholder="hexx201899288301@1" required>
-							</div>
+					</div>
 
-							<div class="form-group col-md-3">
-								<label for="cad_pessoa_perfil">Perfil</label>
-								<select class="form-control" id="cad_pessoa_perfil" name="cad_pessoa_perfil">
-									<option>Selecione...</option>
-									<option value="Aluno">Aluno</option>
-									<option value="Professor">Professor</option>
-									<option value="Coordenador">Coordenador</option>
-
-								</select>
-							</div>
+					<div class="form-row">
+						<div class="form-group col-md-5">
+							<label for="cad_pessoa_email">Email</label>
+							<input type="email" class="form-control" id="cad_pessoa_email" name="cad_pessoa_email" placeholder="pedrinho_tavares91@gmail.com" required>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="cadastro_celular_pessoa">Telefone / Celular</label>
+							<input type="tel" class="form-control" id="cadastro_celular_pessoa" name="cadastro_celular_pessoa" placeholder="(11) 97834-2343">
 						</div>
 
-						<div class="form-row">
-							<div class="form-group col-md-12">
-								<label for="cad_pessoa_descricao">Descrição</label>
-								<textarea class="form-control" id="cad_pessoa_descricao" name="cad_pessoa_descricao" rows="2"></textarea>
-							</div>
+						<div class="form-group col-md-3">
+							<label for="cad_pessoa_status">Status</label>
+							<select class="form-control" id="cad_pessoa_status" name="cad_pessoa_status">
+								<option value="ATIVO">Ativo</option>
+								<option value="INATIVO">Inativo</option>
+
+							</select>
 						</div>
 
-						<div class="form-row">
-							<div class="form-group col-md-4">
-								<label for="cad_pessoa_protocolo">Protocolo</label>
-								<input type="text" class="form-control" id="cad_pessoa_protocolo" name="cad_pessoa_protocolo" placeholder="CODETEC+YMD+HMI+2DIGITOSCPF">
-							</div>
-							<div class="form-group col-md-8">
-								<label for="cad_pessoa_obs">Observações</label>
-								<input type="text" class="form-control" id="cad_pessoa_obs" name="cad_pessoa_obs" placeholder="Aluno Destaque 2017">
-							</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-5">
+							<label for="cad_pessoa_usuario">Usuário</label>
+							<input type="text" class="form-control" id="cad_pessoa_usuario" name="cad_pessoa_usuario" placeholder="pedrinho_tavares91" required>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="cad_pessoa_senha">Senha</label>
+							<input type="text" class="form-control" id="cad_pessoa_senha" name="cad_pessoa_senha" placeholder="hexx201899288301@1" required>
 						</div>
 
+						<div class="form-group col-md-3">
+							<label for="cad_pessoa_perfil">Perfil</label>
+							<select class="form-control" id="cad_pessoa_perfil" name="cad_pessoa_perfil">
+								<option>Selecione...</option>
+								<option value="Aluno">Aluno</option>
+								<option value="Professor">Professor</option>
+								<option value="Coordenador">Coordenador</option>
 
-						<div class="buttons text-center mt-2">
-							<button type="submit" class="btn btn-secondary">Cadastrar</button>
-							<button type="submit" class="btn btn-danger">Cancelar</button>
+							</select>
 						</div>
+					</div>
 
-					</form>		
-				</div>																		
-			</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="cad_pessoa_descricao">Descrição</label>
+							<textarea class="form-control" id="cad_pessoa_descricao" name="cad_pessoa_descricao" rows="2"></textarea>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-4">
+							<label for="cad_pessoa_protocolo">Protocolo</label>
+							<input type="text" class="form-control" id="cad_pessoa_protocolo" name="cad_pessoa_protocolo" placeholder="CODETEC+YMD+HMI+2DIGITOSCPF">
+						</div>
+						<div class="form-group col-md-8">
+							<label for="cad_pessoa_obs">Observações</label>
+							<input type="text" class="form-control" id="cad_pessoa_obs" name="cad_pessoa_obs" placeholder="Aluno Destaque 2017">
+						</div>
+					</div>
+
+
+					<div class="buttons text-center mt-2">
+						<button type="submit" class="btn btn-secondary">Cadastrar</button>
+						<button type="submit" class="btn btn-danger">Cancelar</button>
+					</div>
+
+				</form>		
+			</div>																		
 		</div>
 	</div>
+</div>
 
 
 </div>

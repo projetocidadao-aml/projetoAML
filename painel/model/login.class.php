@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../config.class.php");
+include_once("../config.class.php");
 	/**
 	 * Captura login
 	 */

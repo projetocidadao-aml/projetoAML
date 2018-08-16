@@ -47,5 +47,4 @@ function capturaValores(){
 	diretor = $("#diretorEtec").val();
 	responsavel = $("#responsavelEtec").val();
 
-	alert(nome);
 }

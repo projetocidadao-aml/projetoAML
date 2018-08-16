@@ -42,4 +42,11 @@ $('#cadastro_celular_pessoa').mask('(00) 0000-00000', options2);
 $('#cepEtec').mask('00.000-000');
 $('#cad_pessoa_cpf').mask('000.000.000-00');
 
+$('#preCad_pessoa_cpf').mask('000.000.000-00');
+
+
+
+
+
+
 
