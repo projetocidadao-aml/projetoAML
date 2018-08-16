@@ -1,20 +1,15 @@
+/*
 body {
     background: rgba(235, 225, 225, 0.19);
 }
+*/
 
 @font-face {
     font-family: LondonBetween;
     src: url(fonts/LondonBetween.ttf);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: myFirstFont;
-}
+
 
 ul {
     list-style: none;
@@ -35,7 +30,19 @@ a:hover {
 }
 
 .btn-primary {
-    background: #5F259F !important;
+    background: #7852a7 !important;
+
+
+
+    /*
+    background: #7852a7;
+    background: #86608f;
+*/
+}
+
+.btn-primary:hover {
+    background: #9865ca !important;
+
 }
 
 .float-right {
@@ -92,13 +99,62 @@ a:hover {
     margin-left: 0px !important;
 }
 
+
+/*********************************************************************CORES*********************************************************************************
+/*
+
 .laranja {
-    /*    background: #FE5000;*/
+        background: #FE5000;
     background: rgb(233, 152, 71);
 }
+*/
 
 .roxo {
     background: #5F259F;
+}
+
+.lilas {
+    background: #9865ca;
+    /*
+    background: #7852a7;
+    background: #86608f;
+*/
+}
+
+.inputLilas input,
+.inputLilas textarea {
+    background: #9865ca;
+    color: #fff;
+    border: 1px solid #9865ca;
+    /*
+    background: #7852a7;
+    background: #86608f;
+*/
+}
+
+
+.inputLilas ::-webkit-input-placeholder {
+    color: #fff;
+
+}
+
+.inputLilas ::-moz-placeholder {
+    color: #fff;
+
+}
+
+.inputLilas :::-moz-placeholder {
+    color: #fff;
+
+}
+
+.inputLilas :-ms-input-placeholder {
+    color: #fff;
+
+}
+
+.preto {
+    background: #000;
 }
 
 .cinza {
@@ -114,6 +170,49 @@ a:hover {
     background: rgba(150, 159, 170, 1);
 
 }
+
+
+
+
+
+
+/*********************************************************************TEXTO**********************************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: myFirstFont;
+}
+
+h1 {
+    font-weight: bold !important;
+    font-size: 56px !important;
+}
+
+h2 {
+    font-size: 52px !important;
+}
+
+h4 {
+    font-weight: bold !important;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
 
 .clear {
     clear: both;
@@ -539,7 +638,6 @@ img {
 
 /**************************************************DESAFIOS****************************************************************************************/
 
-
 .play {
     cursor: pointer;
     top: 10px;
@@ -553,8 +651,8 @@ img {
 
 
 .play:hover {
-   
-    
+
+
     opacity: 0.5;
 }
 
@@ -583,12 +681,18 @@ img {
 }
 
 #mPlayer DIV {
+    /*
     position: fixed;
     background: #000;
     width: 560px;
     height: 315px;
     left: calc(50vw - 280px);
     top: calc(50vh - 157px);
+*/
+    background: #000;
+    width: 50%;
+    height: 50%;
+    margin: 15% auto 0 auto;
 }
 
 .curtir {
@@ -600,6 +704,33 @@ img {
     color: #db0fbc !important;
     cursor: pointer;
 }
+
+
+.curtirVideo {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.curtirVideo i {
+    font-size: 30px;
+}
+
+.curtirVideo p {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+    line-height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .avatarPequeno img {
     width: 80%;
@@ -632,6 +763,7 @@ img {
 
 #topo a {
     color: #fff;
+    font-size: 16px;
 }
 
 #login {
@@ -702,6 +834,46 @@ footer p {
     line-height: 2px;
     width: 150px;
 }
+
+   .copyry{
+            width: 80%;
+            float: left;
+        }
+         .copyry img{
+            width: 20%;
+            float: left;
+        }
+            
+            .copyry p{
+            width: 70%;
+            float: left;
+                font-size: 16px;
+        }
+            
+            .footerMenu1   {
+               width: 20%; 
+                float: right;
+            }
+            
+            .footerMenu1 ul{ 
+            display: inline-flex;
+                padding: 0!important;
+                
+            }
+            
+             .footerMenu1 ul li {
+                 
+                 width: 50%;
+         }
+            
+            .footerMenu1 ul li {
+                 line-height: 80px;
+                display: ;
+                background: ;
+                margin-right: 15%;
+         }
+            
+            
 
 
 /**************************************************PRIVACIDADE****************************************************************************************/
@@ -818,7 +990,12 @@ footer p {
     margin-left: auto;
 }
 
-
+.copyry1{
+        display: block;
+    }
+.copyry2{
+        display: none;
+    }
 /**************************************************1024px****************************************************************************************/
 
 @media(max-width: 1024px) {
@@ -826,6 +1003,17 @@ footer p {
         text-align: left;
         z-index: 999;
     }
+
+    body {
+        background: ;
+    }
+    .logoFooter {
+        margin-right: 1px;
+        margin-top: 13px;
+        line-height: 2px;
+        width: 100px;
+    }
+
 }
 
 /**************************************************992px****************************************************************************************/
@@ -844,52 +1032,185 @@ footer p {
         width: 100%;
     }
 
-    /**************************************************768px****************************************************************************************/
-    @media (max-width: 768px) {
-        .carousel-item h4 {
-            font-size: 24px;
-        }
-        .footerMenu {
-            float: none !important;
-            text-align: center;
-        }
-
-        .footerMenu li {
-            margin-right: 30px;
-            text-align: center;
-        }
-
-        footer p {
-            float: none !important;
-            line-height: 0px;
-            font-size: 10px;
-            text-align: center;
-
-            background: red;
-        }
-        .logoFooter {
-            display: none;
-        }
+    #mPlayer DIV {
+        background: #000;
+        width: 95%;
+        height: 50%;
+        margin: 15% 2.5% 0 2.5%;
     }
 
-    /**************************************************500px****************************************************************************************/
-    @media (max-width: 500px) {
-        .carousel-item h4 {
-            font-size: 20px;
-        }
-
-        .menu ul li {
-            margin-top: 0px;
-        }
-
-        .titulo1 {
-            font-size: 40px;
-        }
-
-        .titulo2 {
-            font-size: 30px;
-        }
-        .cover-nav li {
-            margin-right: 16px;
-        }
+    body {
+        background: ;
     }
+
+
+    .copyry {
+        width: 75% !important;
+    }
+
+    .copyry p {
+        font-size: 12px !important;
+    }
+
+    .footerMenu1 {
+        width: 25% !important;
+
+    }
+
+
+
+
+}
+
+/**************************************************768px****************************************************************************************/
+
+@media (max-width: 768px) {
+
+    .carousel-item h4 {
+        font-size: 24px;
+    }
+    .footerMenu {
+        float: none !important;
+        text-align: center;
+    }
+
+    .footerMenu li {
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    footer p {
+        float: none !important;
+        line-height: 0px;
+        font-size: 10px;
+        text-align: center;
+        background: ;
+    }
+    .logoFooter {
+        display: block;
+    }
+
+    body {
+        background: ;
+    }
+    
+    .copyry1{
+        display: none;
+    }
+    
+     .copyry2{
+        display: block;
+    }
+
+    .copyry {
+        width: 100% !important;
+        float: right!important;
+
+    }
+    .copyry img {
+        width: 20% !important;
+        float: left !important;
+    }
+
+    .copyry p {
+        width: 80% !important;
+        float: right !important;
+        font-size: 12px !important;
+        height: 60px;
+        line-height: 60px !important;
+    }
+
+    .footerMenu1 {
+        width: 100% !important;
+        float: left!important;
+        text-align: center !important;
+    }
+
+    .footerMenu1 ul {
+        display: inline-flex !important;
+        padding: 0 !important;
+
+    }
+
+    .footerMenu1 ul li {
+        width: 50% !important;
+    }
+
+    .footerMenu1 ul li {
+        line-height: 80px !important;
+        margin-right: 15% !important;
+    }
+
+    .logoFooter {
+        margin-right: 0px !important;
+
+    }
+    
+    h1 {
+    font-weight: bold !important;
+    font-size: 30px !important;
+}
+
+}
+
+/**************************************************500px****************************************************************************************/
+
+@media (max-width: 500px) {
+    .carousel-item h4 {
+        font-size: 20px;
+    }
+
+    .menu ul li {
+        margin-top: 0px;
+    }
+
+    .titulo1 {
+        font-size: 40px;
+    }
+
+    .titulo2 {
+        font-size: 30px;
+    }
+    .cover-nav li {
+        margin-right: 16px;
+    }
+   
+   
+
+    .copyry p {
+        width: 80% !important;
+        float: right !important;
+        font-size: 11px !important;
+        height: 60px;
+        line-height: 60px !important;
+    }
+
+    .footerMenu1 {
+        width: 100% !important;
+        float: left!important;
+        text-align: center !important;
+    }
+
+    .footerMenu1 ul {
+        display: inline-flex !important;
+        padding: 0 !important;
+
+    }
+
+    .footerMenu1 ul li {
+        width: 50% !important;
+    }
+
+    .footerMenu1 ul li {
+        line-height: 80px !important;
+        margin-right: 15% !important;
+    }
+
+    .logoFooter {
+        margin-right: 0px !important;
+
+    }
+    
+    
+
+}

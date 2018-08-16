@@ -50,10 +50,10 @@
                 </div>
                 <div class="modal fade " id="loginMoldal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
                     <div class="modal-dialog modal-sm ">
-                        <div class="modal-content px-3 py-3 laranja">
+                        <div class="modal-content px-3 py-3 roxo inputLilas">
                             <div class="modalTitulo">
                                 <button type="button" class="text-branco close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="login" class=" text-branco"><u>Login do aluno</u></h4>
+                                <h4 class="modal-title" id="login" class=" text-branco">LOGIN DO ALUNO</h4>
                             </div>
                             <div class="modal-body">
                                 <form class="formLogCli" action="#">
@@ -107,24 +107,62 @@
         <script src="dist/js/msgAluno.js"></script>        
         <script src="dist/js/inserirVideoFoto.js"></script>
 
+<!--
         <footer>
             <div class="row tirar_margin_row pt-4 pb-1 cinza">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-md-8  text-branco ">
-                            <img class="logoFooter float-left" src="dist/img/logoBranco.png" alt="">
-                            <p class="float-left">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
+                        <div class="col-md-8 col-lg-8 col-sm-12 col-xl-8  text-branco" style="background:red">
+                            <img class="logoFooter float-left" src="dist/img/logoBranco.png" alt="" style="background:green">
+                            <p class="float-left copy" style="background:pink">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 text-branco  ">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xl-4  text-branco  " style="background:blue">
                             <ul class="footerMenu  float-right">
-                                <li><a href="index.php?page=privacidade">Privacidade</a></li>
-                                <li><a href="index.php?page=contato">Contato</a></li>
+                                <li><a href="index.php?page=privacidade">PRIVACIDADE</a></li>
+                                <li><a href="index.php?page=contato">CONTATO</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+-->
+ 
+        
+        
+        
+         <footer>
+            <div class="tirar_margin_row pt-4 pb-1 cinza">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyry copyry1 text-branco " style="background:">
+                            <img class="logoFooter" src="dist/img/logoBranco.png" alt="" style="background:">
+                            <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
+                        </div>
+                        
+                        
+                        <div class="footerMenu1 " style="background:">
+                            <ul class="">
+                                <li><a href="index.php?page=privacidade">PRIVACIDADE</a></li>
+                                <li><a href="index.php?page=contato">CONTATO</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="copyry copyry2 text-branco" style="background:">
+                            <img class="logoFooter" src="dist/img/logoBranco.png" alt="" style="background:">
+                            <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="dist/js/jquery.blockUI.js"></script>
         <script src="dist/js/ajaxLoading.js"></script>
