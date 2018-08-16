@@ -1,0 +1,44 @@
+padronizar fontes;
+trocar # para ID; OK
+Trocar titulos das páginas, fonte maior, negrito; OK
+Subtitlo diminuir, menos destaque; OK
+ Titulos e subtitulos de guias, trocar tamanho da fonte, as abas:
+Pré cadastro, buscar e cadastro; OK
+Criar banco para registro de atividades;
+ultimas atividades:
+trocar o background do card para lilás claro. OK
+Hover nos botões com lilás(todos).
+diminuir o nome acessar OK
+tirar o amarelo da area de login
+trocar pagina de login (inverter logo por formulário) OK
+
+portal
+aumentar fonte do menu - home, regulamento, area do aluno 
+colocar em negrito home e regulamento.
+moldal area do aluno 
+roxo aml com letras brancas e input lilas tirar subilhado do titulo e colocar em maisculo
+fazer novos banners com texto imbutido
+(imagem sobre cidadania, tecnologia, ação social)
+como você se torna um cidadao fazendo uma ação social com tecnologia...
+bloco O PROJETO e TITULO
+dexar lilás
+titulo em negrito  56px
+fonte tamanho 18px
+subititulo 52px
+colocar container
+
+DESAFIOS seguir o padrão do moldal
+e subistituir (nome do desafio) por ( nome do grupo) e deixar em negrito
+colocar container no regulamento
+formação e processo de seleção colocar em negrito
+
+trocar botão header do aluno pelo sair
+
+tela do aluno e coordenador 
+deixar titulos em negrito;
+
+
+
+
+
+

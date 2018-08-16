@@ -15,7 +15,7 @@
 /*A pedidos do Marketing...*/
 
 .imgHeaderTitle{
-  display: none;
+  /*display: none;*/
 }
 
 .title{
@@ -26,6 +26,17 @@
   font-size: 2.2em;
   font-weight: bold;
 
+  margin-right: 130px !important;
+
+}
+
+.titleUnImg{
+   text-transform: uppercase;
+  /*background-color: rgb(95,37,159, 0.9);*/
+  color: #5F259F !important;
+  font-family: London;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 .subTitle{
@@ -286,8 +297,8 @@ label{
   border-bottom-left-radius: 90px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: #d7b3ff;
-  color: #333;
+  background-color: rgba(95,37,159,10);
+  color: #fff;
   max-width: 280px;
 }
 
@@ -319,6 +330,7 @@ label{
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: rgba(95,37,159,0.2);
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
@@ -383,7 +395,9 @@ td{
   }
 
   .title{
-    font-size: 1.5em;
+    margin: auto !important;
+    margin-top: 34px !important;
+    font-size: 1.8em;
   }
 
   .imgHeaderTitle{
