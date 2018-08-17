@@ -91,7 +91,7 @@ $dalGeral = new dalGeral();
 	</nav>
 	
 	<?php 
-	new routers('painel');
+		new routers('painel');
 	?>
 
 	<footer class="footer navbar navbar-expand-lg navbar-dark">
@@ -108,5 +108,5 @@ $dalGeral = new dalGeral();
 	</footer>
 </body>
 
-
+<script src="./dist/js/abasCadastro.js"></script>
 </html>

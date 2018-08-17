@@ -13,29 +13,23 @@ tirar o amarelo da area de login
 trocar pagina de login (inverter logo por formulário) OK
 
 portal
-aumentar fonte do menu - home, regulamento, area do aluno 
-colocar em negrito home e regulamento.
-moldal area do aluno 
-roxo aml com letras brancas e input lilas tirar subilhado do titulo e colocar em maisculo
-fazer novos banners com texto imbutido
-(imagem sobre cidadania, tecnologia, ação social)
-como você se torna um cidadao fazendo uma ação social com tecnologia...
-bloco O PROJETO e TITULO
-dexar lilás
-titulo em negrito  56px
-fonte tamanho 18px
-subititulo 52px
-colocar container
+aumentar fonte do menu - home, regulamento, area do aluno colocar em negrito home e regulamento. Ok
+moldal area do aluno roxo aml com letras brancas e input lilas tirar subilhado do titulo e colocar em maisculo Ok
+fazer novos banners com texto imbutido (imagem sobre cidadania, tecnologia, ação social) como você se torna um cidadao fazendo uma ação social com tecnologia...
+bloco O PROJETO e TITULO dexar lilás ok
+titulo em negrito  56px Ok
+fonte tamanho 18px Ok
+subititulo 52px Ok
+colocar container Ok
 
-DESAFIOS seguir o padrão do moldal
+DESAFIOS seguir o padrão do moldal Ok
 e subistituir (nome do desafio) por ( nome do grupo) e deixar em negrito
-colocar container no regulamento
+colocar container no regulamento Ok
 formação e processo de seleção colocar em negrito
 
 trocar botão header do aluno pelo sair
 
-tela do aluno e coordenador 
-deixar titulos em negrito;
+tela do aluno e coordenador, deixar titulos em negrito; Ok
 
 
 
