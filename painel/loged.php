@@ -108,5 +108,5 @@ $dalGeral = new dalGeral();
 	</footer>
 </body>
 
-
+<script src="./dist/js/abasCadastro.js"></script>
 </html>

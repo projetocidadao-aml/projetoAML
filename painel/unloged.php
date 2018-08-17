@@ -72,7 +72,7 @@
 		});
 	</script>
 
-
+<script src="./dist/js/abasCadastro.js"></script>
 
 
 </body>
