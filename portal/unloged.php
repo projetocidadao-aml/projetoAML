@@ -5,12 +5,27 @@
     <html lang="pt-br">
 
     <head>
+
+        <!-- SEO -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Projeto feito por alunos das Etec Jaraguá, Etec basilides de godoy e Etec André Bogasian com parceria da empresa AML
+         ">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="Etec ,Etec Jaraguá, Etec basilides de godoy, Etec André Bogasian, AML, Cidadão, Cidadão do futuro">
+        <meta name="author" content="Etec Jaraguá, Etec basilides de godoy e Etec André Bogasian">
+        <meta name="og:title" property="og:title" content="Cidadão do futuro">
+        <title>Cidadão do futuro</title>
+
+
+
+        <link rel="shortcut icon" href="dist/img/favicon.png">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="dist/css/bootstrap.css">
         <link rel="stylesheet" href="dist/css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
 
+        <!-- CSS -->
         <link rel="stylesheet" href="dist/css/style.css">
 
         <style>
@@ -53,7 +68,7 @@
                         <div class="modal-content px-3 py-3 roxo inputLilas">
                             <div class="modalTitulo">
                                 <button type="button" class="text-branco close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="login" class=" text-branco">LOGIN DO ALUNO</h4>
+                                <h5 class="modal-title" id="login" class=" text-branco">LOGIN DO ALUNO</h5>
                             </div>
                             <div class="modal-body">
                                 <form class="formLogCli" action="#">
@@ -62,7 +77,7 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control senha" name="senha" placeholder="Senha">
                                     </div>
-                                    <p class="text-center">
+                                    <p class="text-center margin_btn">
                                         <input type="hidden" name="logaCli" value="Entrar">
                                         <button class="btn btn-primary logaCli" name="logaCli">
                                     <i class="fa fa-sign-in"></i>Entrar
@@ -98,34 +113,13 @@
         <script src="dist/js/modalVideoDesafio.js"></script>
         <script src="dist/js/curtirDesafio.js"></script>
         <script src="dist/js/addIntegrante.js"></script>
-        <script src="dist/js/msgAluno.js"></script>        
+        <script src="dist/js/msgAluno.js"></script>
         <script src="dist/js/inserirVideoFoto.js"></script>
 
-<!--
+
+
+
         <footer>
-            <div class="row tirar_margin_row pt-4 pb-1 cinza">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-lg-8 col-sm-12 col-xl-8  text-branco" style="background:red">
-                            <img class="logoFooter float-left" src="dist/img/logoBranco.png" alt="" style="background:green">
-                            <p class="float-left copy" style="background:pink">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-sm-12 col-xl-4  text-branco  " style="background:blue">
-                            <ul class="footerMenu  float-right">
-                                <li><a href="index.php?page=privacidade">PRIVACIDADE</a></li>
-                                <li><a href="index.php?page=contato">CONTATO</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
--->
- 
-        
-        
-        
-         <footer>
             <div class="tirar_margin_row pt-4 pb-1 cinza">
                 <div class="container">
                     <div class="row">
@@ -133,15 +127,15 @@
                             <img class="logoFooter" src="dist/img/logoBranco.png" alt="" style="background:">
                             <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
                         </div>
-                        
-                        
+
+
                         <div class="footerMenu1 " style="background:">
                             <ul class="">
                                 <li><a href="index.php?page=privacidade">PRIVACIDADE</a></li>
                                 <li><a href="index.php?page=contato">CONTATO</a></li>
                             </ul>
                         </div>
-                        
+
                         <div class="copyry copyry2 text-branco" style="background:">
                             <img class="logoFooter" src="dist/img/logoBranco.png" alt="" style="background:">
                             <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
@@ -150,13 +144,13 @@
                 </div>
             </div>
         </footer>
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="dist/js/jquery.blockUI.js"></script>
         <script src="dist/js/ajaxLoading.js"></script>
