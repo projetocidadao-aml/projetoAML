@@ -104,7 +104,7 @@ $cursos = new cursoControl();
 				<div class="col-12 border mt-5 p-4">
 					<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Upload de Listas</h2>
 
-					<form>
+					<form enctype="multipart/form-data" method="POST" action="./control/uploadPreCadastro.class.php">
 
 						<div class="form-row">
 							<div class="form-group col-md-8">
@@ -118,6 +118,10 @@ $cursos = new cursoControl();
 								<label for="uploadSemestre">Semestre</label>
 								<select class="form-control" id="uploadSemestre" name="upload_semestre_curso">
 									<option>Selecione...</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
 								</select>
 							</div>
 						</div>
@@ -126,9 +130,9 @@ $cursos = new cursoControl();
 							<div class="form-group col-md-12">
 								<label for="uploadArquivo">Arquivo</label>
 								<div class="custom-file" id="customFile" lang="es">
-									<input type="file" class="custom-file-input" id="exampleInputFile" name="upload_lista_pessoas" aria-describedby="fileHelp">
-									<label class="custom-file-label" for="exampleInputFile">
-										Selecione o arquivo...
+									<input type="file" class="custom-file-input" id="upload_lista_pessoas" name="upload_lista_pessoas" aria-describedby="fileHelp">
+									<label class="custom-file-label" for="upload_lista_pessoas">
+									Selecione o arquivo...									
 									</label>
 								</div>
 							</div>
