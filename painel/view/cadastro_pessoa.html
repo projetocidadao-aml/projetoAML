@@ -8,6 +8,8 @@ $cursos = new cursoControl();
 
 
 ?>
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-12">
@@ -19,23 +21,26 @@ $cursos = new cursoControl();
 
 
 	<ul class="nav nav-pills mt-4" id="pills-tab" role="tablist">
-		<li class="nav-item">
-			<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Pré Cadastro</a>
+		<li class="nav-item preCadastro-cadastro-pessoa">
+			<a class="nav-link active   btn-lilas" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Pré Cadastro</a>
 		</li>
 		
-		<li class="nav-item">
+		<li class="nav-item cadastro-cadastro-pessoa ">
 			<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Cadastro</a>
 		</li>
 
-		<li class="nav-item">
+		<li class="nav-item buscar-cadastro-pessoa">
 			<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Buscar</a>
 		</li>
 	</ul>
-	<div class="tab-content" id="pills-tabContent">
+	
+	
+	<div class="tab-content lilas" id="pills-tabContent">
 		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
+            </style>
 			<div class="row">
-				<div class="col-12 mt-3 p-4">
+				<div class="col-12 mt-3 p-4 ">
 					<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Pré Cadastro Alunos</h2>
 
 					<form>
@@ -101,7 +106,7 @@ $cursos = new cursoControl();
 
 				</div>
 
-				<div class="col-12 border mt-5 p-4">
+				<div class="col-12  mt-5 p-4">
 					<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Upload de Listas</h2>
 
 					<form enctype="multipart/form-data" method="POST" action="./control/uploadPreCadastro.class.php">
