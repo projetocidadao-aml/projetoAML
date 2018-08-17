@@ -43,7 +43,7 @@
                             <ul class="navbar-nav ">
                                 <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.php?page=regulamento">REGULAMENTO</a></li>
-                                <li class="nav-item caixaLogin"><a class="nav-link" href="" data-toggle="modal" data-target="#loginMoldal">AREA DO ALUNO</a>
+                                <li class="nav-item"><a class="nav-link" href="control/deslogar.php">SAIR</a>
                             </ul>
                         </div>
                     </nav>
@@ -78,8 +78,8 @@
         </div>
         </div>
 
-        <?php 
-		new routers('index');
+        <?php
+		new routers('aluno');
 	?>
 
 
