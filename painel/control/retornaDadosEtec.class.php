@@ -1,18 +1,18 @@
 <?php
 session_start();
-$retorno[] = array('idUser'=>utf8_encode($_SESSION['idUser']), 
-   'nomeEtec'=> utf8_encode($_SESSION['nomeEtec']), 
-   'nomeDiretor'=> utf8_encode($_SESSION['nomeDiretor']), 
-   'nomeResponsavel'=> utf8_encode($_SESSION['nomeResponsavel']),
-   'nomeUsuario'=>utf8_encode($_SESSION['nomeUsuario']), 
-   'senhaEtec'=> utf8_encode($_SESSION['senhaEtec']), 
-   'cepEtec'=> utf8_encode($_SESSION['cepEtec']), 
-   'logradouroEtec'=> utf8_encode($_SESSION['logradouroEtec']), 
-   'cidadeEtec'=> utf8_encode($_SESSION['cidadeEtec']), 
-   'bairroEtec'=> utf8_encode($_SESSION['bairroEtec']), 
-   'emailEtec'=> utf8_encode($_SESSION['emailEtec']), 
-   'ufEtec'=> utf8_encode($_SESSION['ufEtec']), 
-   'telefoneEtec'=>utf8_encode($_SESSION['telefoneEtec']));
-echo json_encode($retorno);
+$retorno[] = array('idUser'=>$_SESSION['idUser'], 
+   'nomeEtec'=> $_SESSION['nomeEtec'], 
+   'nomeDiretor'=> $_SESSION['nomeDiretor'], 
+   'nomeResponsavel'=> $_SESSION['nomeResponsavel'],
+   'nomeUsuario'=>$_SESSION['nomeUsuario'], 
+   'senhaEtec'=> $_SESSION['senhaEtec'], 
+   'cepEtec'=> $_SESSION['cepEtec'], 
+   'logradouroEtec'=> $_SESSION['logradouroEtec'], 
+   'cidadeEtec'=> $_SESSION['cidadeEtec'], 
+   'bairroEtec'=> $_SESSION['bairroEtec'], 
+   'emailEtec'=> $_SESSION['emailEtec'], 
+   'ufEtec'=> $_SESSION['ufEtec'], 
+   'telefoneEtec'=>$_SESSION['telefoneEtec']);
+echo json_encode($retorno, JSON_UNESCAPED_UNICODE);
 
 ?>

@@ -231,11 +231,15 @@ label{
 }
 
 .btn-secondary:hover{
-  box-shadow: 0 0 0 0.2rem rgba(66,85,99, 0.5) !important;
+  /*box-shadow: 0 0 0 0.2rem rgba(66,85,99, 0.5) !important;*/
+  box-shadow: 0 0 0 0.2rem rgba(95,37,159, 0.5) !important;
+
 }
 
 .btn-secondary:focus, .btn-secondary.focus{
-  box-shadow: 0 0 0 0.2rem rgba(66,85,99, 0.5) !important;
+  /*box-shadow: 0 0 0 0.2rem rgba(66,85,99, 0.5) !important;*/
+  box-shadow: 0 0 0 0.2rem rgba(95,37,159, 0.5) !important;
+  
 }
 
 .btn-danger:hover{

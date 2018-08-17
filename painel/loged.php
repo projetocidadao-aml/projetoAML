@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: text/html; charset=utf-8');
 include 'control/router.class.php';
 include 'control/dal.class.php';
 $dalGeral = new dalGeral();
