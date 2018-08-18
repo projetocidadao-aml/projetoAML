@@ -1,4 +1,5 @@
-  <div id="carouselSite" class="carousel slide" data-ride="carousel">
+<?php include("control/desafio.class.php"); ?>
+<div id="carouselSite" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block img-fluid" src="dist/img/banner1.jpg" alt="slider">
@@ -110,53 +111,13 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column ">
-                <div class="card roxo">
-                    <img class="card-img-top" src="dist/img/capaGrupoIndex.png" alt="">
-                    <div class="card-body text-center testPTColorWhite">
-                        <h4 class="card-title">
-                            nome do grupo
-                        </h4>
-                        <p class="card-text justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus necessitatibus atque dicta unde numquam ut...</p>
-                        <a class="card-link btn btn-outline-primary btn-lilas" href="index.php?page=desafios">Ver desafio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column">
-                <div class="card lilas">
-                    <img class="card-img-top" src="dist/img/capaGrupoIndex.png" alt="">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">
-                            nome do grupo
-                        </h4>
-                        <p class="card-text justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus necessitatibus atque dicta unde numquam ut...</p>
-                        <a class="card-link btn btn-outline-primary btn-roxo" href="index.php?page=desafios">Ver desafio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column">
-                <div class="card roxo">
-                    <img class="card-img-top" src="dist/img/capaGrupoIndex.png" alt="">
-                    <div class="card-body text-center testPTColorWhite">
-                        <h4 class="card-title">
-                            nome do grupo
-                        </h4>
-                        <p class="card-text justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus necessitatibus atque dicta unde numquam ut...</p>
-                        <a class="card-link btn btn-outline-primary btn-lilas" href="index.php?page=desafios">Ver desafio</a>
-                    </div>
-                </div>
-            </div>
+            
+            <?php $desafio->listaDesafios(); ?>
         </div>
         <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center">
                 <li class="page-item">
-                    <a class="page-link testPTpagecolor" href="#" tabindex="-1">&lsaquo;</a>
-                </li>
-                <li class="page-item"><a class="page-link testPTpagecolor activePag" href="#">1</a></li>
-                <li class="page-item"><a class="page-link testPTpagecolor" href="#">2</a></li>
-                <li class="page-item"><a class="page-link testPTpagecolor" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link testPTpagecolor" href="#">&rsaquo;</a>
+                    <a class="page-link testPTpagecolor" href="index.php?page=grupos_todos">Ver todos</a>
                 </li>
             </ul>
         </nav>
