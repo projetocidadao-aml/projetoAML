@@ -17,7 +17,7 @@ class conexao{
     {
         //tenta conexão com banco retorna conexão caso tenha sucesso, caso não, retorna mensagem de erro.
         try{
-            $con = new PDO($this->host, $this->user, $this->pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+            $con = new PDO($this->host, $this->user, $this->pass);
             $con -> exec("set names utf8");
             return $con;
         }

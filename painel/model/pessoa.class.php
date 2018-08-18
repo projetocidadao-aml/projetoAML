@@ -9,7 +9,7 @@
 			$this->conn = $conexao->conect();
 		}
         function listaPessoas(){
-            $sql = "SELECT P.*, PER.*, PC.*, C.*, PG.*, G.*,E.*
+            $sql = "SELECT P.*, PER.*, PC.*, C.*, PG.*, G.*,E.*, P.PESSOA_ID as ID
             FROM PESSOA AS P
             LEFT JOIN PERFIL AS PER ON P.ID_PERFIL = PER.PERFIL_ID
             LEFT JOIN PESSOA_CURSO AS PC ON P.PESSOA_ID = PC.ID_PESSOA
@@ -22,7 +22,7 @@
 			$linha = $db->fetchAll();
 			foreach ($linha as $value) {
 				echo "<tr>
-                        <td>".$value['PESSOA_ID']."</td>
+                        <td>".$value['ID']."</td>
                         <td>".$value['PESSOA_NOME']."</td>
                         <td>".$value['PERFIL']."</td>
                         <td>".$value['GRUPO_ID']."</td>

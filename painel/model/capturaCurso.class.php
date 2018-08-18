@@ -37,6 +37,19 @@ function listaCursosComboBox(){
     
 }
 
+function listaCursosComboBoxSemestre(){
+    $sql = "SELECT * FROM etec_teste_2.CURSOS inner join ETEC_CURSOS on CURSO_ID = ID_CURSO and ID_ETEC = $_SESSION[idUser]";
+    $db = $this->conn->prepare($sql);
+    $db->execute();
+    $linha = $db->fetchAll();
+    foreach ($linha as $value) {
+        echo "<option value = '$value[CURSO_ID]'  semestres = '$value[CURSO_DURACAO]'>
+        $value[CURSO_NOME]
+        </option>";
+    }
+    
+}
+
 
 function listaCursosEtec(){
 
