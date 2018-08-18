@@ -14,9 +14,15 @@ class cursoControl
 
 	}
 
-		function listaCursosComboBox(){
+	function listaCursosComboBox(){
 		$curso = new capturaCursos();
 		$curso->listaCursosComboBox();
+
+	}
+
+	function listaCursosComboBoxSemestre(){
+		$curso = new capturaCursos();
+		$curso->listaCursosComboBoxSemestre();
 
 	}
 }

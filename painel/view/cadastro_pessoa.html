@@ -5,8 +5,6 @@ $pessoa = new pessoaControl();
 include 'control/capturaCurso.class.php';
 $cursos = new cursoControl();
 
-
-
 ?>
 
 
@@ -38,129 +36,111 @@ $cursos = new cursoControl();
 	<div class="tab-content lilas" id="pills-tabContent">
 		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-            </style>
-			<div class="row">
-				<div class="col-12 mt-3 p-4 ">
-					<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Pré Cadastro Alunos</h2>
+		</style>
+		<div class="row">
+			<div class="col-12 mt-3 p-4 ">
+				<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Pré Cadastro Alunos</h2>
 
-					<form>
-						<div class="form-row">
-							<div class="form-group col-md-5">
-								<label for="nomePessoa">Nome</label>
-								<input type="name" class="form-control" id="nomePessoa" name="preCad_pessoa_nome" placeholder="Pedro Travalon Tavares" required>
-							</div>
-							<div class="form-group col-md-4">
-								<label for="emailPessoa">Email</label>
-								<input type="email" class="form-control" id="emailPessoa" name="preCad_pessoa_email" placeholder="pedro.travalon@gmail.com" required>
-							</div>
-
-							<div class="form-group col-md-3">
-								<label for="emailPessoa">CPF</label>
-								<input type="email" class="form-control" id="preCad_pessoa_cpf" name="preCad_pessoa_cpf" placeholder="333.333.333-33" required>
-							</div>
-
+				<form class="form-preCadastro">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="nomePessoa">Nome</label>
+							<input type="name" class="form-control" id="nomePessoa" name="preCad_pessoa_nome" placeholder="Pedro Travalon Tavares" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="emailPessoa">Email</label>
+							<input type="email" class="form-control" id="emailPessoa" name="preCad_pessoa_email" placeholder="pedro.travalon@gmail.com" required>
 						</div>
 
-						<div class="form-row">
-							<div class="form-group col-md-5">
-								<label for="perfilPessoa">Perfil</label>
-								<select class="form-control" id="perfilPessoa" name="preCad_pessoa_perfil" required>
-									<option>Selecione...</option>
-									<option value="Aluno">Aluno</option>
-									<option value="Professor">Professor</option>
-									<option value="Coordenador">Coordenador</option>
+					</div>
 
-								</select>
-							</div>
+					<div class="form-row">
+						
+						<div class="form-group col-md-6">
+							<label for="perfilPessoa">Curso</label>
+							<select class="form-control" id="cursoPessoa" name="preCad_pessoa_curso" required>
+								<option value="">Selecione...</option>
+								<?php $cursos->listaCursosComboBoxSemestre(); ?>
+							</select>
+						</div>
 
-							<div class="form-group col-md-4">
-								<label for="perfilPessoa">Curso</label>
-								<select class="form-control" id="cursoPessoa" name="preCad_pessoa_curso" required>
-									<option value="">Selecione...</option>
-									<?php $cursos->listaCursosComboBox(); ?>
+						<div class="form-group col-md-3">
+							<label for="perfilPessoa">Semestre</label>
+							<select class="form-control" id="semestrePessoa" name="preCad_pessoa_semestre" required>
+								<option>Selecione...</option>
+							</select>
+						</div>
 
-								</select>
-							</div>
-
-							<div class="form-group col-md-3">
-								<label for="perfilPessoa">Semestre</label>
-								<select class="form-control" id="semestrePessoa" name="preCad_pessoa_semestre" required>
-									<option>Selecione...</option>
-									<option value="Aluno">Aluno</option>
-									<option value="Professor">Professor</option>
-									<option value="Coordenador">Coordenador</option>
-
-								</select>
-							</div>
-							
-
+						<div class="form-group col-md-3">
+							<label for="emailPessoa">CPF</label>
+							<input type="tel" class="form-control" id="preCad_pessoa_cpf" name="preCad_pessoa_cpf" placeholder="333.333.333-33" required>
 						</div>
 
 
-						<div class="buttons text-center mt-2">
-							<button type="submit" class="btn btn-secondary">Cadastrar</button>
-							<button type="submit" class="btn btn-danger">Cancelar</button>
-						</div>
-
-					</form>		
-
-				</div>
-
-				<div class="col-12  mt-5 p-4">
-					<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Upload de Listas</h2>
-
-					<form enctype="multipart/form-data" method="POST" action="./control/uploadPreCadastro.class.php">
-
-						<div class="form-row">
-							<div class="form-group col-md-8">
-								<label for="uploadCurso">Curso</label>
-								<select class="form-control" id="uploadCurso" name="upload_nome_curso">
-									<option value="">Selecione...</option>
-									<?php $cursos->listaCursosComboBox(); ?>
-								</select>
-							</div>
-							<div class="form-group col-md-4">
-								<label for="uploadSemestre">Semestre</label>
-								<select class="form-control" id="uploadSemestre" name="upload_semestre_curso">
-									<option>Selecione...</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="form-row">
-							<div class="form-group col-md-12">
-								<label for="uploadArquivo">Arquivo</label>
-								<div class="custom-file" id="customFile" lang="es">
-									<input type="file" class="custom-file-input" id="upload_lista_pessoas" name="upload_lista_pessoas" aria-describedby="fileHelp">
-									<label class="custom-file-label" for="upload_lista_pessoas">
-									Selecione o arquivo...									
-									</label>
-								</div>
-							</div>
-							
-						</div>
+					</div>
 
 
+					<div class="buttons text-center mt-2">
+						<button type="submit" class="btn btn-secondary">Cadastrar</button>
+						<button type="submit" class="btn btn-danger">Cancelar</button>
+					</div>
 
-						<div class="buttons text-center mt-2">
-							<button type="submit" class="btn btn-secondary">Subir o Arquivo</button>
-						</div>
+				</form>		
 
-					</form>		
-
-
-				</div>
 			</div>
 
+			<div class="col-12  mt-5 p-4">
+				<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Upload de Listas</h2>
+
+				<form enctype="multipart/form-data" method="POST" action="./control/uploadPreCadastro.class.php">
+
+					<div class="form-row">
+						<div class="form-group col-md-8">
+							<label for="uploadCurso">Curso</label>
+							<select class="form-control" id="uploadCurso" name="upload_nome_curso">
+								<option value="">Selecione...</option>
+								<?php $cursos->listaCursosComboBoxSemestre(); ?>
+								
+							</select>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="uploadSemestre">Semestre</label>
+							<select class="form-control" id="uploadSemestre" name="upload_semestre_curso">
+								<option>Selecione...</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="uploadArquivo">Arquivo</label>
+							<div class="custom-file" id="customFile" lang="es">
+								<input type="file" class="custom-file-input" id="upload_lista_pessoas" name="upload_lista_pessoas" aria-describedby="fileHelp">
+								<label class="custom-file-label" for="upload_lista_pessoas">
+									Selecione o arquivo...									
+								</label>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="buttons text-center mt-2">
+						<button type="submit" class="btn btn-secondary">Subir o Arquivo</button>
+					</div>
+
+				</form>		
+
+
+			</div>
 		</div>
-		<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-			<div class="row">
-				<div class="col-12 mt-3 p-4">
-					<h2 class="text-center text-secondary mb-5 subTitle">Buscar Pessoas</h2>
+
+	</div>
+	<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+		<div class="row">
+			<div class="col-12 mt-3 p-4">
+				<h2 class="text-center text-secondary mb-5 subTitle">Buscar Pessoas</h2>
 					<!-- <form>
 						<div class="form-row">
 							<div class="form-group col-md-6">
@@ -306,4 +286,34 @@ $cursos = new cursoControl();
 <script src="dist/js/mascaras.js"></script>
 <script src="control/script/cadastraPessoa.js"></script>
 
+<script>
 
+	/*
+	* Informar os dois Ids de curso e semestre, que ele automáticamente irá gerar um evento para completar os semestres
+	*@Alex
+	*/
+	
+	function preencheSemestre(cmbCurso, cmbSemestre){
+		$('#'+cmbCurso+'').change(function() {
+			var valor = this.value;
+			var semestres = $(this).find(':selected').attr('semestres');
+
+			$('#'+cmbSemestre+'').find('option').remove();
+
+				$('#'+cmbSemestre+'').append("<option value = '0'>Selecione...</option>");
+
+			for (var i = 1; i <= semestres; i++) {
+				$('#'+cmbSemestre+'').append("<option value = '"+i+"'>"+i+" º Semestre</option>");
+			}
+
+		});
+
+	}
+
+	preencheSemestre('cursoPessoa','semestrePessoa');
+
+	preencheSemestre('uploadCurso','uploadSemestre');
+
+
+
+</script>
