@@ -1,3 +1,5 @@
+<?php include 'control/usuario.class.php';
+$usuario = new usuario(); ?>
 <div class="cover perfil mb-3">
     <div class="wrapper">
         <div class="image">
@@ -10,7 +12,7 @@
                 <div class="avatar">
                     <img src="dist/img/avatar.png" alt="people" />
                 </div>
-                <div class="nome"><a href="#">Nome do coordenador</a></div>
+                <div class="nome"><a href="#"><?php echo $usuario->nome ?></a></div>
                 <ul class="cover-nav text-preto">
                     <li><a class="text-preto" href="" data-toggle="modal" data-target="#criarDesafioModal"> Criar desafio</a></li>
                     <li><a class="text-preto" href="index.php?page=criarGrupo"> Criar grupo</a></li>

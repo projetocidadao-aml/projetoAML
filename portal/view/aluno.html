@@ -1,3 +1,5 @@
+  <?php include 'control/usuario.class.php';
+  $usuario = new usuario(); ?>
   <div class="cover perfil mb-3 ">
         <div class="wrapper">
             <div class="image">
@@ -10,9 +12,9 @@
                     <div class="avatar">
                         <a href="index.php?page=aluno"> <img src="dist/img/avatar.png" alt="people"></a>
                     </div>
-                    <div class="nome"><a href="#">Nome do aluno</a></div>
+                    <div class="nome"><a href="#"><?php echo $usuario->nome ?></a></div>
                     <ul class="cover-nav menuPerfil">
-                        <li><a  class="text-preto" href="index.php?page=grupo">Grupo</a></li>
+                        <li><a  class="text-preto" href="index.php?page=grupo"><?php echo $usuario->nomeGrupo ?></a></li>
                     </ul>
                 </div>
             </div>
@@ -29,9 +31,9 @@
                         <h4 class="card-title text-center">
                             CRACHÁ
                         </h4>
-                        <p class="card-text">Nome do aluno</p>
-                        <p class="card-text">Nome da etec</p>
-                        <p class="card-text">Nome do curso</p>
+                        <p class="card-text"><?php echo $usuario->nome ?></p>
+                        <p class="card-text"><?php echo $usuario->nomeEtec ?></p>
+                        <p class="card-text"><?php echo $usuario->nomeGrupo ?></p>
                     </div>
                 </div>
                 <div class="card subir testePTColorgray">
