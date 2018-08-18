@@ -33,8 +33,12 @@ include("config.class.php");
                     <div class="'.$card_body.'">
                         <h4 class="card-title">'.$results["GRUPO_NOME"].'
                         </h4>
+                        
                         <p class="card-text justify">'.$results["GRUPO_DESC_COMPLETA"].'</p>
+                        
+                        <div class"card-footer">
                         <a class="card-link btn btn-outline-primary btn-lilas" href="index.php?page=desafios&id='.$results["GRUPO_ID"].'">Ver desafio</a>
+                        </div>
                     </div>
                 </div>
             </div>';
