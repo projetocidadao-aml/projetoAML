@@ -9,8 +9,7 @@
         <!-- SEO -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Projeto feito por alunos das Etec Jaraguá, Etec basilides de godoy e Etec André Bogasian com parceria da empresa AML
-         ">
+        <meta name="description" content="O Projeto Cidadão do Futuro, iniciativa a ser desenvolvida pela AML Consulting em parceria com as ETECs Basilides de Godoy, André Bogasian e Jaraguá, tem como objetivo desenvolver uma plataforma online para abrigar o concurso Cidadão do Futuro. A iniciativa busca a participação dos alunos e professores em ações para o exercício da cidadania, contribuindo na formação de cidadãos conscientes dos seus deveres e obrigações na sociedade.">
         <meta name="robots" content="index, follow">
         <meta name="keywords" content="Etec ,Etec Jaraguá, Etec basilides de godoy, Etec André Bogasian, AML, Cidadão, Cidadão do futuro">
         <meta name="author" content="Etec Jaraguá, Etec basilides de godoy e Etec André Bogasian">

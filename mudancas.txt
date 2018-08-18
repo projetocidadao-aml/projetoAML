@@ -23,8 +23,8 @@ subititulo 52px Ok
 colocar container Ok
 
 DESAFIOS seguir o padrão do moldal Ok
-e subistituir (nome do desafio) por ( nome do grupo) e deixar em negrito
-colocar container no regulamento Ok
+e subistituir (nome do desafio) por ( nome do grupo) e deixar em negrito, colocar container no regulamento Ok
+
 formação e processo de seleção colocar em negrito
 
 trocar botão header do aluno pelo sair
