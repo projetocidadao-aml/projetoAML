@@ -26,14 +26,13 @@ function capturaValores(){
 	senha = $("#cad_pessoa_senha").val();
 	perfil = $("#cad_pessoa_perfil").val();
 	descricao = $("#cad_pessoa_descricao").val();
-	protocolo = $("#cad_pessoa_protocolo").val();
 	obs = $("#cad_pessoa_obs").val();
 	$.post("control/cadastroPessoa.class.php",
 	{
 		cad_pessoa_nome: nome, cad_pessoa_apelido: apelido, cad_pessoa_cpf: cpf, 
 		cad_pessoa_email: email, cadastro_celular_pessoa: telefone, cad_pessoa_status: status, 
 		cad_pessoa_usuario: usuario,  cad_pessoa_senha: senha, cad_pessoa_perfil: perfil,
-		cad_pessoa_descricao: descricao, cad_pessoa_protocolo: protocolo,cad_pessoa_obs: obs
+		cad_pessoa_descricao: descricao, cad_pessoa_obs: obs
 	},
 	function(data){
 		console.log(data);
@@ -44,6 +43,11 @@ function capturaValores(){
 				text: "Cadastrado com Sucesso",
 				icon: "success",
 			});
+
+			setTimeout(function(){
+				window.location.reload();
+
+			}, 2000);
 		}
 		else{
 			parar();
@@ -80,6 +84,11 @@ function capturaValoresPreCadastro(){
 				text: "Cadastrado com Sucesso",
 				icon: "success",
 			});
+
+			setTimeout(function(){
+				window.location.reload();
+
+			}, 2000)
 		}
 
 		else if(data == 'Erro ao enviar o Email.'){
@@ -89,6 +98,11 @@ function capturaValoresPreCadastro(){
 				text: "Cadastrado com Sucesso. O Email não foi enviado.\nReenviar Email",
 				icon: "info",
 			});
+
+			setTimeout(function(){
+				window.location.reload();
+
+			}, 2000);
 		}
 		else{
 			parar();

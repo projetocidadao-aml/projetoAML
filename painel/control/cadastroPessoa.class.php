@@ -13,7 +13,7 @@ class Pessoa{
 	public $datacadastro;
 	public $dataalteracao;
     public $status;
-    public $protocolo;
+    // public $protocolo;
     public $observacoes;
     public $idperfil;
     public $prenome;
@@ -39,10 +39,10 @@ class Pessoa{
         $this->celular = $_POST['cadastro_celular_pessoa'];
         $this->descperfil = $_POST['cad_pessoa_descricao'];
         $this->status = $_POST['cad_pessoa_status'];
-        $this->protocolo = $_POST['cad_pessoa_protocolo'];
+        // $this->protocolo = $_POST['cad_pessoa_protocolo'];
         $this->observacoes = $_POST['cad_pessoa_obs'];
         $this->idperfil = $_POST['cad_pessoa_perfil'];
-        new cadastraPessoa($this->nome, $this->email, $this->apelido, $this->usuario, $this->senha, $this->cpf, $this->email, $this->celular, $this->descperfil, $this->status, $this->protocolo,$this->observacoes,$this->idperfil,$this->prenome,$this->preemail,$this->preperfil,$this->preobs,$this->curso,$this->semestrecurso,$this->cursoupload,$this->buscapessoa,$this->buscapessoacurso);
+        new cadastraPessoa($this->nome, $this->email, $this->apelido, $this->usuario, $this->senha, $this->cpf,  $this->celular, $this->descperfil, $this->status,$this->observacoes,$this->idperfil);
         
     }
 }

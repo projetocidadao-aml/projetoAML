@@ -36,6 +36,7 @@ include_once("../config.class.php");
 				$etec =  $linha['ETEC_NOME'];
 				$email = $linha['ETEC_EMAIL'];
 				$telefone = $linha['ETEC_TELEFONE'];
+
 				$message = "
 				<head>
 				<meta charset='UTF-8'>
@@ -83,11 +84,11 @@ include_once("../config.class.php");
 				<tr>
 				<td style='background-color:#fff;text-align:left; padding-left: 15px; padding-right: 5px;'>
 				<h2 style='font-weight: normal; color: #5F259F; text-align: center; margin-top: 0; margin-bottom: 10px;'>Etec: <b><u>$etec</u></b></h2>
-				<p style='font-size: 18px;'>Prezado <?php echo $nome?>, foi feito um pré cadastro e para acessar o portal ele precisa ser completado.</p>
-				<p style='font-size: 18px;'>Acesse o link e complete o seu cadastro: <a href=''>cidadaodofuturo.com.br/cadastro.php?prt=<?php echo $protocolo?></a></p>
+				<p style='font-size: 18px;'>Prezado $nome, foi feito um pré cadastro e para acessar o portal ele precisa ser completado.</p>
+				<p style='font-size: 18px;'>Acesse o link e complete o seu <a href='cidadaodofuturo.com.br/cadastro.php?prt=$protocolo'>cadastro.</a></p>
 
-				<p style='font-size: 18px;'>Qualquer dúvida entrar em contato com o telefone <?php echo $telefone?></p>
-				<p style='font-size: 18px;'>Ou pelo email: <?php echo $email?></p>
+				<p style='font-size: 18px;'>Qualquer dúvida entrar em contato: $telefone</p>
+				<p style='font-size: 18px;'>Ou envie email: $email</p>
 
 
 

@@ -1,38 +1,37 @@
 <?php
-    include_once("config.class.php");
-    class pessoa
+include_once("config.class.php");
+class pessoa
+{
+    private $conn;
+    function __construct()
     {
-        private $conn;
-		function __construct()
-		{
-			$conexao = new conexao();
-			$this->conn = $conexao->conect();
-		}
-        function listaPessoas(){
-            $sql = "SELECT P.*, PER.*, PC.*, C.*, PG.*, G.*,E.*, P.PESSOA_ID as ID
-            FROM PESSOA AS P
-            LEFT JOIN PERFIL AS PER ON P.ID_PERFIL = PER.PERFIL_ID
-            LEFT JOIN PESSOA_CURSO AS PC ON P.PESSOA_ID = PC.ID_PESSOA
-            LEFT JOIN CURSOS AS C ON PC.ID_CURSO = C.CURSO_ID
-            LEFT JOIN PESSOA_GRUPO AS PG ON P.PESSOA_ID = PG.PESSOA_ID
-            LEFT JOIN GRUPO AS G ON PG.GRUPO_ID = G.GRUPO_ID
-            LEFT JOIN ETEC AS E ON E.ETEC_ID = G.ID_ETEC";
-            $db = $this->conn->prepare($sql);
-            $db->execute();
-			$linha = $db->fetchAll();
-			foreach ($linha as $value) {
-				echo "<tr>
-                        <td>".$value['ID']."</td>
-                        <td>".$value['PESSOA_NOME']."</td>
-                        <td>".$value['PERFIL']."</td>
-                        <td>".$value['GRUPO_ID']."</td>
-                        <td>".$value['ETEC_NOME']."</td>
-                        <td><button class='btn btn-secondary'>Alterar</button></td>
-                    </tr>";
-			}
-            
-        }
+     $conexao = new conexao();
+     $this->conn = $conexao->conect();
+ }
+ function listaPessoas(){
+    $sql = "SELECT  *, PESSOA.PESSOA_ID AS ID FROM PESSOA INNER JOIN PERFIL ON PERFIL_ID = ID_PERFIL 
+ LEFT JOIN PESSOA_CURSO ON PESSOA_ID = ID_PESSOA 
+ LEFT JOIN ETEC_CURSOS ON PESSOA_CURSO.ID_CURSO = ETEC_CURSOS.ID_CURSO
+ LEFT JOIN ETEC ON ETEC_ID = ID_ETEC
+ LEFT JOIN PESSOA_GRUPO PG ON PG.PESSOA_ID = PESSOA.PESSOA_ID
+ LEFT JOIN GRUPO ON PG.GRUPO_ID = GRUPO.GRUPO_ID";
+    $db = $this->conn->prepare($sql);
+    $db->execute();
+    $linha = $db->fetchAll();
+
+    foreach ($linha as $value) {
+        echo "<tr>
+        <td>".$value['ID']."</td>
+        <td>".$value['PESSOA_NOME']."</td>
+        <td>".$value['PERFIL']."</td>
+        <td>".$value['ETEC_NOME']."</td>
+        <td>".$value['GRUPO_NOME']."</td>
+        <td><button class='btn btn-secondary'>Alterar</button></td>
+        </tr>";
     }
-    
+
+}
+}
+
 
 ?>
