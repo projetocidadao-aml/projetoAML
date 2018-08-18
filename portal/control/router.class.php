@@ -12,7 +12,7 @@
 						include "view/".$page.".html";
  					}
 					 else{
-						header("location:index.php");
+						include "view/".$loged_status.".html";
 					 }
  				} else{
 					include "view/".$page.".html";
