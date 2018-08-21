@@ -1,73 +1,92 @@
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<img src="./dist/img/trophy.png" class="img-thumbnail img-responsive float-left border-0 imgHeaderTitle" style="width: 140px;">
-				<h2 class="text-center pt-4  titleBordered title desafiosTitle">Nome Desafio</h2>
-				<h4 class="text-center mb-5  titleBordered title ">Etec {Nome}</h4>
-			</div>
+	<?php include("control/capturaDesafios.class.php");
+
+	$desafio = new desafioControl();
+
+
+	if($desafio->capturaDado($_GET['id'], 'DESAFIO_SITUACAO') != 'Terminado'){
+	$vencedor = 'Em Andamento';
+}else{
+$vencedor = $desafio->capturaDado($_GET['id'], 'GRUPO_NOME');
+
+}
+
+
+
+
+
+?>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<img src="./dist/img/trophy.png" class="img-thumbnail img-responsive float-left border-0 imgHeaderTitle" style="width: 140px;">
+			<h2 class="text-center pt-4  titleBordered title desafiosTitle"><?php echo $desafio->capturaDado($_GET['id'], 'DESAFIO_TEMA');?></h2>
+			<h4 class="text-center mb-5  titleBordered title ">Etec <?php echo $desafio->capturaDado($_GET['id'], 'ETEC_NOME');?></h4>
+		</div>
+	</div>
+
+	<hr>
+
+
+	<div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="desafio_tema">Tema</label>
+			<h5 class="text-secondary titleBordered"><?php echo $desafio->capturaDado($_GET['id'], 'DESAFIO_DESCRICAO1');?></h5>
 		</div>
 
-		<hr>
-		
-
-		<div class="form-row">
-			<div class="form-group col-md-6">
-				<label for="desafio_tema">Tema</label>
-				<h5 class="text-secondary titleBordered">Combate ao Preconceito</h5>
-			</div>
-
-			<div class="form-group col-md-3">
-				<label for="desafio_dataFinalizacao">Data de Finalização</label>
-				<h5 class="text-secondary titleBordered">21/07/2018</h5>
-
-			</div>
-
-			<div class="form-group col-md-3">
-				<label for="desafio_dataFinalizacao">Grupo Vencedor</label>
-				<h5 class="text-secondary titleBordered">Group Not</h5>
-
-			</div>
+		<div class="form-group col-md-3">
+			<label for="desafio_dataFinalizacao">Data de Finalização</label>
+			<h5 class="text-secondary titleBordered"><?php echo $desafio->capturaDado($_GET['id'], 'DESAFIO_DATA_FT');?></h5>
 
 		</div>
 
-		<div class="table-responsive mt-4">
-			<h3 class="text-center titleBordered text-secondary mb-4">Grupos participantes</h3>
-			<table class="table table-striped border text-center mb-5">
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Nome</th>
-						<th>Etec</th>
-						<td>#</td>
-					</tr>
-				</thead>
+		<div class="form-group col-md-3">
+			<label for="desafio_dataFinalizacao">Grupo Vencedor</label>
+			<h5 class="text-secondary titleBordered"><?php echo $vencedor?></h5>
 
-				<tbody>
-					<tr class="bg-success">
-						<td>2</td>
-						<td>Group Not</td>
-						<td>Bogasian</td>
-						<td><a class="btn btn-secondary" href="?page=detalhamento_grupo">Detalhar</a></td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Not Group</td>
-						<td>Jaraguá</td>
-						<td><a class="btn btn-secondary" href="?page=detalhamento_grupo">Detalhar</a></td>
-					</tr>
-					
-				</tbody>
-			</table>	
 		</div>
-
-		caso não tenha vencedor mudar o "Grupo Vencedor" para "Desafio em Andamento" e não colocar a class bg success no vencedor
 
 	</div>
-	<script type="text/javascript" src="control/script/verificaEtec.js"></script>
-	<!-- Container -->
 
-	<script src="dist/js/jquery.mask.js"></script>
-	<script src="dist/js/mascaras.js"></script>
+	<div class="table-responsive mt-4">
+		<h3 class="text-center titleBordered text-secondary mb-4">Grupos participantes</h3>
+		<table class="table table-striped border text-center mb-5">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>
+					<th>Etec</th>
+					<td>#</td>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr class="bg-success">
+					<td>2</td>
+					<td>Group Not</td>
+					<td>Bogasian</td>
+					<td><a class="btn btn-secondary" href="?page=detalhamento_grupo">Detalhar</a></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Not Group</td>
+					<td>Jaraguá</td>
+					<td><a class="btn btn-secondary" href="?page=detalhamento_grupo">Detalhar</a></td>
+				</tr>
+
+			</tbody>
+		</table>	
+	</div>
+
+	caso não tenha vencedor mudar o "Grupo Vencedor" para "Desafio em Andamento" e não colocar a class bg success no vencedor
+
+</div>
+<script type="text/javascript" src="control/script/verificaEtec.js"></script>
+<!-- Container -->
+
+<script src="dist/js/jquery.mask.js"></script>
+<script src="dist/js/mascaras.js"></script>
 
 
 

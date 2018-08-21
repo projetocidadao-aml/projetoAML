@@ -34,5 +34,32 @@
             }
             
         }
+
+                function listaDesafio($id, $campo){
+            $sql = "SELECT D.*, C.*, G.*, ETEC.*, date_format(DESAFIO_DATA, '%d/%m/%Y') as DESAFIO_DATA_FT
+            FROM DESAFIO AS D
+            LEFT JOIN COLOCACAO AS C ON D.DESAFIO_ID = C.ID_DESAFIO
+            LEFT JOIN GRUPO AS G ON C.ID_GRUPO = G.GRUPO_ID INNER JOIN ETEC ON ID_ETEC = ETEC_ID where DESAFIO_ID = $id";
+            $db = $this->conn->prepare($sql);
+            $db->execute();
+
+            $linha = $db->fetch(PDO::FETCH_OBJ);
+
+            // foreach ($linha as $value) {
+            //     if($value['DESAFIO_SITUACAO'] != 'Terminado'){
+            //         $vencedor = 'Em Andamento';
+            //     }else{
+            //         $vencedor = $value['GRUPO_NOME'];
+            //     }
+            // }
+
+                echo($linha->$campo);
+
+
+                // PRINT_R($linha);
+
+
+            
+        }
     }
 ?>

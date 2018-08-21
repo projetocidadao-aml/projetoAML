@@ -92,7 +92,13 @@ $cursos = new cursoControl();
 			<div class="col-12  mt-5 p-4">
 				<h2 class="text-center text-secondary titleBordered mb-5 subTitle">Upload de Listas</h2>
 
-				<form enctype="multipart/form-data" method="POST" action="./control/uploadPreCadastro.class.php">
+				<div class="container text-center">
+
+					<a class="btn btn-primary" href="control/Listas_CSV/template.csv" download="template.csv">Baixar Template!</a>
+
+				</div>
+
+				<form enctype="multipart/form-data" method="POST" action="./control/importaArquivo.class.php" id="formUpload" onsubmit="return confereCSV('labelChoose')">
 
 					<div class="form-row">
 						<div class="form-group col-md-8">
@@ -115,8 +121,8 @@ $cursos = new cursoControl();
 						<div class="form-group col-md-12">
 							<label for="uploadArquivo">Arquivo</label>
 							<div class="custom-file" id="customFile" lang="es">
-								<input type="file" class="custom-file-input" id="upload_lista_pessoas" name="upload_lista_pessoas" aria-describedby="fileHelp">
-								<label class="custom-file-label" for="upload_lista_pessoas">
+								<input type="file" onchange="document.getElementById('labelChoose').innerText = this.value.substring(12, this.value.lenght)" class="custom-file-input" id="upload_lista_pessoas" name="upload_lista_pessoas" aria-describedby="fileHelp">
+								<label class="custom-file-label" for="upload_lista_pessoas" id="labelChoose">
 									Selecione o arquivo...									
 								</label>
 							</div>
@@ -126,12 +132,16 @@ $cursos = new cursoControl();
 
 
 
+
+
 					<div class="buttons text-center mt-2">
 						<button type="submit" class="btn btn-secondary">Subir o Arquivo</button>
 					</div>
 
 				</form>		
+				<button onclick="confereCSV('labelChoose')">teste</button>
 
+				
 
 			</div>
 		</div>
@@ -299,7 +309,7 @@ $cursos = new cursoControl();
 
 			$('#'+cmbSemestre+'').find('option').remove();
 
-				$('#'+cmbSemestre+'').append("<option value = '0'>Selecione...</option>");
+			$('#'+cmbSemestre+'').append("<option value = '0'>Selecione...</option>");
 
 			for (var i = 1; i <= semestres; i++) {
 				$('#'+cmbSemestre+'').append("<option value = '"+i+"'>"+i+" º Semestre</option>");
@@ -315,4 +325,28 @@ $cursos = new cursoControl();
 
 
 
+</script>
+
+
+
+<script>
+	function confereCSV(id){
+
+		var arquivo = document.getElementById(id).innerText;
+		var tamanho =arquivo.length - 3;
+		arquivo = arquivo.substr(tamanho, 3);
+
+		if(arquivo.toLowerCase() == 'csv'){
+			return true;
+		}
+		else{
+
+			swal({
+				title: "Upload de Arquivo",
+				text: "Arquivo incompatível!\nUtilize apenas a extensão .CSV",
+				icon: "error",
+			});
+			return false;
+		}
+	}
 </script>

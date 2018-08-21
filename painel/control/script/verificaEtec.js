@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$(".aml-form").submit(function(){
         capturaValores();
-		$.post("control/cadastroEtec.class.php",
+		$.post("./control/cadastroEtec.class.php",
 			{
 				nomeEtec: nome, emailEtec: email, cepEtec: cep, 
 				enderecoEtec: endereco, cidadeEtec: cidade, ufEtec: uf, 
