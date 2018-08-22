@@ -49,7 +49,8 @@
             <div class="container">
                 <div class="col-md-12">
                     <nav class="menuTopo navbar navbar-expand-lg navbar-light  ">
-                        <a class="navbar-brand logo" href="index.php"><img class="logo img-fluid" src="dist/img/logoBranco.png" alt=""></a>
+                        <a class="navbar-brand logo" href="index.php"><img class=" img-fluid" src="dist/img/logo.png" alt=""></a>
+                        <a class="navbar-brand logo1" href="index.php"><img class=" img-fluid" src="dist/img/logoBranco.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                          <span class="navbar-toggler-icon" ></span>
                     </button>
@@ -114,7 +115,8 @@
         <script src="dist/js/addIntegrante.js"></script>
         <script src="dist/js/msgAluno.js"></script>
         <script src="dist/js/inserirVideoFoto.js"></script>
-
+        <script src="dist/js/animacao.js"></script>
+       
 
 
 
