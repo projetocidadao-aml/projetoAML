@@ -35,7 +35,8 @@
             <div class="container">
                 <div class="col-md-12">
                     <nav class="menuTopo navbar navbar-expand-lg navbar-light  ">
-                        <a class="navbar-brand logo" href="index.php"><img class="logo img-fluid" src="dist/img/logoBranco.png" alt=""></a>
+                        <a class="navbar-brand logo" href="index.php"><img class=" img-fluid" src="dist/img/logo.png" alt=""></a>
+                        <a class="navbar-brand logo1" href="index.php"><img class=" img-fluid" src="dist/img/logoBranco.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                          <span class="navbar-toggler-icon" ></span>
                     </button>
@@ -43,7 +44,7 @@
                             <ul class="navbar-nav ">
                                 <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.php?page=regulamento">REGULAMENTO</a></li>
-                                <li class="nav-item"><a class="nav-link" href="control/deslogar.php">SAIR</a>
+                                <li class="nav-item caixaSair"><a class="nav-link" href="control/deslogar.php">SAIR</a>
                             </ul>
                         </div>
                     </nav>
