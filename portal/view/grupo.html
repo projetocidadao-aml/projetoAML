@@ -1,3 +1,6 @@
+ <?php include 'control/usuario.class.php';
+ include 'control/membrosGrupo.class.php';
+  $usuario = new usuario(); ?>
 <!--
     <div class="cover perfil mb-3">
         <div class="wrapper">
@@ -30,7 +33,7 @@
                 <div class="avatar">
                     <img src="dist/img/avatarGrupo.png" alt="people" />
                 </div>
-                <div class="nome"><a href="#">Nome do grupo</a></div>
+                <div class="nome"><a href="#"><?php echo $usuario->nomeGrupo ?></a></div>
                 <ul class="cover-nav">
                   
                 </ul>
@@ -49,20 +52,11 @@
                         <h4 class="card-title text-center">
                             Crachá
                         </h4>
-                        <p class="card-text">Nome do grupo</p>
-                        <p class="card-text">Nome da etec</p>
+                        <p class="card-text"><?php echo $usuario->nomeGrupo ?></p>
+                        <p class="card-text"><?php echo $usuario->nomeEtec ?></p>
                         <p class="card-text">Nome dos integrantes</p>
                         <ul class="integrantes">
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
-                            <li>Nome do aluno</li>
+                            <?php $membrosGrupo->listaMembros(); ?>
                         </ul>
                     </div>
                 </div>
@@ -83,7 +77,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-8 primary mb-4">
-                <form action="">
+                <form method="POST" action="model/uploadPost.php" enctype="multipart/form-data" >
                     <div class="card mb-4">
                         <div class="fazerPost">
                             O que há de novo
@@ -93,6 +87,7 @@
                             <textarea name="postDesafio" id="" placeholder="compartilhe seu status"></textarea>
                         </div>
                         <div class="fazerPost  cinza-claro">
+                            
                             <div class="fazerPostVidImg">
                                 <ul>
                                     <li class="videoInserir"><i class="fas fa-video"></i></li>
@@ -100,13 +95,16 @@
                                     <li class="fotoInserir"><i class="fas fa-image"></i></li>
                                 </ul>
                                 <div class="esconder">
+                                
                                     <input type="file" name="inserirVideo" class="inserirVideo">
-                                    <input type="file" name="inserirFoto" class="inserirFoto">
+                                    <input type="file" name="inserirFoto[]" class="inserirFoto" multiple="multiple">
+                                    </form>
                                 </div>
                             </div>
                             <div class="fazerPostBotao ">
-                                <button type="submit" class="btn btn-primary float-right">Enviar</button>
+                                <input name="SendCadImg" type="submit" value="Enviar" class="btn btn-primary float-right">
                             </div>
+                            </form>
                         </div>
                     </div>
                 </form>
