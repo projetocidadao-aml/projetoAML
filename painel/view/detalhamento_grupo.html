@@ -1,4 +1,7 @@
-	<?php include("control/grupo.class.php"); ?>
+	<?php include("control/grupo.class.php");
+
+echo $_GET['id'];
+	 ?>
 	<div class="container">
 		
 		<div class="row">
@@ -23,7 +26,7 @@
 				</thead>
 
 				<tbody>
-					<?php $grupo->listaIntegrantes(); ?>
+					<?php $grupo->listaIntegrantes($_GET['id']); ?>
 				</tbody>
 			</table>	
 		</div>

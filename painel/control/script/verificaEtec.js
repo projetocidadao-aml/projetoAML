@@ -1,16 +1,38 @@
 $(document).ready(function(){
 	$(".aml-form").submit(function(){
-        capturaValores();
+		carregando();
+		capturaValores();
 		$.post("./control/cadastroEtec.class.php",
-			{
-				nomeEtec: nome, emailEtec: email, cepEtec: cep, 
-				enderecoEtec: endereco, cidadeEtec: cidade, ufEtec: uf, 
-				usuarioEtec: usuario,  senhaEtec: senha, telefoneEtec: telefone,
-				diretorEtec: diretor, responsavelEtec: responsavel
-			},
-			function(data){
-				console.log(data);
-			});
+		{
+			nomeEtec: nome, emailEtec: email, cepEtec: cep, 
+			enderecoEtec: endereco, cidadeEtec: cidade, ufEtec: uf, 
+			usuarioEtec: usuario,  senhaEtec: senha, telefoneEtec: telefone,
+			diretorEtec: diretor, responsavelEtec: responsavel
+		},
+		function(data){
+			console.log(data);
+			if(data == 'true'){
+				parar();
+				swal({
+					title: "Sucesso",
+					text: "Cadastrado com Sucesso",
+					icon: "success",
+				});
+
+				setTimeout(function(){
+					window.location.reload();
+
+				}, 2000);
+			}
+			else{
+				parar();
+				swal({
+					title: "Erro",
+					text: "Erro ao cadastrar",
+					icon: "error",
+				});
+			}
+		});
 		return false;
 	})
 });
@@ -28,15 +50,5 @@ function capturaValores(){
 	diretor = $("#diretorEtec").val();
 	responsavel = $("#responsavelEtec").val();
 
-	console.log(nome);
-	console.log(email);
-	console.log(cep);
-	console.log(endereco);
-	console.log(cidade);
-	console.log(uf);
-	console.log(usuario);
-	console.log(senha);
-	console.log(telefone);
-	console.log(diretor);
-	console.log(responsavel);
+	
 }

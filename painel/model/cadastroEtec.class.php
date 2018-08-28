@@ -1,5 +1,5 @@
 <?php
-include_once("config.class.php");
+include_once("../config.class.php");
 	/**
 	 * Insere dados no banco ETEC
 	 */

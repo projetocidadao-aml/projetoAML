@@ -14,8 +14,8 @@ include_once("config.class.php");
 		function listaDados(){
 			$sql = "SELECT G.*, E.*, count(P.PESSOA_GRUPO_ID) AS countPerson
             FROM GRUPO AS G
-            LEFT JOIN ETEC AS E ON G.ID_ETEC = E.ETEC_ID
-            LEFT JOIN PESSOA_GRUPO AS P ON G.GRUPO_ID = P.GRUPO_ID";
+            INNER JOIN ETEC AS E ON G.ID_ETEC = E.ETEC_ID
+            INNER JOIN PESSOA_GRUPO AS P ON G.GRUPO_ID = P.GRUPO_ID GROUP BY GRUPO_ID";
 			
             $db = $this->conn->prepare($sql);
             $db->execute();

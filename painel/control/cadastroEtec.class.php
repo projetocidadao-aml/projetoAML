@@ -26,7 +26,7 @@ class Etec{
         $this->telefone = $_POST['telefoneEtec'];
         $this->diretor = $_POST['diretorEtec'];
         $this->responsavel = $_POST['responsavelEtec'];
-        new cadastraEtec($this->nome, $this->email, $this->cep, $this->endereco, $this->cidade, $this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor, $this->responsavel);
+        new insereDados($this->nome, $this->email, $this->cep, $this->endereco, $this->cidade, $this->uf, $this->usuario, $this->senha, $this->telefone, $this->diretor, $this->responsavel);
     }
 }
 new Etec();

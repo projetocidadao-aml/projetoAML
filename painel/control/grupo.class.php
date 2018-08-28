@@ -16,9 +16,9 @@ class grupo{
         $grupoModel = new grupoModel();
         $grupoModel->pegaDados($this->id, $campo);
     }
-    function listaIntegrantes(){
+    function listaIntegrantes($id){
         $grupoModel = new grupoModel();
-        $grupoModel->listaPessoas($this->id);
+        $grupoModel->listaPessoas($id);
     }
     function listaDesafios(){
         $grupoModel = new grupoModel();
