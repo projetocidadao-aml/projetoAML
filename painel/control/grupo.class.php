@@ -20,9 +20,9 @@ class grupo{
         $grupoModel = new grupoModel();
         $grupoModel->listaPessoas($id);
     }
-    function listaDesafios(){
+    function listaDesafios($idG){
         $grupoModel = new grupoModel();
-        $grupoModel->listaDesafios($this->id);
+        $grupoModel->listaDesafios($idG);
     }
 }
 $grupo = new grupo();

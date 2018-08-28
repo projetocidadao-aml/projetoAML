@@ -66,7 +66,7 @@ include_once("config.class.php");
 			$sql = "SELECT DG.*,D.*
 			FROM DESAFIO_GRUPO AS DG
 			JOIN DESAFIO AS D ON DG.DESAFIO_GRUPO_ID = D.DESAFIO_ID
-			WHERE DG.ID_GRUPO_DESAFIADO = '$id'";
+			WHERE DG.ID_GRUPO = '$id'";
 			
             $db = $this->conn->prepare($sql);
             $db->execute();
