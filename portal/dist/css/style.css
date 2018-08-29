@@ -460,7 +460,7 @@ textarea {
     float: left;
 }
 
-.fazerPostVidImg li {
+.fazerPostVidImg li, .fa-video {
     font-size: 20px;
     margin-right: 30px;
     color: #999;
@@ -623,7 +623,12 @@ textarea {
 
 .nome a {
     color: #fff;
+    text-shadow: #000 0.1em 0.1em 0.2em;
+/*      text-shadow: #000 2px 3px 2px;*/
 }
+
+
+
 
 .nome-grupo {
     position: absolute;
@@ -1158,7 +1163,7 @@ footer p {
 }
 /*grupo*/
 
-.videoInserir {
+.videoInserirUrl {
     cursor: pointer;
 }
 

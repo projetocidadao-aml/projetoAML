@@ -76,6 +76,8 @@
                     </div>
                 </div>
             </div>
+            
+             
             <div class="col-sm-12 col-md-8 primary mb-4">
                 <form method="POST" action="model/uploadPost.php" enctype="multipart/form-data" >
                     <div class="card mb-4">
@@ -90,13 +92,14 @@
                             
                             <div class="fazerPostVidImg">
                                 <ul>
-                                    <li class="videoInserir"><i class="fas fa-video"></i></li>
+                                 
+                                    <li class=""><i class="fas fa-video videoInserirUrl" data-toggle="modal" data-target="#inserirUrlVideo"></i></li>
+                                    
 
                                     <li class="fotoInserir"><i class="fas fa-image"></i></li>
                                 </ul>
                                 <div class="esconder">
                                 
-                                    <input type="file" name="inserirVideo" class="inserirVideo">
                                     <input type="file" name="inserirFoto[]" class="inserirFoto" multiple="multiple">
                                     </form>
                                 </div>
@@ -201,4 +204,32 @@
             </div>
         </div>
     </div>
-    
+    <div class="container">
+        
+ <div class="modal fade " id="inserirUrlVideo" tabindex="-1" role="dialog" aria-labelledby="inserirUrl" aria-hidden="true">
+                  
+                    <div class= "modal-dialog modal-sm ">
+                        <div class="modal-content px-3 py-3 roxo inputLilas">
+                            <div class="modalTitulo">
+                                <button type="button" class="text-branco close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h6 class="modal-title text-branco" id="login" >Insira a url de seu video aqui</h6>
+                                
+                            </div>
+                            <div class="modal-body">
+                                <h6>Exemplo: https://www.youtube.com/watch?v=0MsUw1t5IOY</h6>
+                                <form action="#">
+                                   
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="urlVideo" placeholder="">
+                                    </div>
+                                    <p class="text-center margin_btn">
+                                        <button class="btn btn-primary" name=""><i class="fa fa-sign-in"></i>Entrar</button>
+                                        
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+    </div>
