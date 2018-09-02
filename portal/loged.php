@@ -31,7 +31,7 @@
 
     <body>
         <!--   <div id="teste"></div>-->
-        <div id="topo">
+        <div id="topo" class="hide-on-init">
             <div class="container">
                 <div class="col-md-12">
                     <nav class="menuTopo navbar navbar-expand-lg navbar-light  ">
@@ -78,10 +78,12 @@
             </div>
         </div>
         </div>
-
-        <?php
-		new routers('aluno');
-	?>
+        <main class="hide-on-init" style="overflow-x: hidden; max-width: 1400px;margin:auto;">
+           <?php
+            new routers('aluno');
+           ?> 
+        </main>
+        
 
 
         <script src="dist/js/jquery.min.js"></script>
@@ -126,32 +128,31 @@
         
         
         
-         <footer>
+         <footer class="hide-on-init">
             <div class="tirar_margin_row pt-4 pb-1 cinza">
                 <div class="container">
                     <div class="row">
-                        <div class="copyry copyry1 text-branco " style="background:">
-                            <img class="logoFooter" src="dist/img/logoBranco.png" alt="" style="background:">
-                            <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
+                         <div style="width: 50%;">
+                            <img class="logoFooter" src="dist/img/logoBranco.png" alt="">
                         </div>
-                        
-                        
                         <div class="footerMenu1 " style="background:">
                             <ul class="">
                                 <li><a href="index.php?page=privacidade">PRIVACIDADE</a></li>
                                 <li><a href="index.php?page=contato">CONTATO</a></li>
                             </ul>
                         </div>
-                        
+                       
                         <div class="copyry copyry2 text-branco" style="background:">
-                            <img class="logoFooter" src="dist/img/logoBranco.png" alt="" style="background:">
                             <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        
+        <div class="pos-load-page active">
+            <img src="dist/img/logo2.png" />
+            <img class="load-image" src="dist/img/loading.gif">
+        </div>
         
         
         
@@ -162,6 +163,17 @@
         <script src="dist/js/jquery.blockUI.js"></script>
         <script src="dist/js/ajaxLoading.js"></script>
         <script src="control/script/verificaLogin.js"></script>
+        <script type="text/javascript">
+            window.addEventListener('load',()=>{
+                setTimeout(()=>{
+                    document.querySelector('.pos-load-page').style.opacity = '0';
+                },700)
+                setTimeout(()=>{
+                    $('.hide-on-init').removeClass('hide-on-init');
+                    document.querySelector('.pos-load-page').classList.remove('active');
+                },1400);
+            });
+        </script>
     </body>
 
     </html>
