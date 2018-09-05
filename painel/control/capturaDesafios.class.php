@@ -7,6 +7,11 @@ class desafioControl
 		$desafio->listaDesafios();
 	}
 
+	function capturaDadosTabela($id){
+		$desafio = new capturaDesafios();
+		$desafio->listaDesafiosTabela($id);
+	}
+
 	function capturaDado($id, $campo){
 		$desafio = new capturaDesafios();
 		$desafio->listaDesafio($id, $campo);

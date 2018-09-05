@@ -20,6 +20,10 @@ fclose($file);
 // var_dump($arq);
 
 
+      // $last_id = $this->conn->lastInsertId();
+      // echo $last_id;
+
+
 
 for ($i=1; $i < count($arq) ; $i++) { 
 	$nome = $arq[$i][0];

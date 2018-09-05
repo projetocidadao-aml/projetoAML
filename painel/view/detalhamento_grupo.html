@@ -1,7 +1,6 @@
 	<?php include("control/grupo.class.php");
 
-echo $_GET['id'];
-	 ?>
+	?>
 	<div class="container">
 		
 		<div class="row">
@@ -14,7 +13,7 @@ echo $_GET['id'];
 		<hr>
 
 		<div class="table-responsive mt-4">
-				<h3 class="text-center text-secondary mb-4">Integrantes</h3>
+			<h3 class="text-center text-secondary mb-4">Integrantes</h3>
 			<table class="table table-striped border text-center mb-5">
 				<thead>
 					<tr>
@@ -31,18 +30,21 @@ echo $_GET['id'];
 			</table>	
 		</div>
 
-		<div class="col-12 mb-5">
-			<img src="./dist/img/trophy.png" class="img-thumbnail img-responsive float-left border-0" style="width: 140px;">
-			<h2 class="text-center pt-5 pb-5 text-secondary titleBordered title desafiosTitle">Desafios Participados</h2>
-		</div>
+		<div class="card col-12 pt-3 mt-4">
 
-		<div class="desafios col-md-12 pt-3">
-			<div class="row">
-				<?php $grupo->listaDesafios($_GET['id']); ?>
+			<div class="col-12 mb-5">
+				<img src="./dist/img/trophy.png" class="img-thumbnail img-responsive float-left border-0" style="width: 140px;">
+				<h2 class="text-center pt-5 pb-5 text-secondary titleBordered title desafiosTitle">Desafios Participados</h2>
 			</div>
+
+			<div class="desafios col-md-12 pt-2">
+				<div class="row">
+					<?php $grupo->listaDesafios($_GET['id']); ?>
+				</div>
+			</div>
+
 		</div>
 
-		
 	</div>
 	<script type="text/javascript" src="control/script/verificaEtec.js"></script>
 	<!-- Container -->
