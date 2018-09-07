@@ -86,7 +86,7 @@
                         </div>
                         <div class="fazerPostMensagem testePTColorgray">
 
-                            <textarea name="postDesafio" id="" placeholder="compartilhe seu status"></textarea>
+                            <textarea name="postDesafio" id="compartilhe" placeholder="compartilhe seu status"></textarea>
                         </div>
                         <div class="fazerPost  cinza-claro">
                             
@@ -101,10 +101,11 @@
                                 <div class="esconder">
                                 
                                     <input type="file" name="inserirFoto[]" class="inserirFoto" multiple="multiple">
-                                    </form>
+                                    <input type="text" name="videoLink" id="ThisLinkVideo" value="">
                                 </div>
                             </div>
-                            <div class="fazerPostBotao ">
+                            <div class="fazerPostBotao">
+                                
                                 <input name="SendCadImg" type="submit" value="Enviar" class="btn btn-primary float-right">
                             </div>
                             </form>
@@ -220,10 +221,11 @@
                                 <form action="#">
                                    
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="urlVideo" placeholder="">
+                                        <input type="text" class="form-control" name="urlVideo" placeholder="" id="ModalUrlVideo">
                                     </div>
                                     <p class="text-center margin_btn">
-                                        <button class="btn btn-primary" name=""><i class="fa fa-sign-in"></i>Entrar</button>
+                                       
+                                        <button class="btn btn-primary" name="" id="EnviarL"  data-dismiss="modal" aria-hidden="true"><i class="fa fa-sign-in"></i>Entrar</button>
                                         
                                     </p>
                                 </form>
@@ -233,3 +235,4 @@
                 </div>
         
     </div>
+
