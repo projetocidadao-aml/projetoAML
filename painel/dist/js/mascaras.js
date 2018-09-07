@@ -1,7 +1,7 @@
 var options2 = {
-	onKeyPress: function (cpf, ev, el, op) {
+	onKeyPress: function (cel, ev, el, op) {
 		var masks = ['(00) 0000-00000', '(00) 00000-0000'],
-		mask = (cpf.length > 14) ? masks[1] : masks[0];
+		mask = (cel.length > 14) ? masks[1] : masks[0];
 		el.mask(mask, op);
 	}
 }
@@ -39,8 +39,13 @@ $("#cepEtec").keyup(function(){
 $('#telefoneEtec').mask('(00) 0000-00000', options2);
 $('#cadastro_celular_pessoa').mask('(00) 0000-00000', options2);
 
+$('#detalhamento_celular_pessoa').mask('(00) 0000-00000', options2);
+
+
 $('#cepEtec').mask('00.000-000');
 $('#cad_pessoa_cpf').mask('000.000.000-00');
+$('#detalhamento_cpf').mask('000.000.000-00');
+
 
 $('#preCad_pessoa_cpf').mask('000.000.000-00');
 

@@ -18,6 +18,11 @@ $(document).ready(function(){
 					icon: "success",
 				});
 
+				setTimeout(function(){
+					window.location.reload();
+
+				}, 2000)
+
 			}
 			else{
 				parar();
@@ -26,6 +31,11 @@ $(document).ready(function(){
 					text: "Erro ao alterar dados!",
 					icon: "error",
 				});
+
+				setTimeout(function(){
+					window.location.reload();
+
+				}, 2000)
 
 			}
 		});

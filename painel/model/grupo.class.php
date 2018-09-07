@@ -58,14 +58,14 @@ include_once("config.class.php");
 						<td>".$value['PESSOA_ID']."</td>
 						<td>".$value['PESSOA_NOME']."</td>
 						<td>".$value['PERFIL']."</td>
-						<td><a class='btn btn-secondary' href='?page=cadastro_pessoa	&id=".$value['PESSOA_ID']."'>Detalhar</a></td>
+						<td><a class='btn btn-secondary' href='?page=detalhamento_aluno&id=".$value['PESSOA_ID']."'>Detalhar</a></td>
 					</tr>";
 			}
 		}
 		function listaDesafios($id){
 			$sql = "SELECT DG.*,D.*
 			FROM DESAFIO_GRUPO AS DG
-			JOIN DESAFIO AS D ON DG.DESAFIO_GRUPO_ID = D.DESAFIO_ID
+			JOIN DESAFIO AS D ON DG.DESAFIO_ID = D.DESAFIO_ID
 			WHERE DG.ID_GRUPO = '$id'";
 			
             $db = $this->conn->prepare($sql);

@@ -1,0 +1,134 @@
+<?php 
+include 'control/pessoa.class.php';
+$pessoa = new pessoaControl(); 
+
+
+$objPessoa = $pessoa->selecionaPessoa($_GET['id']);
+
+
+?>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<img src="./dist/img/people.png" class="img-thumbnail img-responsive float-left border-0 imgHeaderTitle" style="width: 140px;">
+			<h2 class="text-center mt-5 titleBordered title">Detalhamento do Aluno</h2>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-12 mt-3 p-4">
+
+			<form id="form_Atualiza">
+				<input type="hidden" name="detalhamento_id" id="detalhamento_id" value="<?php echo $objPessoa[0]['PESSOA_ID'];?>">
+				<div class="form-row">
+					<div class="form-group col-md-5">
+						<label for="detalhamento_nome">Nome</label>
+						<input type="name" class="form-control" id="detalhamento_nome" name="detalhamento_nome" placeholder="Pedro Travalon Tavares" value = "<?php echo $objPessoa[0]['PESSOA_NOME'];?>" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="detalhamento_apelido">Apelido</label>
+						<input type="text" class="form-control" id="detalhamento_apelido" name="detalhamento_apelido" value = "<?php echo $objPessoa[0]['PESSOA_APELIDO'];?>" placeholder="Pedrinho">
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="detalhamento_cpf">CPF</label>
+						<input type="text" class="form-control" id="detalhamento_cpf" name="detalhamento_cpf" value = "<?php echo $objPessoa[0]['PESSOA_CPF'];?>" placeholder="300.002.123-23" required>
+					</div>
+
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-5">
+						<label for="detalhamento_email">Email</label>
+						<input type="email" class="form-control" id="detalhamento_email" name="detalhamento_email" value = "<?php echo $objPessoa[0]['PESSOA_EMAIL'];?>" placeholder="pedrinho_tavares91@gmail.com" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="detalhamento_celular_pessoa">Telefone / Celular</label>
+						<input type="tel" class="form-control" id="detalhamento_celular_pessoa" name="detalhamento_celular_pessoa" value = "<?php echo $objPessoa[0]['PESSOA_CELULAR'];?>" placeholder="(11) 97834-2343">
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="detalhamento_status">Status</label>
+						<select name="detalhamento_status" id="detalhamento_status" class="form-control" required>
+							<option value="">Selecione...</option>
+							<option value="ATIVO">Ativo</option>
+							<option value="INATIVO">Inativo</option>
+						</select>
+					</div>
+
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-5">
+						<label for="detalhamento_usuario">Usuário</label>
+						<input type="text" class="form-control" id="detalhamento_usuario" name="detalhamento_usuario" placeholder="pedrinho_tavares91" value = "<?php echo $objPessoa[0]['PESSOA_USUARIO'];?>" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="detalhamento_senha">Senha</label>
+
+						<div class="input-group d-flex align-items-center" id="show_hide_password">
+							<input class="form-control" type="password" id="detalhamento_senha" name="detalhamento_senha" value = "<?php echo $objPessoa[0]['PESSOA_SENHA'];?>" required>
+							<div class="input-group-addon">
+								&nbsp;<i class="fa fa-eye eyePass text-primary" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="detalhamento_protocolo">Protocolo</label>
+						<input type="text" name="detalhamento_protocolo" id="detalhamento_protocolo" class="form-control" value = "<?php echo $objPessoa[0]['PESSOA_PROTOCOLO'];?>" disabled>
+
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						<label for="detalhamento_descricao">Descrição</label>
+						<textarea class="form-control" id="detalhamento_descricao" name="detalhamento_descricao" rows="2"><?php echo $objPessoa[0]['PESSOA_DESCPERFIL'];?></textarea>
+					</div>
+				</div>
+
+				<div class="form-row">
+
+					<div class="form-group col-md-12">
+						<label for="detalhamento_obs">Observações</label>
+						<input type="text" class="form-control" id="detalhamento_obs" name="detalhamento_obs" placeholder="Aluno Destaque 2017" value="<?php echo $objPessoa[0]['PESSOA_OBSERVACOES'];?>">
+					</div>
+				</div>
+
+				<div class="buttons text-center mt-2">
+					<button type="submit" class="btn btn-secondary">Alterar</button>
+				</div>	
+
+			</form>	
+
+		</div>																		
+	</div>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="dist/js/jquery.blockUI.js"></script>
+<script src="dist/js/ajaxLoading.js"></script>
+<script src="dist/js/jquery.mask.js"></script>
+<script src="dist/js/mascaras.js"></script>
+<script src="control/script/atualizaPessoa.js"></script>
+
+<script>
+
+
+	$("#detalhamento_status").val("<?php echo $objPessoa[0]['PESSOA_STATUS']?>");
+
+	$(".eyePass").click(function(){
+
+		if($('#detalhamento_senha').attr("type") == "text"){
+			$('#detalhamento_senha').attr('type', 'password');
+		}else {
+			$('#detalhamento_senha').attr('type', 'text');
+		}
+
+	});
+
+</script>

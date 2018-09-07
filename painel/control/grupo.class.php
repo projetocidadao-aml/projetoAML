@@ -4,8 +4,17 @@ class grupo{
     public $id;
     function __construct(){
 
-        // $this->id = $_GET['id'];
-        $this->id = $_SESSION['idUser'];
+
+        if(isset($_GET['id'])){
+            $this->id = $_GET['id'];
+
+        }
+
+        else{
+
+            $this->id = $_SESSION['idUser'];
+
+        }
         
     }
     function listaGrupos(){

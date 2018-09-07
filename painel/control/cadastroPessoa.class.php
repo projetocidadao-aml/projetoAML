@@ -27,7 +27,6 @@ class Pessoa{
     public $buscapessoacurso;
 
 
-
     function __construct()
 	{
         $this->nome = $_POST['cad_pessoa_nome'];

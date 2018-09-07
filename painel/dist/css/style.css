@@ -405,6 +405,10 @@ label{
   background-color: rgba(95,37,159,0.2);
 }
 
+.eyePass{
+  cursor: pointer;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
   background-color: #425563;
   font-size: 18px;
