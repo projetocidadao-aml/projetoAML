@@ -17,15 +17,12 @@
             a {
                 text-decoration: none;
             }
-
             a:link {
                 text-decoration: none;
             }
-
             a:hover {
                 text-decoration: none;
             }
-
         </style>
     </head>
 
@@ -91,7 +88,6 @@
             $(document).ready(function() {
                 $("#teste").fadeOut("show");
             });
-
         </script>
 
         <script src="dist/js/popper.min.js"></script>
@@ -174,6 +170,17 @@
                 },1400);
             });
         </script>
+               <script>
+        $('#EnviarL').click(function(e){
+            var link;
+            link = document.getElementById("ModalUrlVideo").value;
+            document.getElementById("ThisLinkVideo").value = link;
+        var teste2;
+        teste2 = document.getElementById("ThisLinkVideo").value;
+        e.preventDefault();
+        });
+  
+    </script>
     </body>
 
     </html>
