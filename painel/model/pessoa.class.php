@@ -29,7 +29,8 @@ class pessoa
             <td>".$value['PERFIL']."</td>
             <td>".$value['ETEC_NOME']."</td>
             <td>".$value['GRUPO_NOME']."</td>
-            <td><button class='btn btn-secondary' onclick = 'document.getElementById(\"pills-contact-tab\").click()'>Alterar</button></td>
+            <td><a class = 'btn btn-secondary' href = 'index.php?page=detalhamento_aluno&id=$value[ID]'>Alterar</a></td>
+        
             </tr>";
         }
 

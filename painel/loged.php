@@ -101,10 +101,10 @@ $dalGeral = new dalGeral();
 
 						</div>
 					</li>
-					<li class="nav-item">
+<!-- 					<li class="nav-item">
 						<a class="nav-link" href="index.php?page=desafio">Desafios</a>
 					</li>
-					
+					 -->
 					<!-- <li class="nav-item">
 						<a class="nav-link" href="#">Relatórios</a>
 					</li> -->
