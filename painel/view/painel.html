@@ -1,76 +1,88 @@
 <?php
 include("control/contadores.class.php");
 $grupos = new Contador();
+
+include 'control/capturaAtividades.class.php';
+
+
 ?>
-  <div class="container">
+<div class="container">
 
-    <div class="row mt-5">
-
-      <div class="caixaPainel col-8 col-md-3 m-auto text-center py-3">
-       <h1><i class="fa fa-user-graduate"></i></h1>
-       <h5 class="titleBordered">Alunos Cadastrados</h5>
-       <h4 class="titleBordered"><?php echo $grupos->alunos; ?></h4>
-     </div>
-
-     <div class="caixaPainel col-8 col-md-3 m-auto text-center py-3">
-      <h1><i class="fa fa-users"></i></h1>
-      <h5 class="titleBordered">Grupos  Formados</h5>
-      <h4 class="titleBordered"><?php echo $grupos->grupos; ?></h4>
-    </div>
+  <div class="row mt-5">
 
     <div class="caixaPainel col-8 col-md-3 m-auto text-center py-3">
-      <h1><i class="fa fa-trophy"></i></h1>
-      <h5 class="titleBordered">Desafios Realizados</h5>
-      <h4 class="titleBordered"><?php echo $grupos->desafios; ?></h4>
-    </div>
+     <h1><i class="fa fa-user-graduate"></i></h1>
+     <h5 class="titleBordered">Alunos Cadastrados</h5>
+     <h4 class="titleBordered"><?php echo $grupos->alunos; ?></h4>
+   </div>
 
+   <div class="caixaPainel col-8 col-md-3 m-auto text-center py-3">
+    <h1><i class="fa fa-users"></i></h1>
+    <h5 class="titleBordered">Grupos  Formados</h5>
+    <h4 class="titleBordered"><?php echo $grupos->grupos; ?></h4>
   </div>
 
-  <section class="mt-5 col-md-12">
-    <h2 class="text-center text-primary titleBordered mb-5 titleUnImg">Últimas Atividades</h2>
-
-    <div class="row atividades">
-      <div class="col-md-2">
-        <img src="./dist/img/logo.png" class="img-thumbnail img-responsive border-0" style="width: 100px;">
-      </div>
-      <div class="col-md-9">
-        <h3 class="text-secondary titleBordered">Grupo NotGroup subiu um vídeo</h3>
-        <p>Upload de vídeo feito no dia 25/08/2018</p>
-      </div>
-    </div>
-
-    <div class="row atividades">
-      <div class="col-md-2">
-        <img src="./dist/img/logo.png" class="img-thumbnail img-responsive border-0" style="width: 100px;">
-      </div>
-      <div class="col-md-9">
-        <h3 class="text-secondary titleBordered">Grupo NotGroup subiu uma foto</h3>
-        <p>Upload de foto feito no dia 25/08/2018</p>
-      </div>
-    </div>
-
-    <div class="row atividades">
-      <div class="col-md-2">
-        <img src="./dist/img/logo.png" class="img-thumbnail img-responsive border-0" style="width: 100px;">
-      </div>
-      <div class="col-md-9">
-        <h3 class="text-secondary titleBordered">Grupo NotGroup subiu um diário de bordo</h3>
-        <p>Upload do diário de bordo feito no dia 25/08/2018</p>
-      </div>
-    </div>
-
-   
-
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <button class="text-white btn btn-primary">Veja Mais...</button>
-      </div>
-    </div>
-
-
-
-  </section>
+  <div class="caixaPainel col-8 col-md-3 m-auto text-center py-3">
+    <h1><i class="fa fa-trophy"></i></h1>
+    <h5 class="titleBordered">Desafios Realizados</h5>
+    <h4 class="titleBordered"><?php echo $grupos->desafios; ?></h4>
+  </div>
 
 </div>
+
+<section class="mt-5 col-md-12">
+  <h2 class="text-center text-primary titleBordered mb-5 titleUnImg h2Atividades">Últimas Atividades</h2>
+
+
+  <?php $atividades = new capturaAtividades(0);?>
+
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <button class="text-white btn btn-primary" id="vejaMais">Veja Mais...</button>
+    </div>
+  </div>
+
+
+
+</section>
+
+</div>
+
+<script src="dist/js/jquery.blockUI.js"></script>
+<script src="dist/js/ajaxLoading.js"></script>
+
+<?php
+
+echo "
+<script>
+
+  var pagination =3;
+
+  $('#vejaMais').click(function(event) {
+    carregando();
+
+    $.ajax({url: 'atividadesAjax.php?paginacao='+pagination, success: function(result){
+
+      $('.atividades').remove();
+
+      $('.h2Atividades').after(result);
+
+      parar();
+
+    }});
+
+    pagination = pagination + 3;
+
+  });
+
+</script>
+
+";
+
+
+?>
+
+
 
 
