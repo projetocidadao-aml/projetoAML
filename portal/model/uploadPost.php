@@ -84,7 +84,8 @@
                                         $sql3 = "INSERT INTO `POST_MIDIA` (`MIDIA_TIPO_ARQUIVO`, `MIDIA_URL_TEXT`, `HISTORICO_ID`) VALUES ('IMAGEM','$destino', '$ID_PARA_ENVIO')";
                                         $db3 = $this->conn->prepare($sql3);
                                         $db3->execute();
-                                        echo "Entrou aqui";
+                                         header('Location: ../index.php?page=grupo');
+                                        
                                     } else {
                                             echo "Erro ao realizar upload";
                                         }
