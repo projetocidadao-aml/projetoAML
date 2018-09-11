@@ -324,7 +324,7 @@ $cursos = new cursoControl();
 
 <script>
 	function confereCSV(id){
-
+		carregando();
 		var arquivo = document.getElementById(id).innerText;
 		var tamanho =arquivo.length - 3;
 		arquivo = arquivo.substr(tamanho, 3);
@@ -333,6 +333,7 @@ $cursos = new cursoControl();
 			return true;
 		}
 		else{
+		parar();
 
 			swal({
 				title: "Upload de Arquivo",
