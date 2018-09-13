@@ -10,108 +10,121 @@ body {
 }
 
 /*textos banner*/
- .caption-1, .caption-2, .caption-3{
-                   background: rgba(0,0,0,0.3);
-                   padding: 20px;
-                   width: auto;
-               }
-               
-                @keyframes caption-1 {
-        0% {
-            transform: translateY(-1000px);
-        }
-        
- 50% { transform: translateY(-500px); }
-       
-        100% {
-            transform: translateY(0);
-        }
+
+.caption-1,
+.caption-2,
+.caption-3 {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: auto;
+}
+
+@keyframes caption-1 {
+    0% {
+        transform: translateY(-1000px);
     }
-               
-               .caption-1, .caption-2, .caption-3 {
-        animation-name: caption-1;
-        animation-duration: 1s;
+
+    50% {
+        transform: translateY(-500px);
     }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.caption-1,
+.caption-2,
+.caption-3 {
+    animation-name: caption-1;
+    animation-duration: 1s;
+}
 
 /*animação*/
+
 .btnVoltar {
-        display: none;
-        z-index: 10;
-        position: fixed;
-        bottom: 130px;
-        right: 12px;
-        width: 50px;
-        height: 50px;
-        background-color:  #b28ae4;
-        /* opacity: 0.9;*/
+    display: none;
+    z-index: 10;
+    position: fixed;
+    bottom: 130px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+    background-color: #b28ae4;
+    /* opacity: 0.9;*/
+}
+
+.btnVoltarLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+.cursorBloquado{
+    cursor: no-drop;
+}
+
+
+@keyframes btnVoltar {
+    0% {
+        transform: translateY(0);
     }
-
-    .btnVoltarLink {
-        display: block;
-        width: 100%;
-        height: 100%;
-        line-height: 50px;
-        text-align: center;
-        color: #000;
-        font-weight: bold;
-        font-size: 40px;
-
+    25% {
+        transform: translateY(-20px);
     }
-
-
-    @keyframes btnVoltar {
-        0% {
-            transform: translateY(0);
-        }
-        25% {
-            transform: translateY(-20px);
-        }
-        50% {
-            transform: translateY(0);
-        }
-        75% {
-            transform: translateY(-20px);
-        }
-        100% {
-            transform: translateY(0);
-        }
+    50% {
+        transform: translateY(0);
     }
-
-    .btnVoltar:hover {
-        animation-name: btnVoltar;
-        animation-delay: 1s;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: 100;
-        /*opacity: 1;*/
+    75% {
+        transform: translateY(-20px);
     }
-
-
-    .anime-1 {
-        opacity: 0;
-        transform: translate3d(-100px, 0, 0);
-        transition: .5s;
+    100% {
+        transform: translateY(0);
     }
+}
 
-    .anime-start-1 {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+.btnVoltar:hover {
+    animation-name: btnVoltar;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 100;
+    /*opacity: 1;*/
+}
 
-    .anime-2 {
-        opacity: 0;
-        transform: translate3d(100px, 0, 0);
-        transition: .5s;
-    }
 
-    .anime-start-2 {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+.anime-1 {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .5s;
+}
+
+.anime-start-1 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.anime-2 {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+    transition: .5s;
+}
+
+.anime-start-2 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
 /*fim - animação*/
 
-.fa-arrow-alt-circle-up{
-    color:#fff;
+.fa-arrow-alt-circle-up {
+    color: #fff;
 }
 
 ul {
@@ -151,7 +164,6 @@ a:hover {
 .btn-primary:focus {
 
     box-shadow: 0 0 0 0.2rem rgba(150, 100, 206, 0.5) !important
-
 }
 
 .modal-body {
@@ -225,14 +237,24 @@ a:hover {
 
 
 
-/*********************************************************************CORES*********************************************************************************
-/*
+/*********************************************************************CORES*********************************************************************************/
+
+.bordaLaranja{
+   border:2px rgb(233, 152, 71) solid!important;
+}
+
+.bordaCinza{
+ border: 2px solid #425563;   
+}
+
+.bordaRoxo{
+ border: 2px solid #662483;   
+}
 
 .laranja {
-        background: #FE5000;
-    background: rgb(233, 152, 71);
+    /*        background: #FE5000;*/
+    background: rgb(233, 152, 71) !important;
 }
-*/
 
 .roxo {
     background: #662483;
@@ -255,9 +277,34 @@ a:hover {
 }
 
 .lilas {
-    
+
     border: 1px solid #dbcbef;
 }
+
+
+.preto {
+    background: #000;
+}
+
+.cinza {
+    background: #425563;
+}
+
+.cinza1 {
+    background: #bbb9bd;
+}
+
+.cinza-claro {
+
+    background: #e3e6e4;
+}
+
+.cinza-claro2 {
+    background: rgba(150, 159, 170, 1);
+
+}
+
+
 
 .inputLilas input,
 .inputLilas textarea {
@@ -290,25 +337,6 @@ a:hover {
     color: #666;
 
 }
-
-.preto {
-    background: #000;
-}
-
-.cinza {
-    background: #425563;
-}
-
-.cinza-claro {
-
-    background: #e3e6e4;
-}
-
-.cinza-claro2 {
-    background: rgba(150, 159, 170, 1);
-
-}
-
 
 
 
@@ -415,12 +443,12 @@ textarea {
 }
 
 .botaoMensagem button {
-   margin-top: 11px!important;
+    margin-top: 11px !important;
 }
 
 .botaoMensagem p {
     float: right;
-     margin-top: 16px!important;
+    margin-top: 16px !important;
 }
 
 .fotoVideoPost {
@@ -428,7 +456,7 @@ textarea {
     height: 400px;
 }
 
-.fotoVideoPost img{
+.fotoVideoPost img {
     width: 100%;
     height: 400px;
 }
@@ -460,7 +488,8 @@ textarea {
     float: left;
 }
 
-.fazerPostVidImg li, .fa-video {
+.fazerPostVidImg li,
+.fa-video {
     font-size: 20px;
     margin-right: 30px;
     color: #999;
@@ -625,7 +654,7 @@ textarea {
 .nome a {
     color: #fff;
     text-shadow: #000 0.1em 0.1em 0.2em;
-/*      text-shadow: #000 2px 3px 2px;*/
+    /*      text-shadow: #000 2px 3px 2px;*/
 }
 
 
@@ -858,7 +887,8 @@ img {
 }
 
 .curtirAtivo {
-    color: #db0fbc !important;
+    /*    color: #db0fbc !important;*/
+    color: rgb(233, 152, 71) !important;
     cursor: pointer;
 }
 
@@ -868,6 +898,19 @@ img {
     overflow: hidden;
 }
 
+
+.curtirVideo i {
+    font-size: 30px;
+}
+
+.curtirVideo p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 33px;
+}
+
+/*
 .curtirVideo i {
     font-size: 30px;
 }
@@ -878,7 +921,7 @@ img {
     float: left;
     line-height: 33px;
 }
-
+*/
 
 .caixaAvatarGrupo-desafio {
     width: 30%;
@@ -906,7 +949,7 @@ img {
     padding-left: 0px !important;
 }
 
-.nomeEtec {
+.nomeGrupo {
     font-size: 14px;
 }
 
@@ -997,18 +1040,30 @@ img {
 
 /**************************************************INFERIOR****************************************************************************************/
 
-.footerMenu {
+.footerMenu1 {
+    width: 50%;
     float: left;
 }
 
-.footerMenu li {
-    margin-right: 30px;
-    line-height: 80px;
+.footerMenu1 img {
+    width: 20%;
 }
 
-footer p {
-    line-height: 80px;
+
+.footerMenu1 p a {
+    line-height: 40px;
+    float: right;
 }
+
+.footerMenu1 img {
+    margin-left: 50px;
+}
+
+.footerMenu1 p {
+    margin-right: 50px;
+}
+
+/*
 
 .logoFooter {
     margin-right: 30px;
@@ -1016,6 +1071,7 @@ footer p {
     line-height: 2px;
     width: 250px;
 }
+*/
 
 .copyry {
     width: 80%;
@@ -1032,46 +1088,26 @@ footer p {
     width: 70%;
     /* float: left; */
     font-size: 16px;
-    margin:  auto;
+    margin: auto;
 }
 
-.footerMenu1 {
-    width: 10%;
-    /* float: left; */
-}
 
-.footerMenu1 ul {
-    /* display: inline-flex; */
-    padding: 0 !important;
-    margin-top: 37px;
-}
-
-.footerMenu1 ul li {
-
-    width: 50%;
-}
-
-.footerMenu1 ul li {
-    line-height: 40px;
-    display:;
-    background:;
-    margin-right: 15%;
-}
-.card-deck > div > div{
+.card-deck > div > div {
     transition: 300ms ease all;
     box-shadow: 5px 2px 20px 0px grey;
-    top:0;
+    top: 0;
 }
-.card-deck > div > div:hover{
+
+.card-deck > div > div:hover {
     top: -10px;
     box-shadow: 9px 2px 20px 0px grey;
 }
+
 /**************************************************PRIVACIDADE****************************************************************************************/
 
 /**************************************************REGULAMENTO****************************************************************************************/
 
 /*cores dos perfis e Grupos*/
-
 
 .testePTColorgray {
     background-color: #e3e6e4;
@@ -1151,25 +1187,26 @@ footer p {
 
 
 
- .logo {
-            top: 0px;
-            left: 0px;
-            position: absolute;
-            z-index: 999;
-     width: 212px;
-   
-        }
+.logo {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 999;
+    width: 212px;
+
+}
 
 .logo img {
     width: 150px;
     vertical-align: middle;
     border-style: none;
-    border:2px solid #662483;
+    border: 2px solid #662483;
 }
 
-.logo1{
+.logo1 {
     display: none;
 }
+
 /*grupo*/
 
 .videoInserirUrl {
@@ -1198,9 +1235,10 @@ footer p {
 
 .copyry2 {
     display: block;
-    text-align:  center;
-    margin:  auto;
+    text-align: center;
+    margin: auto;
 }
+
 /**************************************************1024px****************************************************************************************/
 
 @media(max-width: 1024px) {
@@ -1209,46 +1247,46 @@ footer p {
         z-index: 999;
     }
 
+    /*
     body {
-        background: ;
+        background: red;
     }
-    .logoFooter {
-        margin-right: 1px;
-        margin-top: 13px;
-        line-height: 2px;
-        width: 100px;
-    }
-
+*/
 }
 
 /**************************************************992px****************************************************************************************/
 
 @media (max-width:992px) {
-     .logo {
-            display: none;
-        }
-    
+    /*
+    body{
+        background: blue;
+    }
+*/
+    .logo {
+        display: none;
+    }
+
     .logo1 {
-            display: block;
-        }
+        display: block;
+    }
 
 
-.logo1 img {
-    width: 150px;
-    padding: 5px;
-    vertical-align: middle;
-    border-style: none;
-}
+    .logo1 img {
+        width: 150px;
+        padding: 5px;
+        vertical-align: middle;
+        border-style: none;
+    }
 
-    
-    
-    
-    
+
+
+
+
     .caixaLogin {
         background: rgba(0, 0, 0, 0);
     }
-    
-    
+
+
     #menu {
         border-top: 3px solid #753ab7;
         ;
@@ -1279,10 +1317,31 @@ footer p {
         font-size: 12px !important;
     }
 
-    .footerMenu1 {
-        width: 25% !important;
 
+    .footerMenu1 {
+        width: 50%;
+        float: left;
     }
+
+    .footerMenu1 img {
+        width: 30%;
+    }
+
+
+    .footerMenu1 p a {
+        line-height: 40px;
+        float: right;
+    }
+
+    .footerMenu1 img {
+        margin-left: 0px;
+    }
+
+    .footerMenu1 p {
+        margin-right: 0px;
+    }
+
+
 
 
 
@@ -1292,33 +1351,21 @@ footer p {
 /**************************************************768px****************************************************************************************/
 
 @media (max-width: 768px) {
-
+    /*
+    body{
+        background: green;
+    }
+*/
     .carousel-item h4 {
         font-size: 24px;
     }
-    .footerMenu {
-        float: none !important;
-        text-align: center;
-    }
 
-    .footerMenu li {
-        margin-right: 30px;
-        text-align: center;
-    }
-
-    footer p {
-        float: none !important;
-        line-height: 0px;
-        font-size: 10px;
-        text-align: center;
-        background: ;
-    }
     .logoFooter {
         display: block;
     }
 
     body {
-        background:;
+        background: ;
         overflow-: hidden;
     }
 
@@ -1332,43 +1379,11 @@ footer p {
 
     .copyry {
         width: 100% !important;
-        float: right !important;
         text-align: center;
     }
-    .copyry img {
-        width: 20% !important;
-        float: left !important;
-    }
 
-    .copyry p {
-        width: 80% !important;
-        float: right !important;
-        font-size: 12px !important;
-        height: 60px;
-        line-height: 60px !important;
-    }
 
-    .footerMenu1 {
-        width: 100% !important;
-        float: left !important;
-        text-align: center !important;
-    }
 
-    .footerMenu1 ul {
-        display: inline-flex !important;
-        padding: 0 !important;
-
-    }
-
-    .footerMenu1 ul li {
-        width: 50% !important;
-    }
-
-    .footerMenu1 ul li {
-        line-height: 80px !important;
-        margin-right: 0% !important;
-        padding: 0 40px;
-    }
 
     .logoFooter {
         margin-right: 0px !important;
@@ -1379,17 +1394,52 @@ footer p {
         font-weight: bold !important;
         font-size: 30px !important;
     }
-.justify{
+    .justify {
         text-align: justify;
     }
-    .mobile_bnt{
+    .mobile_bnt {
         display: none;
     }
 }
 
+@media(max-width:575px) {
+    /*
+    body{
+        background: black;
+    }
+*/
+    .footerMenu1 img {
+        width: 30%;
+    }
+
+
+    .footerMenu1 p a {
+        line-height: 40px;
+        float: right;
+    }
+
+    .footerMenu1 img {
+        margin-left: 40px;
+    }
+
+    .footerMenu1 p {
+        margin-right: 40px;
+    }
+
+
+
+}
+
+
 /**************************************************500px****************************************************************************************/
 
 @media (max-width: 500px) {
+
+    /*
+    body{
+        background: pink;
+    }
+*/
     .carousel-item h4 {
         font-size: 20px;
     }
@@ -1413,94 +1463,118 @@ footer p {
 
     .copyry p {
         width: 80% !important;
-        float: unset!important;
+        float: unset !important;
         font-size: 11px !important;
-        height: 60px;
-        line-height: 60px !important;
-        margin: auto;
+        height: 20px;
+        line-height: 20px !important;
+        margin: 0 auto !important;
         /* text-align:  center; */
     }
 
     .footerMenu1 {
-        width: 50% !important;
-        float: unset !important;
-        text-align: unset !important;
-        font-size: 14px;
+        width: 50%;
+        float: left;
     }
 
-    .footerMenu1 ul {
-        display: block !important;
-        padding: 0 !important;
-        justify-content:  center;
-        margin-top:  18px;
+    .footerMenu1 img {
+        width: 40%;
     }
 
-    .footerMenu1 ul li {
-        width: 50% !important;
+
+    .footerMenu1 p a {
+        line-height: 40px;
+        float: right;
     }
 
-    .footerMenu1 ul li {
-        line-height: 40px !important;
-        margin-right: 0% !important;
+    .footerMenu1 img {
+        margin-left: 20px;
     }
 
-    .logoFooter {
-        margin-right: 0px !important;
-        width: 100%;
+    .footerMenu1 p {
+        margin-right: 20px;
     }
-    
+
+
+
+
 
 
 }
-*{
+
+* {
     /* display: none; */
 }
-.pos-load-page{
+
+.pos-load-page {
     display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 99999999;
-    top:0;
+    top: 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: white;
 }
-.pos-load-page img{
+
+.pos-load-page img {
     display: block !important;
     width: 90%;
     max-width: 400px;
 }
-.pos-load-page .load-image{
-    width: 90%;
-    max-width: 50px;
-}
-.pos-load-page.active{
-    display: flex;
-}
-.pos-load-page img{
-    width: 90%;
-    max-width: 400px;
-}
-.pos-load-page .load-image{
+
+.pos-load-page .load-image {
     width: 90%;
     max-width: 50px;
 }
 
-.carousel-item img{
+.pos-load-page.active {
+    display: flex;
+}
+
+.pos-load-page img {
+    width: 90%;
+    max-width: 400px;
+}
+
+.pos-load-page .load-image {
+    width: 90%;
+    max-width: 50px;
+}
+
+.carousel-item img {
     min-height: 300px;
 }
-.desafio-card{
+
+.desafio-card {
     padding: 10px;
     margin-bottom: 10px;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 7px 6px 20px -11px #000;
 }
+
 @media (min-width: 500px) {
     .lead {
         font-size: 16px;
         font-weight: 300;
+    }
+}
+
+@media (max-width: 412px) {
+    /*
+    body{
+        background: red;
+    }
+*/
+    .copyry p {
+        width: 80% !important;
+        float: unset !important;
+        font-size: 11px !important;
+        height: 40px;
+        line-height: 20px !important;
+        margin: 0 auto 10px auto !important;
+        /* text-align:  center; */
     }
 }

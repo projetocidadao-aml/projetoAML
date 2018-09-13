@@ -17,12 +17,15 @@
             a {
                 text-decoration: none;
             }
+
             a:link {
                 text-decoration: none;
             }
+
             a:hover {
                 text-decoration: none;
             }
+
         </style>
     </head>
 
@@ -76,11 +79,11 @@
         </div>
         </div>
         <main class="hide-on-init" style="overflow-x: hidden; max-width: 1400px;margin:auto;">
-           <?php
+            <?php
             new routers('aluno');
-           ?> 
+           ?>
         </main>
-        
+
 
 
         <script src="dist/js/jquery.min.js"></script>
@@ -88,6 +91,7 @@
             $(document).ready(function() {
                 $("#teste").fadeOut("show");
             });
+
         </script>
 
         <script src="dist/js/popper.min.js"></script>
@@ -97,10 +101,10 @@
         <script src="dist/js/modalVideoDesafio.js"></script>
         <script src="dist/js/curtirDesafio.js"></script>
         <script src="dist/js/addIntegrante.js"></script>
-        <script src="dist/js/msgAluno.js"></script>        
+        <script src="dist/js/msgAluno.js"></script>
         <script src="dist/js/inserirVideoFoto.js"></script>
 
-<!--
+        <!--
         <footer>
             <div class="row tirar_margin_row pt-4 pb-1 cinza">
                 <div class="container">
@@ -120,27 +124,31 @@
             </div>
         </footer>
 -->
- 
-        
-        
-        
-         <footer class="hide-on-init">
-            <div class="tirar_margin_row pt-4 pb-1 cinza">
+
+        <style>
+
+
+        </style>
+
+
+        <footer class="hide-on-init">
+            <div class="md-12 pt-4 pb-1 cinza">
                 <div class="container">
-                    <div class="row">
-                         <div style="width: 50%;">
+                    <div class="row py-2">
+
+                        <div class="footerMenu1 pb-2">
                             <img class="logoFooter" src="dist/img/logoBranco.png" alt="">
                         </div>
-                        <div class="footerMenu1 " style="background:">
-                            <ul class="">
-                                <li><a href="index.php?page=privacidade">PRIVACIDADE</a></li>
-                                <li><a href="index.php?page=contato">CONTATO</a></li>
-                            </ul>
+                        <div class="footerMenu1 pb-2">
+
+                            <p><a href="index.php?page=contato" class="mr-2">CONTATO</a></p>
+
                         </div>
-                       
-                        <div class="copyry copyry2 text-branco" style="background:">
+
+                        <div class="copyry copyry2 text-branco pb-2" style="background:">
                             <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -149,38 +157,40 @@
             <img src="dist/img/logo2.png" />
             <img class="load-image" src="dist/img/loading.gif">
         </div>
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+        <script src="dist/js/jquery.min.js"></script>
+        <script src="dist/js/revelaSenha.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="dist/js/jquery.blockUI.js"></script>
         <script src="dist/js/ajaxLoading.js"></script>
         <script src="control/script/verificaLogin.js"></script>
         <script type="text/javascript">
-            window.addEventListener('load',()=>{
-                setTimeout(()=>{
+            window.addEventListener('load', () => {
+                setTimeout(() => {
                     document.querySelector('.pos-load-page').style.opacity = '0';
-                },700)
-                setTimeout(()=>{
+                }, 700)
+                setTimeout(() => {
                     $('.hide-on-init').removeClass('hide-on-init');
                     document.querySelector('.pos-load-page').classList.remove('active');
-                },1400);
+                }, 1400);
             });
+
         </script>
-               <script>
-        $('#EnviarL').click(function(e){
-            var link;
-            link = document.getElementById("ModalUrlVideo").value;
-            document.getElementById("ThisLinkVideo").value = link;
-        var teste2;
-        teste2 = document.getElementById("ThisLinkVideo").value;
-        e.preventDefault();
-        });
-  
-    </script>
+        <script>
+            $('#EnviarL').click(function(e) {
+                var link;
+                link = document.getElementById("ModalUrlVideo").value;
+                document.getElementById("ThisLinkVideo").value = link;
+                var teste2;
+                teste2 = document.getElementById("ThisLinkVideo").value;
+                e.preventDefault();
+            });
+
+        </script>
     </body>
 
     </html>

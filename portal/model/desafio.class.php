@@ -21,11 +21,16 @@ include("config.class.php");
 
 				foreach ($result as $results){
 					if ($flag == 1) {
-						$card = "card lilas";
+						$card = "card bordaLaranja";
 						$card_body = "card-body text-center";
-					}else{
-						$card = "card roxo";
-						$card_body = "card-body text-center testPTColorWhite";
+					}
+                    else if ($flag == 2) {
+						$card = "card  bordaCinza";
+						$card_body = "card-body text-center";
+					}
+                    else{
+						$card = "card bordaRoxo";
+						$card_body = "card-body text-center";
 					}
 					echo '<div class="col-sm-12 col-md-4 mb-3 d-flex align-self-stretch  flex-column ">
                 <div class="'.$card.'">

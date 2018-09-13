@@ -58,7 +58,7 @@
                             <ul class="navbar-nav ">
                                 <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.php?page=regulamento">REGULAMENTO</a></li>
-                                <li class="nav-item caixaLogin"><a class="nav-link" href="" data-toggle="modal" data-target="#loginMoldal">AREA DO ALUNO</a>
+                                <li class="nav-item caixaLogin"><a class="nav-link" href="" data-toggle="modal" data-target="#loginMoldal">LOGIN</a>
                             </ul>
                         </div>
                     </nav>
@@ -68,7 +68,7 @@
                         <div class="modal-content px-3 py-3 roxo inputLilas">
                             <div class="modalTitulo">
                                 <button type="button" class="text-branco close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h5 class="modal-title" id="login" class=" text-branco">LOGIN DO ALUNO</h5>
+                                <h5 class="modal-title" id="login" class=" text-branco">LOGIN</h5>
                             </div>
                             <div class="modal-body">
                                 <form class="formLogCli" action="#">
@@ -84,6 +84,8 @@
                                     </button>
                                         <label class="returnFormLogCli"></label>
                                     </p>
+
+                                    <p class="text-center pt-3"><a href="index.php?page=alterarCadastro" class="mr-2">Esqueci minha senha</a></p>
                                 </form>
                             </div>
                         </div>
@@ -98,7 +100,7 @@
             new routers('index');
            ?>
         </main>
-        
+
 
 
         <script src="dist/js/jquery.min.js"></script>
@@ -119,27 +121,26 @@
         <script src="dist/js/msgAluno.js"></script>
         <script src="dist/js/inserirVideoFoto.js"></script>
         <script src="dist/js/animacao.js"></script>
-       
-
 
 
         <footer class="hide-on-init">
-            <div class="tirar_margin_row pt-4 pb-1 cinza">
+            <div class="md-12 pt-4 pb-1 cinza">
                 <div class="container">
-                    <div class="row">
-                         <div style="width: 50%;">
+                    <div class="row py-2">
+
+                        <div class="footerMenu1 pb-2">
                             <img class="logoFooter" src="dist/img/logoBranco.png" alt="">
                         </div>
-                        <div class="footerMenu1 " style="background:">
-                            <ul class="">
-                                <li><a href="index.php?page=privacidade">PRIVACIDADE</a></li>
-                                <li><a href="index.php?page=contato">CONTATO</a></li>
-                            </ul>
+                        <div class="footerMenu1 pb-2">
+
+                            <p><a href="index.php?page=contato" class="mr-2">CONTATO</a></p>
+
                         </div>
-                       
-                        <div class="copyry copyry2 text-branco" style="background:">
+
+                        <div class="copyry copyry2 text-branco pb-2" style="background:">
                             <p class="" style="background:">© Copyright 2018 - AML Reputacional, todos os direitos reservados.</p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -153,21 +154,23 @@
 
 
 
-
+        <script src="dist/js/jquery.min.js"></script>
+        <script src="dist/js/revelaSenha.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="dist/js/jquery.blockUI.js"></script>
         <script src="dist/js/ajaxLoading.js"></script>
         <script src="control/script/verificaLogin.js"></script>
         <script type="text/javascript">
-            window.addEventListener('load',()=>{
-                setTimeout(()=>{
+            window.addEventListener('load', () => {
+                setTimeout(() => {
                     document.querySelector('.pos-load-page').style.opacity = '0';
-                },700)
-                setTimeout(()=>{
+                }, 700)
+                setTimeout(() => {
                     $('.hide-on-init').removeClass('hide-on-init');
                     document.querySelector('.pos-load-page').classList.remove('active');
-                },1400);
+                }, 1400);
             });
+
         </script>
     </body>
 
