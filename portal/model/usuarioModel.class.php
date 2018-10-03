@@ -26,10 +26,11 @@ include("config.class.php");
 			$this->valorCampo = $result[$campo];
 		}
 		function listaPosts(){
-            $sql = "SELECT  POSTAGEM.*, PESSOA.*, POST_MIDIA.*, COMENTARIO.*, count(LIKES.LIKES_ID) as likes FROM POSTAGEM
+            $sql = "SELECT  POSTAGEM.*, PESSOA.*, POST_MIDIA.*, COMENTARIO.*, LIKES.* FROM POSTAGEM
 			INNER JOIN PESSOA ON PESSOA.PESSOA_ID = POSTAGEM.ID_PESSOA
 			LEFT JOIN POST_MIDIA ON POST_MIDIA.ID_POSTAGEM = POSTAGEM.ID_POSTAGEM
 			LEFT JOIN COMENTARIO ON COMENTARIO.ID_POSTAGEM = POSTAGEM.ID_POSTAGEM
+            LEFT JOIN PESSOA AS PC ON PESSOA.PESSOA_ID = COMENTARIO.ID_PESSOA
 			LEFT JOIN LIKES ON LIKES.POSTAGEM_ID = POSTAGEM.ID_POSTAGEM";
             $db = $this->conn->prepare($sql);
             $linha = $db->execute();
@@ -62,117 +63,13 @@ include("config.class.php");
                         </div>
 					</div>
 					'.$postmidia.'
-                    <div class="botaoMensagem cinza-claro2 py-2">
+					<div class="botaoMensagem cinza-claro2 py-2">
+						<input type="hidden" class="id_postagem" value="'.$value['ID_POSTAGEM'].'" />
                         <button class="btn btn-primary"><i class="fas fa-thumbs-up"></i></button>
 						<!--<button class="btn btn-primary"><i class="fas fa-share"></i></button>-->
-                        <p class="ml-4 mt-1">'.$value['likes'].' curtidas </p>
-                        <p class=" mt-1"> 10 Comentarios</p>
-                    </div>
-                    <div class="mensagemPost">
-                        <div class="avatarMensagem">
-                            <a href="index.php?page=aluno"><img src="dist/img/avatar.png" class="rounded-circle" alt=""></a>
-                        </div>
-                        <div class="nomeAvatarMensagem">
-                            <a href="index.php?page=aluno">
-                                <p class="text-preto">Nome do aluno <br> Compartilhado em 00/00/0000</p>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-text clear">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
-                                <p class="responder"> RESPONDER</p>
-                                <div class="responderMsg respondaMensagem">
-                                    <div class="avatarResponda">
-                                        <a href="index.php?page=aluno">
-                                        <img src="dist/img/avatar.png" class="rounded-circle" alt="">
-                                         </a>
-                                    </div>
-                                    <div class="respondaMensagemInput">
-                                        <input type="text">
-                                    </div>
-                                    <div class="respondaMensagemBotao">
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mensagemPost">
-                        <div class="avatarMensagem">
-                            <a href="index.php?page=coordenador"><img src="dist/img/avatar.png" class="rounded-circle" alt=""></a>
-                        </div>
-                        <div class="nomeAvatarMensagem">
-                            <a href="index.php?page=coordenador">
-                                <p class="text-preto">
-                                Nome do coordenador <br> Compartilhado em 00/00/0000
-                                </p>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-text clear">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
-                               <p class="responder"> RESPONDER</p>
-                                <div class="responderMsg respondaMensagem">
-                                    <div class="avatarResponda">
-                                        <a href="index.php?page=aluno">
-                                        <img src="dist/img/avatar.png" class="rounded-circle" alt="">
-                                         </a>
-                                    </div>
-                                    <div class="respondaMensagemInput">
-                                        <input type="text">
-                                    </div>
-                                    <div class="respondaMensagemBotao">
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mensagemPostResposta">
-                        <div class="avatarMensagem">
-                            <a href="index.php?page=aluno"><img src="dist/img/avatar.png" class="rounded-circle" alt=""></a>
-                        </div>
-                        <div class="nomeAvatarMensagemResposta">
-                            <a href="index.php?page=aluno">
-                                <p class="text-preto">Nome do aluno <br> Compartilhado em 00/00/0000
-
-                                </p>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-text clear">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident quia tempore minus maiores, modi nihil laudantium? Quidem officia adipisci eligendi, nihil, natus, reprehenderit placeat earum iusto blanditiis eius voluptatem.</p>
-                                <p class="responder"> RESPONDER</p>
-                                <div class="responderMsg respondaMensagem">
-                                    <div class="avatarResponda">
-                                        <a href="index.php?page=aluno">
-                                        <img src="dist/img/avatar.png" class="rounded-circle" alt="">
-                                         </a>
-                                    </div>
-                                    <div class="respondaMensagemInput">
-                                        <input type="text">
-                                    </div>
-                                    <div class="respondaMensagemBotao">
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="respondaMensagem">
-                        <div class="avatarResponda">
-                            <a href="index.php?page=aluno">
-                            <img src="dist/img/avatar.png" class="rounded-circle" alt="">
-                            </a>
-                        </div>
-                        <div class="respondaMensagemInput">
-                            <input type="text">
-                        </div>
-                        <div class="respondaMensagemBotao">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </div>
+                        <p class="ml-4 mt-1">'.$value['QTD_LIKES'].' curtidas </p>
+                        <p class=" mt-1"><a href="#" class="show-coments"> Ver Comentarios </a></p>
+					</div>
                 </div>
             </div>';
 			}
