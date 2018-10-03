@@ -12,4 +12,8 @@
             $capturaNomeGrupo = new usuarioModel($_SESSION['idUser_portal'], 'GRUPO_NOME');
             $this->nomeGrupo = $capturaNomeGrupo->valorCampo;;
         }
+        public function posts(){
+            $posts = new usuarioModel();
+			$posts->listaPosts();
+        }
     }
